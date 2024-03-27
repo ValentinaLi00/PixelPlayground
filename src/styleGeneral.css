@@ -1,0 +1,17 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cera Pro';
+  }
+  
+@font-face {
+    font-family: 'Minecraft';
+    src: local('Mincreft'),
+        url('./fonts/Minecraft.ttf') format('woff2'),
+        url('./fonts/Minecraft.ttf') format('woff'),
+        url('./fonts/Minecraft.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
