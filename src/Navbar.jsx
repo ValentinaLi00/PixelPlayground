@@ -11,7 +11,8 @@ import "./styles/style_navbar.css"
 
 export function Navbar() {
     return(
-        <div className="navbar_content">
+        <div className="container">
+            <div className="navbar_content">
             <div className="nav_first_section">
                 <img src={logoVettoriale} id="logo_vettoriale_nav" />
             </div>
@@ -26,6 +27,8 @@ export function Navbar() {
                 <img src={cart} id="nav_cart" />
                 <img src={heart} id="nav_heart" />
             </div>
+            </div>
         </div>
+        
     )
 }
