@@ -25,7 +25,7 @@ export function UserPage() {
         </div>
         <div className="cards_collection_container">
           <div className="user_card_container">
-            <div className="icon_img_container"><img src="src\assets\paoloLupoAssets\pixel-treasure-chest-vector-28943116.webp" alt="" /></div>
+            <div className="icon_img_container"><img src="src\assets\paoloLupoAssets\chest_wishlist_icon.png" alt="" /></div>
             <p>Wishlist</p>
           </div>
           <div className="user_card_container">
