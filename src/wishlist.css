@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'PixelifyMedium';
+    src: url('/PixelPlayground/src/assets/loghi/ariGiaccariAssets/PixelifySans-Medium.ttf') format ('truetype');
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/PixelPlayground/src/assets/loghi/ariGiaccariAssets/Minecraft.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PixelifyMedium', 'Minecraft';
+}
+
+.wishlistBackground {
+    position: relative;
+}
+
+.wishlistBackgroundImg {
+    width: 100%;
+    height: 100%;
+    filter: brightness(20%);
+}
+
+.wishlistContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.favContainer {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    margin-left:10%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.115);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.474);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.favContainer img {
+    border-radius: 30px;
+    filter: saturate(0%);
+}
+
+
+.upperWishlist {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 40px;
+}
+
+.upperWishlist h1 {
+    color: white;
+    padding-top: 50px;
+}
+
+.favProdName,
+.favProdPrice, .favProdStatus {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+}
+
+.addRemoveBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addRemoveBtns button {
+    cursor: pointer;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.244);
+    background: linear-gradient(to bottom,
+            hsl(340, 33%, 47%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(340, 67%, 17%) 100%);
+}
