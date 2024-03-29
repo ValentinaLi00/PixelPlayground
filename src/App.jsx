@@ -1,16 +1,12 @@
 import { Cart } from "./components/cart/Cart";
-import { Footer } from "./components/footer/Footer";
-import { UserPage } from "./components/userPage/UserPage";
+import { Product } from "./components/product/Product";
 
-
- 
 export function App() {
- 
   return (
     <div>
-      <Cart />
+      <Product />
     </div>
   );
-};
+}
 
 export default App;
