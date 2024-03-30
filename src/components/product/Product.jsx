@@ -4,27 +4,49 @@ export function Product() {
   return (
     <div className="product_component">
       <div className="product_thumbnail_container">
-        <img src="" alt="product's thumbnail" />
-      </div>
-      <div className="super_container">
-        <div className="trailer_container">
-          <video src="" type="" className="video_trailer"></video>
+        <div className="product_thumbnail">
+          <img
+            src="src\assets\paoloLupoAssets\assetsDiProva\dragon-quest-iii-remake-ps5-remake-edition-playstation-5-gioco-playstation-store-cover.jpg"
+            alt="product's thumbnail"
+          />
         </div>
-        <div className="price_container">
-          <p className="sales_date">L'offerta scade il 01/01/2024</p>
-          <div className="sales_container">
-            <p className="sales_amount">-50%</p>
+        <div className="super_container">
+          <div className="trailer_container">
+            <iframe
+              className="trailer"
+              src="https://www.youtube.com/embed/FmfiqydPjVk?&mute=1&autoplay=1"
+              title="Dragon Quest 3 HD-2D Remake - Official Japanese Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div className="price">
-            <p className="previous_price">39,99$</p>
-            <h2 className="actual_price">39,99$</h2>
-          </div>
-          <div className="priceBtn_container">
-            <button name="wishlistBtn" className="wishlistBtn">
-              <img src="" alt="cuore preferiti" />
-            </button>
-            <button name="addToCartBtn">Aggiungi al carrello</button>
-            <button name="buyNowBtn">Compra ora</button>
+          <div className="price_container">
+            <p className="sales_date">L'offerta scade il xx/xx/xxxx</p>
+            <div className="sales_container">
+              <p className="sales_amount">-X%</p>
+            </div>
+            <div className="price">
+              <p className="previous_price">
+                <s>xx,xx$</s>
+              </p>
+              <h2 className="actual_price">XX,XX$</h2>
+            </div>
+            <div className="priceBtn_container">
+              <button name="wishlistBtn" className="wishlistBtn">
+                <img
+                  src="src\assets\paoloLupoAssets\heart_wishlist.png"
+                  alt=""
+                />
+              </button>
+              <button name="addToCartBtn" className="addToCartBtn">
+                Aggiungi al carrello
+              </button>
+              <button name="buyNowBtn" className="buyNowBtn">
+                Compra ora
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -74,8 +96,8 @@ export function Product() {
         </div>
         <div className="details_container">
           <h2 className="details_title">Dettagli di gioco</h2>
-          <div className="details_table">
-            <table>
+          <div className="details_table_container">
+            <table className="details_table">
               <thead>
                 <tr>
                   <td>Rating:</td>
@@ -100,135 +122,391 @@ export function Product() {
       </div>
       <div className="product_gallery">
         <h2 className="productGallery_title">Immagini di gioco</h2>
-        <div>
-          <img src="" alt="product's thumbnail" />
-          <img src="" alt="product's thumbnail" />
-          <img src="" alt="product's thumbnail" />
-          <img src="" alt="product's thumbnail" />
-          <img src="" alt="product's thumbnail" />
+        <div className="product_gallery_subContainer">
+          <div>
+            <img
+              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+              alt="product's thumbnail"
+            />
+          </div>{" "}
+          <div>
+            <img
+              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+              alt="product's thumbnail"
+            />
+          </div>{" "}
+          <div>
+            <img
+              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+              alt="product's thumbnail"
+            />
+          </div>{" "}
+          <div>
+            <img
+              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+              alt="product's thumbnail"
+            />
+          </div>
         </div>
       </div>
       <div className="requirements_container">
         <h2 className="requirements_title">Requisiti di sistema</h2>
-        <div className="minimumRequirements_container">
-          <h3 className="requirements_title">Minimi</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim dicta
-            voluptas natus repellendus, eos modi ipsam cum illum, culpa vel hic
-            repudiandae sint magni, cumque quis? Earum repellat odio reiciendis.
-            Aperiam maxime sunt, tempora qui mollitia eius accusamus magni?
-            Molestiae earum, iste et amet incidunt deleniti dolorum esse
-            necessitatibus labore at aspernatur sunt, tempora sed animi impedit
-            optio ducimus laborum.
-          </p>
+        <div className="requirements_subContainer">
+          <div className="minimumRequirements_container">
+            <h3 className="minimumRequirements_title">Minimi</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+              dicta voluptas natus repellendus, eos modi ipsam cum illum, culpa
+              vel hic repudiandae sint magni, cumque quis? Earum repellat odio
+              reiciendis. Aperiam maxime sunt, tempora qui mollitia eius
+              accusamus magni? Molestiae earum, iste et amet incidunt deleniti
+              dolorum esse necessitatibus labore at aspernatur sunt, tempora sed
+              animi impedit optio ducimus laborum.
+            </p>
+          </div>
+          <div className="suggestedRequirements_container">
+            <h3 className="suggestedRequirements_title">Raccomandati</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              officiis sint maxime consectetur sed recusandae saepe debitis,
+              porro praesentium vero dolore ducimus quod mollitia in
+              necessitatibus eligendi fuga sunt consequuntur? Quam quibusdam
+              illum amet cum reprehenderit officia enim asperiores dolorem
+              corporis excepturi, tempore tempora incidunt, labore, voluptatum
+              ipsum ad! Nulla repellendus odit optio expedita, laboriosam fuga
+              id perspiciatis autem aut.
+            </p>
+          </div>
         </div>
-        <div className="suggestedRequirements_container">
-          <h3 className="requirements_title">Raccomandati</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A officiis
-            sint maxime consectetur sed recusandae saepe debitis, porro
-            praesentium vero dolore ducimus quod mollitia in necessitatibus
-            eligendi fuga sunt consequuntur? Quam quibusdam illum amet cum
-            reprehenderit officia enim asperiores dolorem corporis excepturi,
-            tempore tempora incidunt, labore, voluptatum ipsum ad! Nulla
-            repellendus odit optio expedita, laboriosam fuga id perspiciatis
-            autem aut.
-          </p>
+      </div>
+      <div className="mainReview_container">
+        <h2 className="review_title">Recensioni</h2>
+
+        <div className="userReviewer_container">
+          <div className="userReviewer_avatar_container">
+            <img
+              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 154044.png"
+              alt=""
+              width="80px"
+              height="80px"
+            />
+            <span>User's name</span>
+          </div>
+          <div className="stars_container">
+            <button className="starThumbnail">
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
+            </button>
+            <button className="starThumbnail">
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
+            </button>
+            <button className="starThumbnail">
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
+            </button>
+            <button className="starThumbnail">
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
+            </button>
+            <button className="starThumbnail">
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
+            </button>
+            <div className="subReview_container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                aliquid ad reprehenderit in laborum dicta rerum libero quis ipsa
+                autem mollitia cum explicabo, consequatur dolorum veritatis qui
+                hic! Quisquam, sint.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="mainReview_container">
-          <h2 className="review_title">Recensioni</h2>
-          <div className="userReviewer_container">
-            <div className="userReviewer_avatar_container">
-              <img src="" alt="user avatar" />
-              <span>User's name</span>
-            </div>
+
+        <div className="userReviewer_container">
+          <div className="userReviewer_avatar_container">
+            <img
+              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 154010.png"
+              alt=""
+              width="80px"
+              height="80px"
+            />
+            <span>User's name</span>
           </div>
           <div className="stars_container">
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
-          </div>
-          <div className="subReview_container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              aliquid ad reprehenderit in laborum dicta rerum libero quis ipsa
-              autem mollitia cum explicabo, consequatur dolorum veritatis qui
-              hic! Quisquam, sint.
-            </p>
-          </div>
-          <div className="userReviewer_container">
-            <div className="userReviewer_avatar_container">
-              <img src="" alt="user avatar" />
-              <span>User's name</span>
+            <div className="subReview_container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                aliquid ad reprehenderit in laborum dicta rerum libero quis ipsa
+                autem mollitia cum explicabo, consequatur dolorum veritatis qui
+                hic! Quisquam, sint.
+              </p>
             </div>
+          </div>
+        </div>
+
+        <div className="userReviewer_container">
+          <div className="userReviewer_avatar_container">
+            <img
+              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 154026.png"
+              alt=""
+              width="80px"
+              height="80px"
+            />
+            <span>User's name</span>
           </div>
           <div className="stars_container">
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
-          </div>
-          <div className="subReview_container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              aliquid ad reprehenderit in laborum dicta rerum libero quis ipsa
-              autem mollitia cum explicabo, consequatur dolorum veritatis qui
-              hic! Quisquam, sint.
-            </p>
-          </div>
-          <div className="userReviewer_container">
-            <div className="userReviewer_avatar_container">
-              <img src="" alt="user avatar" />
-              <span>User's name</span>
+            <div className="subReview_container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                aliquid ad reprehenderit in laborum dicta rerum libero quis ipsa
+                autem mollitia cum explicabo, consequatur dolorum veritatis qui
+                hic! Quisquam, sint.
+              </p>
             </div>
+          </div>
+        </div>
+
+        <div className="userReviewer_container">
+          <div className="userReviewer_avatar_container">
+            <img
+              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 153928.png"
+              alt=""
+              width="80px"
+              height="80px"
+            />
+            <span>User's name</span>
           </div>
           <div className="stars_container">
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
             <button className="starThumbnail">
-              <img src="" alt="star" />
+              <img
+                src="src\assets\paoloLupoAssets\pixel-star.png"
+                alt="star"
+                className="yellowStar"
+              />
+              <img
+                src="src\assets\paoloLupoAssets\black-pixel-star.png"
+                alt=""
+                className="blackStar"
+              />
             </button>
-          </div>
-          <div className="subReview_container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              aliquid ad reprehenderit in laborum dicta rerum libero quis ipsa
-              autem mollitia cum explicabo, consequatur dolorum veritatis qui
-              hic! Quisquam, sint.
-            </p>
+            <div className="subReview_container">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                aliquid ad reprehenderit in laborum dicta rerum libero quis ipsa
+                autem mollitia cum explicabo, consequatur dolorum veritatis qui
+                hic! Quisquam, sint.
+              </p>
+            </div>
           </div>
         </div>
       </div>
