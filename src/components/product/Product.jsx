@@ -51,7 +51,7 @@ export function Product() {
         </div>
       </div>
       <h1 className="product_title">Titolo prodotto:</h1>
-      <h2 className="product_subTitle">Sottotito prodotto</h2>
+      <h2 className="product_subTitle">Sottotitolo prodotto</h2>
       <div className="descriptionAndDetails_container">
         <div className="description_container">
           <h2 className="title_description">Descrizione</h2>
