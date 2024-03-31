@@ -122,30 +122,54 @@ export function Product() {
       </div>
       <div className="product_gallery">
         <h2 className="productGallery_title">Immagini di gioco</h2>
-        <div className="product_gallery_subContainer">
-          <div>
+        <div className="gallery_container">
+          <div className="mainFrame">
             <img
               src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-              alt="product's thumbnail"
+              alt="main frame"
             />
-          </div>{" "}
-          <div>
-            <img
-              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-              alt="product's thumbnail"
-            />
-          </div>{" "}
-          <div>
-            <img
-              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-              alt="product's thumbnail"
-            />
-          </div>{" "}
-          <div>
-            <img
-              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-              alt="product's thumbnail"
-            />
+          </div>
+          <div className="galleryBtn_container">
+            <button className="leftGalleryBtn"> {`<`} </button>
+            <button className="rightGalleryBtn"> {`>`} </button>
+          </div>
+          <div className="product_gallery_subContainer">
+            <div>
+              <img
+                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+                alt="product's thumbnail"
+              />
+            </div>
+            <div>
+              <img
+                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+                alt="product's thumbnail"
+              />
+            </div>
+            <div>
+              <img
+                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+                alt="product's thumbnail"
+              />
+            </div>
+            <div>
+              <img
+                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+                alt="product's thumbnail"
+              />
+            </div>
+            <div>
+              <img
+                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+                alt="product's thumbnail"
+              />
+            </div>
+            <div>
+              <img
+                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
+                alt="product's thumbnail"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -154,28 +178,60 @@ export function Product() {
         <div className="requirements_subContainer">
           <div className="minimumRequirements_container">
             <h3 className="minimumRequirements_title">Minimi</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
-              dicta voluptas natus repellendus, eos modi ipsam cum illum, culpa
-              vel hic repudiandae sint magni, cumque quis? Earum repellat odio
-              reiciendis. Aperiam maxime sunt, tempora qui mollitia eius
-              accusamus magni? Molestiae earum, iste et amet incidunt deleniti
-              dolorum esse necessitatibus labore at aspernatur sunt, tempora sed
-              animi impedit optio ducimus laborum.
-            </p>
+            <table className="minimumRequirements_table">
+              <thead>
+                <tr>
+                  <td>OS:</td>
+                  <td>Windows 10 (64 bit)/Windows 11 (64 bit)</td>
+                </tr>
+                <tr>
+                  <td>Processore:</td>
+                  <td>Intel Core i5 10600 / AMD Ryzen 5 3600</td>
+                </tr>
+                <tr>
+                  <td>Memoria:</td>
+                  <td>16GB RAM</td>
+                </tr>
+                <tr>
+                  <td>Scheda grafica:</td>
+                  <td>
+                    NVIDIA GeForce GTX 1070 / AMD Radeon RX 5500 XT with 8GB
+                    VRAM
+                  </td>
+                </tr>
+                <tr>
+                  <td>DirectX:</td>
+                  <td>Versione 12</td>
+                </tr>
+              </thead>
+            </table>
           </div>
           <div className="suggestedRequirements_container">
             <h3 className="suggestedRequirements_title">Raccomandati</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-              officiis sint maxime consectetur sed recusandae saepe debitis,
-              porro praesentium vero dolore ducimus quod mollitia in
-              necessitatibus eligendi fuga sunt consequuntur? Quam quibusdam
-              illum amet cum reprehenderit officia enim asperiores dolorem
-              corporis excepturi, tempore tempora incidunt, labore, voluptatum
-              ipsum ad! Nulla repellendus odit optio expedita, laboriosam fuga
-              id perspiciatis autem aut.
-            </p>
+            <table className="suggestedRequirements_table">
+              <thead>
+                <tr>
+                  <td>OS:</td>
+                  <td>Windows 10 (64 bit)/Windows 11 (64 bit)</td>
+                </tr>
+                <tr>
+                  <td>Processore:</td>
+                  <td>Intel Core i7 10700 / AMD Ryzen 5 3600</td>
+                </tr>
+                <tr>
+                  <td>Memoria:</td>
+                  <td>16GB RAM</td>
+                </tr>
+                <tr>
+                  <td>Scheda grafica:</td>
+                  <td>NVIDIA GeForce RTX 2080 / AMD Radeon RX 6700</td>
+                </tr>
+                <tr>
+                  <td>DirectX:</td>
+                  <td>Versione 12</td>
+                </tr>
+              </thead>
+            </table>
           </div>
         </div>
       </div>

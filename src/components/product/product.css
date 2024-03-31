@@ -13,13 +13,13 @@ p {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 45vh;
-  margin-bottom: 200px;
+  height: 50vh;
+  margin-bottom: 250px;
 }
 
 .product_thumbnail {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .product_thumbnail img {
@@ -35,7 +35,7 @@ p {
   justify-content: space-around;
   width: 100%;
   position: absolute;
-  top: 320px;
+  top: 360px;
 }
 
 .trailer_container {
@@ -54,7 +54,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   background-color: rgba(254, 254, 254, 0.8);
   width: 450px;
   height: 250px;
@@ -154,7 +154,6 @@ p {
 }
 
 .description_container {
-
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -162,6 +161,7 @@ p {
   overflow-y: hidden;
   margin: 0px 40px 30px 40px;
   padding: 10px;
+  background-color: rgba(79, 22, 203, 0.3);
 }
 
 .title_description {
@@ -190,7 +190,7 @@ p {
 }
 
 .details_table {
-  background-color: #40256b;
+  background-color: rgba(79, 22, 203, 0.3);
   color: whitesmoke;
   margin: 30px 0px;
   width: 100%;
@@ -210,35 +210,85 @@ p {
 }
 
 .productGallery_title {
-  margin: 30px 40px ;
+  margin: 30px 40px;
   color: whitesmoke;
   border-bottom: 1px solid gainsboro;
 }
 
 .product_gallery_subContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   margin: 20px 0px;
 }
 
 .product_gallery_subContainer div {
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   margin: 0px 30px;
+  border: 5px solid rgba(93, 27, 177, 255)
 }
 
 .product_gallery_subContainer img {
   width: 100%;
   height: 100%;
-  margin: 0px 30px;
+}
+
+.gallery_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 450px;
+  margin: 40px;
+}
+
+.mainFrame img {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryBtn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.leftGalleryBtn {
+  font-size: xx-large;
+  color: whitesmoke;
+  background-color: transparent;
+  width: 60px;
+  height: 50px;
+  margin-right: 15px;
+  border: 2px solid rgba(93, 27, 177, 255);
+  border-radius: 6px;
+  box-shadow: 2px 2px rgb(109, 4, 247);
+}
+
+.rightGalleryBtn {
+  font-size: xx-large;
+  color: whitesmoke;
+  background-color: transparent;
+  width: 60px;
+  height: 50px;
+  margin-left: 15px;
+  border: 2px solid rgba(93, 27, 177, 255);
+  border-radius: 6px;
+  box-shadow: -2px 2px rgb(109, 4, 247)
 }
 
 /** REQUISITI DI SISTEMA */
 
 .requirements_container {
-
   margin: 0px 40px 30px 40px;
   padding: 10px;
 }
@@ -263,7 +313,7 @@ p {
 
 .requirements_subContainer {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .minimumRequirements_container {
@@ -275,11 +325,25 @@ p {
   margin: 0px 15px 30px 15px;
 }
 
+.minimumRequirements_table td {
+  color: white;
+  padding: 10px;
+  font-size: large;
+  background-color: rgba(79, 22, 203, 0.3);
+}
+
+.suggestedRequirements_table td {
+  color: white;
+  padding: 10px;
+  font-size: large;
+  background-color: rgba(79, 22, 203, 0.3);
+}
+
 /** RECENSIONI */
 
 .mainReview_container {
-
-  margin: 0px 40px 30px 40px;
+  background-color: black;
+  /* margin: 0px 40px 30px 40px; */
   padding: 10px;
 }
 
@@ -287,13 +351,15 @@ p {
   margin-bottom: 30px;
   color: whitesmoke;
   border-bottom: 1px solid gainsboro;
+  margin: 0px 40px 30px 40px;
 }
 
 /** USER */
 
 .userReviewer_container {
   display: flex;
-  margin: 0px 30px 30px 30px;
+  margin: 0px 40px 30px 40px;
+  background-color: rgba(79, 22, 203, 0.7);
 }
 
 .userReviewer_avatar_container {
@@ -306,8 +372,7 @@ p {
 }
 
 .stars_container {
-  margin: 0px 30px 0px 30px;
-
+  margin: 10px 30px 0px 30px;
 }
 
 .starThumbnail {
@@ -322,8 +387,6 @@ p {
 .starThumbnail img {
   width: 100%;
 }
-
-
 
 .blackStar {
   display: none;
