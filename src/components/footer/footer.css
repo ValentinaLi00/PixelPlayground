@@ -1,8 +1,8 @@
 footer {
     display: flex;
     flex-direction: column;
-    background-color:  #201434;
-    color: white;
+    background-color: rgba(127, 72, 236, 0.838);
+    color: black;
 }
 
 .logo_container{
@@ -19,12 +19,14 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 30px 0px;
 }
 
 .footer_language_menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .footer_language_menu span{
