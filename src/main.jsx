@@ -2,6 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {App} from './App.jsx'
 import { Root } from './Root.jsx'
-
+import "./style/styleGeneral.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(<Root />)

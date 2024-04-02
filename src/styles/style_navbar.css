@@ -4,13 +4,132 @@
     box-sizing: border-box;
 }
 
+.container_of_all {
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     height: 100vh;
     width: 100%;
     background: gainsboro;
+    display: flex;
+    flex-direction: row;
 }
 
+.video_background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*panel section*/
+
+.panel_container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.panel_navbar {
+    width: 30%;
+    height: 100%;
+    background: rgba(113, 0, 128, 0.697);
+    border-top-right-radius: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel_logo {
+    width: 30%;
+    height: 15%;
+}
+
+.user_container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.user_image {
+    width: 30%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.content_console {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    color: white;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons_panel {
+    display: flex;
+    width: 15%;
+    height: 15%;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 20px;
+}
+
+.sections_panel {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.other_links_panel {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 2em;
+}
+
+.social_panels {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+#social_icons {
+    width: 35px;
+    height: 35px;
+}
+
+#youtube_icon {
+    width: 55px;
+    height: 35px;
+}
+
+#x_icon {
+    height: 30px;
+    width: 35px;
+}
+
+/*panel section end*/
+
 .navbar_content {
+    position: absolute;
     height: 20%;
     width: 100%;
     display: flex;
@@ -81,8 +200,8 @@
 }
 
 #nav_heart {
-    width: 37px;
-    height: 37px;
+    width: 32px;
+    height: 32px;
 }
 
 #nav_cart {

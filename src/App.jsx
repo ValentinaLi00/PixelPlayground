@@ -8,7 +8,6 @@ export function App() {
     <div>
       <Routes>
         <Route path="/" element={<Navbar />} />
-        <Route path="/" element={} />
       </Routes>
     </div>
   )
