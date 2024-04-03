@@ -4,9 +4,9 @@ import "./userPage.css";
 export function UserPage() {
   return (
     <div className="UserPage_component">
-      <div className="userPage_logo_container">
+      {/* <div className="userPage_logo_container">
         <img src="src\assets\loghi\logo-removebg-preview.png" alt="" />
-      </div>
+      </div> */}
       <div className="cards_collection">
         <div className="cards_collection_container">
           <div className="user_card_container">
