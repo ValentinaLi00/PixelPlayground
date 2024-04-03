@@ -70,6 +70,14 @@
     font-size: 20px;
 }
 
+.login_container_form img {
+    width: 200px;
+}
+
+.login_container_form img:hover {
+    width: 250px;
+}
+
 
 .username_login_input,
 .password_login_input,
@@ -106,9 +114,21 @@
 }
 
 .username_login_input,
-.password_login_input:focus {
+.password_login_input,
+.username_registration,
+.email_registration,
+.password_registration:focus {
     outline: none;
 }
+
+.username_login_input:hover,
+.password_login_input:hover,
+.username_registration:hover,
+.email_registration:hover,
+.password_registration:hover {
+    border: 4px solid white;
+}
+
 
 .login_submit,
 .registration_submit {
@@ -118,6 +138,14 @@
     font-size: 20px;
     color: rgba(243, 17, 106, 255);
 }
+
+.registration_submit:hover,
+.login_submit:hover {
+    width: 320px;
+    border: 4px solid rgba(243, 17, 106, 255);
+}
+
+
 
 .login_container_registration {
     display: flex;
@@ -145,12 +173,17 @@
 }
 
 .move_left {
-    margin-left: 0px;
+    margin-left: -4px;
+    transition: all 1.5s ease-in-out;
+    /* animation: left 1s linear 0s 1 normal forwards; */
 }
 
 .move_right {
     margin-left: 864px;
+    transition: all 1.5s ease-in-out;
+    /* animation: right 2s linear 0s 1 normal forwards; */
 }
+
 
 .img_container img {
     width: 100%;
@@ -189,9 +222,23 @@
 
 /*form*/
 .registration_container_form {
-    height: 50%;
+    height: 60%;
     margin-top: 40px;
 }
+
+.registration_container_form img {
+    width: 200px;
+}
+
+.registration_container_form img:hover {
+    width: 250px;
+}
+
+.registration_container_form p {
+    color: white;
+    font-size: 20px;
+}
+
 
 .registration_container_login {
     margin-top: 10px;
@@ -203,6 +250,6 @@
 .registration_container_login p {
     font-size: 26px;
     color: white;
-    margin-top: 150px;
+    margin-top: 50px;
     cursor: pointer;
 }

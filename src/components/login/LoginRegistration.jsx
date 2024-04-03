@@ -30,7 +30,7 @@ export function LoginRegistration() {
                     <input type="password" name="password_login" className={classes.password_login_input} placeholder='password' />
                     <button type="submit" name='submit_login' className={classes.login_submit}>Accedi</button>
                     <p>oppure</p>
-                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" className={classes.login_google_img} style={{ width: '200px' }} />
+                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" className={classes.login_google_img}  />
                 </div>
 
                 {/* registration */}
@@ -57,6 +57,8 @@ export function LoginRegistration() {
                     <input type="email" name='email_registration' className={classes.email_registration} placeholder='email' />
                     <input type="password" name='password_registration' className={classes.password_registration} placeholder='password' />
                     <button type="submit" name='submit_registration' className={classes.registration_submit}>Registrati</button>
+                    <p>oppure</p>
+                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" className={classes.login_google_img}  />
                 </div>
                 <div className={classes.registration_container_login}>
                     <p onClick={handleMoveImgRight}>Hai già un account?</p>
