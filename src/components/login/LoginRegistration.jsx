@@ -3,6 +3,17 @@ import { useState } from 'react'
 import classes from './loginRegistration.module.css'
 
 export function LoginRegistration() {
+
+    const [isLeft, setIsLeft] = useState(false)
+
+    function handleMoveImgLeft() {
+        setIsLeft(true)
+    }
+
+    function handleMoveImgRight() {
+        setIsLeft(false)
+    }
+
     return (
         <div className={classes.card}>
             {/* form container*/}
@@ -24,13 +35,13 @@ export function LoginRegistration() {
 
                 {/* registration */}
                 <div className={classes.login_container_registration}>
-                    <p>Non hai un account?</p>
+                    <p onClick={handleMoveImgLeft}>Non hai un account?</p>
                     <p>Hai dimenticato la password?</p>
                 </div>
             </div>
 
             {/* image */}
-            <div className={classes.img_container} >
+            <div className={`${classes.img_container} ${isLeft? classes.move_left : classes.move_right}` }>
                 <img src="src\assets\valentinaLiAssets\background\desktop_img.png" alt="immagine di login"/>
             </div>
 
@@ -48,7 +59,7 @@ export function LoginRegistration() {
                     <button type="submit" name='submit_registration' className={classes.registration_submit}>Registrati</button>
                 </div>
                 <div className={classes.registration_container_login}>
-                    <p>Hai già un account?</p>
+                    <p onClick={handleMoveImgRight}>Hai già un account?</p>
                 </div>
             </div>
 

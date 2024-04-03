@@ -131,6 +131,7 @@
 .login_container_registration p {
     font-size: 26px;
     color: white;
+    cursor: pointer;
 }
 
 
@@ -139,8 +140,16 @@
     width: 55%;
     height: 100%;
     position: absolute;
-    /* margin-left: 864px; */
+    margin-left: 864px;
     overflow: hidden;
+}
+
+.move_left {
+    margin-left: 0px;
+}
+
+.move_right {
+    margin-left: 864px;
 }
 
 .img_container img {
@@ -195,4 +204,5 @@
     font-size: 26px;
     color: white;
     margin-top: 150px;
+    cursor: pointer;
 }
