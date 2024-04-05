@@ -1,0 +1,60 @@
+import "./payment.css"
+
+export function Payment(){
+    return(
+            <div className="payment_container">
+                    <h2 className="cart-title">Seleziona metodo di pagamento</h2>
+
+                    <form action="#">
+                        <input type="radio" name="payment" id="visa" />
+                        <input type="radio" name="payment" id="mastercard" />
+                        <input type="radio" name="payment" id="paypal" />
+                        <input type="radio" name="payment" id="AMEX" />
+
+                    
+                        <div class="category">
+                            <label for="visa" class="visaMethod">
+                                <div class="imgName">
+                                    <div class="imgContainer visa">
+                                        <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="" />
+                                    </div>
+                                    <span class="name">VISA</span>
+                                </div>
+                                <span class="check"><i class="fa-solid fa-circle-check" style={{color: "#6064b6"}} ></i></span>
+                            </label>
+
+                            <label for="mastercard" class="mastercardMethod">
+                                <div class="imgName">
+                                    <div class="imgContainer mastercard">
+                                        <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="" />
+                                    </div>
+                                    <span class="name">Mastercard</span>
+                                </div>
+                                <span class="check"><i class="fa-solid fa-circle-check" style={{color: "#6064b6"}} ></i></span>
+                            </label>
+
+                            <label for="paypal" class="paypalMethod">
+                                <div class="imgName">
+                                    <div class="imgContainer paypal">
+                                        <img src="https://i.ibb.co/KVF3mr1/paypal.png" alt="" />
+                                    </div>
+                                    <span class="name">Paypal</span>
+                                </div>
+                                <span class="check"><i class="fa-solid fa-circle-check" style={{color: "#6064b6"}} ></i></span>
+                            </label>
+
+                            <label for="AMEX" class="amexMethod">
+                                <div class="imgName">
+                                    <div class="imgContainer AMEX">
+                                        <img src="https://i.ibb.co/wQnrX86/American-Express.jpg" alt="" />
+                                    </div>
+                                    <span class="name">AMEX</span>
+                                </div>
+                                <span class="check"><i class="fa-solid fa-circle-check" style={{color: "#6064b6"}} ></i></span>
+                            </label>
+                        </div>
+                        <div className="container_button_payment"><button className="payment-button">Paga ora</button></div>
+                    </form>
+                </div>
+    )
+}

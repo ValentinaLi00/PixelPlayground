@@ -12,6 +12,7 @@ export function Cart() {
                     {/* Sostituire con dati reali */}
                     <div className="cart-item">
                         <div className="cart-item-thumbnail">
+                            <input type="checkbox" />
                             <img src="immagine.png" alt="Titolo del gioco" />
                         </div>
                         <div className="cart-item-details">
@@ -25,21 +26,25 @@ export function Cart() {
                     </div>
                 </div>
             </div>
-            <div className="resume">
-                <h2 className="cart-title">Riepilogo</h2>
-                <div>
-                    <ul>{/* map lista giochi nel carrello */}</ul>
-                    <div className="cart-total">
-                        <p className="cart-total-text">Totale:</p>
-                        <p className="cart-total-amount">$XX.XX</p>
-                    </div>
-                    <div className="cart-resume-buttons">
-                        <button className="checkout-button">Vai al checkout</button>
-                        <button className="continue-shopping-button">
-                            Continua lo shopping
-                        </button>
+            <div className="right_container">
+                <div className="resume_container">
+                    <h2 className="cart-title">Riepilogo</h2>
+                    <div>
+                        <ul>{/* map lista giochi nel carrello */}</ul>
+                        <div className="cart-total">
+                            <p className="cart-total-text">Totale:</p>
+                            <p className="cart-total-amount">$XX.XX</p>
+                            <p className="cart-discount">$XX.XX</p>
+                        </div>
+                        <div className="cart-resume-buttons">
+                            <button className="checkout-button">Vai al checkout</button>
+                            <button className="continue-shopping-button">
+                                Continua lo shopping
+                            </button>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
