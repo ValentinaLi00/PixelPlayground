@@ -5,6 +5,7 @@ export function Wishlist() {
 
         <div className="wishlistBackground">
             <img className='wishlistBackgroundImg' src='src\assets\loghi\ariGiaccariAssets\sfondo_wishlist.png' alt="" />
+            
             <div className='wishlistContainer'>
 
                 <div className="upperWishlist">
