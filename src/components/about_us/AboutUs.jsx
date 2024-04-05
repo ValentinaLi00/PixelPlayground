@@ -4,6 +4,7 @@ export function AboutUs() {
 
 
 
+
     return (
         <div className={classes.container}>
             {/* la nostra storia */}
@@ -34,7 +35,28 @@ export function AboutUs() {
                 <p>Ci ispiriamo alla <span className={classes.rainbow}>pixel art</span> e <br /> al mondo dei <span className={classes.rainbow}>giochi indie</span> per creare un design unico e accattivante che si riflette nel nostro sito. Ogni dettaglio è stato curato con attenzione per offrire un'esperienza visiva memorabile e coinvolgente per i nostri visitatori. Unisciti a noi in questa avventura videoludica e scopri un mondo di divertimento e creatività!</p>
             </div>
 
-           
+            <div className={classes.scroller}>
+                <ul className={`${classes.list} ${classes.scroller_inner}`}>
+                    <li>CSS</li>
+                    <li>REACT.js</li>
+                    <li>NODE.js</li>
+                    <li>VSC</li>
+                    <li>CANVA</li>
+                    <li>GIT</li>
+                    <li>GITHUB</li>
+                    <li>SQL</li>
+                </ul>
+                <ul className={`${classes.list} ${classes.scroller_inner}`}>
+                    <li>CSS</li>
+                    <li>REACT.js</li>
+                    <li>NODE.js</li>
+                    <li>VSC</li>
+                    <li>CANVA</li>
+                    <li>GIT</li>
+                    <li>GITHUB</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
         </div>
     )
 }

@@ -9,19 +9,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 100px;
 }
 
-.container img {
+.story img,
+.team img,
+.mission img,
+.style img {
     width: 300px;
-}
-
-
-.container img {
     animation: bigger linear;
     animation-timeline: view();
 }
+
 
 @keyframes bigger {
     from {
@@ -100,3 +99,45 @@
 }
 
 
+
+
+.scroller {
+    max-width: 400px;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+
+.scroller_inner {
+    list-style: none;
+    padding-block: 1rem;
+    display: flex;
+    gap: 10px;
+    animation: 20s slide infinite linear;
+}
+
+.scroller:hover .scroller_inner {
+    animation-play-state: paused;
+}
+
+
+
+.list li {
+    color: white;
+    background: grey;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(-100%);
+    }
+}
