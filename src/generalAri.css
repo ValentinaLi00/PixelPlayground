@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'pixelifySansMedium';
+    src: url('/src/fonts_ari/PixelifySans-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'pixelifySansRegular';
+    src: url('src/fonts_ari/PixelifySans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'minecraft';
+    src: url('/src/fonts_ari/Minecraft.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'karma';
+    src: url('/src/fonts_ari/3D-Thirteen-Pixel-Fonts.ttf') format('woff');
+}
+

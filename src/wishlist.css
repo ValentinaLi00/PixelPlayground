@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'pixelifySansMedium';
-    src: url('/src/PixelifySans-Medium.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'pixelifySansRegular';
-    src: url('src/PixelifySans-Regular.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'minecraft';
-    src: url('/src/Minecraft.ttf') format('truetype');
-}
 body {
     margin: 0;
     padding: 0;

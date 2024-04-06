@@ -2,13 +2,11 @@ import { useState } from 'react'
 import { AccordionFaq } from './AccordionFaq'
 import './faq.css'
 
-
 export function Faq() {
     const [selected, setSelected] = useState(null)
     const toggle = (i) => {
         if (selected === i) {
             return setSelected(null)
-
         } else setSelected(i)
     }
 
