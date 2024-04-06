@@ -5,7 +5,7 @@ export function App() {
   return (
     <div>
       <UserPage />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

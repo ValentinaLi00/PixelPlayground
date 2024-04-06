@@ -1,51 +1,86 @@
-.UserPage_component {
+body {
     background-color: #201434;
     font-family: Minecraft;
 }
 
-/* .userPage_logo_container img {
-    width: 100px;
-    height: 100px;
-} */
-
-.icon_img_container {
-    width: 80px;
-    height: 80px;
-    margin-top: 40px;
-}
-
-.icon_img_container img {
+.wholeUserPage {
+    font-size: large;
     width: 100%;
-    height: 100%;
-
-}
-
-.cards_collection {
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.cards_collection_container {
+.userIcon {
+    text-align: end;
+    padding: 40px 40px 10px 0px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.modifyAcc,
+.ordersList,
+.subscribe,
+.wishlist img,
+.exit img {
+    background-color: rgba(137, 43, 226, 0.233);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.446);
+    margin: 10px;
+    margin-bottom: 60px;
+}
+
+.modifyAcc p,
+.modifyAcc span,
+.ordersList p,
+.subscribe p {
+    padding: 10px;
+}
+
+.modifyAcc p {
+    font-size: smaller;
+    text-align: center;
+}
+
+.leftUserPart,
+.newsletter {
+    width: 500px;
+}
+
+.modifyAcc {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.user_card_container {
+.modifyAcc div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    border: 2px solid white;
-    border-radius: 16px;
+    justify-content: space-between;
 }
 
-.user_card_container p {
-    color: whitesmoke;
-    margin: 20px 0px 30px 0px;
+.inputUserPage {
+    background: none;
+    width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.506);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 10px 5px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.515);
+    color: white;
+}
+
+.subscribe button {
+    transform: translateY(-20px);
+    padding: 10px 20px 10px 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.506);
+    border-radius: 20px;
+    font-size: large;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.515);
+    background-color: crimson;
 }
