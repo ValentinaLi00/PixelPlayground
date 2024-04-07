@@ -17,7 +17,7 @@ export function UploadAvatar() {
     return (
         <div className="uploadPic" onClick={handleImageClick}>
             <h1>CARICA LA TUA IMMAGINE</h1>
-            {image ? <img src={URL.createObjectURL(image)} alt="" /> : <img style={{filter: 'invert(100%)'}} src="src\assets\paoloLupoAssets\uploadImage.png" alt="avatar_img" />}
+            {image ? <div><img className="clientPic" src={URL.createObjectURL(image)} alt="" /> <p>clicca per scegliere un'altra foto</p></div> :  <img  className='uploadImg' src="src\assets\paoloLupoAssets\uploadImage.png" alt="avatar_img" /> }
             <input type="file" ref={inputRef} onChange={handleImageChange} style={{ display: 'none' }} />
         </div>
 
