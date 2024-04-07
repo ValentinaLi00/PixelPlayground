@@ -1,5 +1,5 @@
 * {
-    background-color: #201434;
+    background-color: rgb(32, 20, 52);
 }
 
 .container {
@@ -20,7 +20,6 @@
     animation: bigger linear;
     animation-timeline: view();
 }
-
 
 @keyframes bigger {
     from {
@@ -54,18 +53,18 @@
     font-size: 40px;
     margin-bottom: 60px;
     color: #000;
-	background: linear-gradient(90deg, #AA00F5 10%, #2D00A8 18%, #248EFF 32%, #00C700 48%, #FAD900 68%, #FF8838 90%, #FF0000 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: #0000;
-	background-clip: text;
+    background: linear-gradient(90deg, #AA00F5 10%, #2D00A8 18%, #248EFF 32%, #00C700 48%, #FAD900 68%, #FF8838 90%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
 }
 
 .rainbow {
     color: #000;
-	background: linear-gradient(90deg, #AA00F5 10%, #2D00A8 18%, #248EFF 32%, #00C700 48%, #FAD900 68%, #FF8838 90%, #FF0000 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: #0000;
-	background-clip: text;
+    background: linear-gradient(90deg, #AA00F5 10%, #2D00A8 18%, #248EFF 32%, #00C700 48%, #FAD900 68%, #FF8838 90%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
 }
 
 .container h2:hover {
@@ -98,17 +97,12 @@
 
 }
 
-
-
-
 .scroller {
     max-width: 400px;
     overflow: hidden;
     display: flex;
     gap: 10px;
-    position: relative;
 }
-
 
 .scroller_inner {
     list-style: none;
@@ -118,11 +112,19 @@
     animation: 20s slide infinite linear;
 }
 
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 .scroller:hover .scroller_inner {
     animation-play-state: paused;
 }
-
-
 
 .list li {
     color: white;
@@ -130,14 +132,4 @@
     border-radius: 5px;
     height: 50px;
     font-size: 20px;
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    
-    to {
-        transform: translateX(-100%);
-    }
 }
