@@ -14,4 +14,14 @@
     font-weight: 300;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'filepile';
+    src: url('/src/fonts/humanoid.regular.ttf') format('woff2'),
+  }
+
+  @font-face {
+    font-family: 'ice_pixel';
+    src: url('/src/fonts/ice-pixel7.regular.ttf') format('woff2'),
+  }
   

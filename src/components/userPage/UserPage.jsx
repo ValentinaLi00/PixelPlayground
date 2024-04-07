@@ -17,7 +17,7 @@ export function UserPage() {
       <div className="wholeUserPage">
         <div className="leftUserPart">
           <div className="account">
-            <p>ACCOUNT</p>
+            <p style={{ fontSize: '23px', fontWeight: '100', color: 'rgb(199, 134, 181)' }}>ACCOUNT</p>
             <div className="modifyAcc" >
               {editing ? (
                 <div>
@@ -44,34 +44,36 @@ export function UserPage() {
               )}
 
             </div>
-
           </div>
           <div className="orders">
-            <p>I MIEI ORDINI</p>
+            <span style={{ fontSize: '23px', fontWeight: '100', color: 'rgb(199, 134, 181)' }}>I MIEI ORDINI</span>
+            <img src="src\assets\paoloLupoAssets\casket-removebg-preview.png" alt="casket" />
             <div className="ordersList">
+              <div className="orderedItem">
               <p>ordine:</p>
-              <p>data: </p>
+              <p>data: --/--/--</p>
+              </div>
               <p>mostra altro</p>
             </div>
           </div>
         </div>
         <div className="rightUserPart">
           <div className="newsletter">
-            <p>NEWSLETTER</p>
+            <span style={{ fontSize: '23px', fontWeight: '100', color: 'rgb(199, 134, 181)' }}>NEWSLETTER</span>
+            <img src="src\assets\paoloLupoAssets\newsletter-removebg-preview.png" alt="" />
             <div className="subscribe">
               <p>iscriviti per rimanere aggiornato</p>
-              <img style={{width: '50px'}} src="src\assets\paoloLupoAssets\newsletter-removebg-preview.png" alt="" />
-              <button>iscriviti</button>
+              <button>subscribe</button>
             </div>
           </div>
-          <div classname='wishlistAndExit'>
-            <div className="wishlist">
-              <p>WISHLIST</p>
-              <img src="" alt="heart_wishlist_icon" />
+          <div className='wishlistAndExit'>
+            <div>
+              <p style={{ fontSize: '23px', fontWeight: '100', color: 'rgb(199, 134, 181)' }}>WISHLIST</p>
+              <img className="wishlist" src="\src\assets\paoloLupoAssets\cuore_grande_pixel-removebg-preview.png" alt="heart_wishlist_icon" />
             </div>
-            <div className="exit">
-              <p>EXIT</p>
-              <img src="src\assets\paoloLupoAssets\exitDoor_icon.jpg" alt="exit_icon" />
+            <div>
+              <p style={{ fontSize: '23px', fontWeight: '100', color: 'rgb(199, 134, 181)' }}>EXIT</p>
+              <img className="exit" src="src\assets\paoloLupoAssets\exitDoor_icon-removebg-preview.png" alt="exit_icon" />
             </div>
           </div>
         </div>

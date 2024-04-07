@@ -1,11 +1,13 @@
+import { UploadAvatar } from "./components/UploadAvatar/UploadAvatar";
 import { Footer } from "./components/footer/Footer";
 import { UserPage } from "./components/userPage/UserPage";
 
 export function App() {
   return (
     <div>
-      <UserPage />
+      {/* <UserPage /> */}
       {/* <Footer /> */}
+      <UploadAvatar />
     </div>
   );
 }
