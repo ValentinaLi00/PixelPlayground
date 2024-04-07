@@ -8,7 +8,9 @@ export function App() {
 
   return (
     <>
-     <DiscountedGames/>
+   
+     <LoginRegistration/>
+       {/* <DiscountedGames/> */}
     </>
   )
 }

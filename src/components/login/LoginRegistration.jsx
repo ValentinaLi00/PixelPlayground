@@ -30,7 +30,7 @@ export function LoginRegistration() {
                     <input type="password" name="password_login" className={classes.password_login_input} placeholder='password' />
                     <button type="submit" name='submit_login' className={classes.login_submit}>Accedi</button>
                     <p>oppure</p>
-                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" className={classes.login_google_img}  />
+                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google"  />
                 </div>
 
                 {/* registration */}

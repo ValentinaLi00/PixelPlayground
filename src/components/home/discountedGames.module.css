@@ -5,40 +5,7 @@
     align-items: center;
 }
 
-.card {
-    width: 400px;
-}
-
-.game_discount {
-    width: 400px;
-    position: relative;
-    text-align: center;
-    font-size: 30px;
-}
-
-.game_discount img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.discount {
-    background-color: red;
-    border-radius: 15px 5px;
-    color: #fff;
-    position: absolute;
-    z-index: 2;
-    width: 80px;
-    height: 40px;
-    left: 0px;
-    
-    
-}
-
-.name_price {
-    display: flex;
-    justify-content: space-between;
-
-}
+/*SCROLLER*/
 
 .scroller {
     max-width: 1700px;
@@ -69,7 +36,7 @@
     animation-play-state: paused;
 }
 
-.scroller::before,
+/* .scroller::before,
 .scroller::after {
     background: linear-gradient(to right, rgb(32, 20, 52) 50%, rgba(255, 255, 255, 0) 100%);
     content: '';
@@ -88,5 +55,41 @@
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
+} */
+
+/*CARD*/
+
+.card {
+    width: 400px;
 }
 
+.game_discount {
+    width: 400px;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+}
+
+.game_discount img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.discount {
+    background-color: red;
+    border-radius: 15px 5px;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    width: 80px;
+    height: 40px;
+    left: 0px;
+
+
+}
+
+.name_price {
+    display: flex;
+    justify-content: space-between;
+
+}
