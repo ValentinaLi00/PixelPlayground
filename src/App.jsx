@@ -9,8 +9,8 @@ export function App() {
   return (
     <>
    
-     <LoginRegistration/>
-       {/* <DiscountedGames/> */}
+     {/* <LoginRegistration/> */}
+       <DiscountedGames/>
     </>
   )
 }
