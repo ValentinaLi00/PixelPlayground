@@ -31,7 +31,7 @@
 #generi,
 #ordina,
 #prezzi {
-    width: 300px;
+    width: 250px;
     height: 50px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -41,7 +41,7 @@
     border: 1px solid white;
     cursor: pointer;
     outline: 0;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -71,19 +71,19 @@
 }
 
 label[for='sistemi'] {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 label[for='generi'] {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 label[for='ordina'] {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 label[for='prezzi'] {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 /*games*/
@@ -99,13 +99,13 @@ label[for='prezzi'] {
 }
 
 .container_img {
-    width: 350px;
+    width: 250px;
     cursor: pointer;
     transition: width 1s ease 0s;
 }
 
 .container_img:hover {
-    width: 400px;
+    width: 300px;
 }
 
 .container_img img {

@@ -2,9 +2,6 @@ import classes from './aboutUs.module.css'
 
 export function AboutUs() {
 
-
-
-
     return (
         <div className={classes.container}>
             {/* la nostra storia */}
