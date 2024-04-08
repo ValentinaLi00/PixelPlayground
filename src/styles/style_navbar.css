@@ -37,11 +37,30 @@
 .panel_navbar {
     width: 30%;
     height: 100%;
-    background: rgba(113, 0, 128, 0.697);
     border-top-right-radius: 70px;
+    border-bottom-right-radius: 30px;
     display: flex;
     flex-direction: column;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
+
+@-webkit-keyframes color-change-2x {
+    0% {
+      background: rgba(128, 0, 128, 0.738);
+    }
+    100% {
+      background: #412cffb7;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #2019eaaa;
+    }
+    100% {
+      background: rgba(128, 0, 128, 0.677);
+    }
+  }
 
 .panel_logo {
     width: 30%;
@@ -151,23 +170,25 @@
 }
 
 #logo_vettoriale_nav {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /*second section*/
 
 .nav_second_section {
-    width: 38%;
-    height: 60%;
-    background: rgba(128, 0, 128, 0.663);
+    width: 55%;
+    height: 75%;
     display: flex;
     flex-direction: row;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
     gap: 2em;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
 
 #pc_icon {
@@ -188,6 +209,60 @@
 #xbox_icon {
     height: 75px;
     width: 75px;
+}
+
+.center_navbar {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo_vettoriale {
+    width: 120px;
+    height: 120px;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+	    animation: rotate-center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+
+#ps_icon:hover {
+    width: 80%;
+    height: 80%;
+}
+#xbox_icon:hover {
+    width: 80%;
+    height: 80%;
+}
+#pc_icon:hover {
+    width: 80%;
+    height: 80%;
+}
+#nintendo_icon:hover {
+    width: 80%;
+    height: 80%;
 }
 
 /*third section*/
