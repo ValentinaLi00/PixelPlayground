@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./userPage.css";
 
 export function UserPage() {
@@ -8,12 +8,28 @@ export function UserPage() {
   const [editingPsw, setEditingPsw] = useState(false);
   const [password, setPassword] = useState('');
 
+  const inputRef = useRef(null)
+  const [image, setImage] = useState('')
+
+  function handleImageClick() {
+    inputRef.current.click()
+  }
+  function handleImageChange(event) {
+    const file = event.target.files[0];
+    console.log(file);
+    setImage(event.target.files[0])
+  }
+
+
   return (
     <>
-      <div className="userIcon">
-        <p>user's name</p>
-        <img src="" alt="user_icon" />
+    <div className="userPagediv">
+      <div className="uploadPic" onClick={handleImageClick}>
+        <h1>user's name</h1>
+        {image ? <div><img className="clientPic" src={URL.createObjectURL(image)} alt="" />  <p>clicca per scegliere un'altra foto</p></div> : <div> <img className='uploadImg' src="src\assets\paoloLupoAssets\uploadImage.png" alt="avatar_img" />  <button  className="inputUploadPic" >scegli file</button> </div>}
+        <input type="file" ref={inputRef} onChange={handleImageChange} style={{display: 'none'}} />
       </div>
+
       <div className="wholeUserPage">
         <div className="leftUserPart">
           <div className="account">
@@ -50,8 +66,8 @@ export function UserPage() {
             <img src="src\assets\paoloLupoAssets\casket-removebg-preview.png" alt="casket" />
             <div className="ordersList">
               <div className="orderedItem">
-              <p>ordine:</p>
-              <p>data: --/--/--</p>
+                <p>ordine:</p>
+                <p>data: --/--/--</p>
               </div>
               <p>mostra altro</p>
             </div>
@@ -77,6 +93,7 @@ export function UserPage() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

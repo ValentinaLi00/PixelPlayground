@@ -5,9 +5,9 @@ import { UserPage } from "./components/userPage/UserPage";
 export function App() {
   return (
     <div>
-      {/* <UserPage /> */}
+      <UserPage />
       {/* <Footer /> */}
-      <UploadAvatar />
+      {/* <UploadAvatar /> */}
     </div>
   );
 }
