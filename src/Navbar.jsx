@@ -5,11 +5,11 @@ import ps from "../images/logo_playstation.png"
 import nintendo from "../images/logo_nintendoSwitch.png"
 import lente from "../images/lente1.png"
 import cart from "../images/cart_empty.png"
-import heart from "../images/heart_wishlist.png"
+import heart from "../images/heart.png"
 import background from "../images/desktop_img.png"
 import user from "../images/user_avatar.png"
 import "./styles/style_navbar.css"
-import backgrounVideo from "../images/VideoBackground.mp4"
+import backgrounVideo from "../images/final-fantasy-background.mp4"
 import instagram from "../images/instagram.png"
 import facebook from "../images/facebook.png"
 import x from "../images/x.png"
@@ -29,12 +29,11 @@ export function Navbar() {
     return(
         <div className="container_of_all">
             <div className="container">
-                <video src={backgrounVideo} autoPlay loop muted className="video_background"/>
-            <div className="panel_container" style={{ display: showPanelContainer ? 'flex' : 'none' }}>
-                <div className="panel_navbar">
-                    <div className="panel_logo">
-                        <img src={hamburger} id="logo_vettoriale_nav" onClick={toggleContainers} alt="menu"/>
-                    </div>
+                <div className="panel_container" style={{ display: showPanelContainer ? 'flex' : 'none' }}>
+                    <div className="panel_navbar">
+                        <div className="panel_logo">
+                            <img src={hamburger} id="logo_vettoriale_nav" onClick={toggleContainers} alt="menu"/>
+                        </div>
                     <div className="user_container">
                         <div className="user_image" style={{backgroundImage:` url(${user})`}}></div>
                     </div>
