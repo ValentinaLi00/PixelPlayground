@@ -5,8 +5,9 @@ export function App() {
 
   return (
     <>
-    {/* <Payment /> */}
     < Cart/>
+    <Payment />
+    
     </>
   )
 }

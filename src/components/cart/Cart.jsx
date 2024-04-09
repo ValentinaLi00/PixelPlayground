@@ -1,32 +1,34 @@
 import "./cart.css";
 
 export function Cart() {
-    return (
-        <div className="cart-component">
-            <div className="cart-container">
-                <h2 className="cart-title">Carrello</h2>
-                <div className="cart-items">
-                    {/* Mappare qui gli articoli nel carrello */}
 
-                    {/* Esempio di struttura per un singolo elemento del carrello */}
-                    {/* Sostituire con dati reali */}
-                    <div className="cart-item">
-                        <div className="cart-item-thumbnail">
-                            <input type="checkbox" />
-                            <img src="immagine.png" alt="Titolo del gioco" />
-                        </div>
-                        <div className="cart-item-details">
-                            <p className="cart-item-title">Titolo del gioco</p>
-                            <p className="cart-item-price">Prezzo: $XX.XX</p>
+
+    return (
+        <div className="cart_component_background">
+            <div className="cart-component">
+                <div className="cart-container">
+                    <h2 className="cart-title">Carrello</h2>
+                    <div className="cart-items">
+                        {/* Mappare qui gli articoli nel carrello */}
+
+                        {/* Esempio di struttura per un singolo elemento del carrello */}
+                        {/* Sostituire con dati reali */}
+                        <div className="cart-item">
+                            <div className="cart-item-thumbnail">
+                                <input type="checkbox" />
+                                <img src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="Titolo del gioco" />
+                                <div className="cart-item-details">
+                                    <p className="cart-item-title">Titolo del gioco</p>
+                                    <p className="cart-item-price">Prezzo: $XX.XX</p>
+                                </div>
+                            </div>
                             <div className="cart-buttons">
-                                <button className="add-button">Aggiungi</button>
                                 <button className="remove-button">Rimuovi</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="right_container">
+
                 <div className="resume_container">
                     <h2 className="cart-title">Riepilogo</h2>
                     <div>
