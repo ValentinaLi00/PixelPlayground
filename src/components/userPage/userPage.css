@@ -14,11 +14,6 @@
     }
 }
 
-body {
-    background-color: #201434;
-    font-family: Minecraft;
-}
-
 .userPagediv {
     animation: scroll 80s linear infinite;
     background: url('src/assets/paoloLupoAssets/avatars.png'), #201434;
@@ -26,8 +21,6 @@ body {
     background-blend-mode: overlay;
     background-position: 0px -20px;
     padding: 30px 0px;
-
-
 }
 
 .wholeUserPage {
@@ -76,9 +69,9 @@ body {
     text-align: center;
 }
 
-.leftUserPart {
+/* .leftUserPart {
     width: 600px;
-}
+} */
 
 .modifyAcc {
     display: flex;
@@ -214,28 +207,15 @@ body {
 }
 
 
-/* UPLOAD AVATar */
+/* UPLOAD AVATAR */
 
 .uploadPic {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 10px;
 }
 
-.uploadPic div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px
-}
-
-.uploadPic h1 {
-    text-align: center;
+.uploadPic h3 {
     width: 300px;
-    font-size: 20px;
     color: rgb(205, 0, 185);
     color: #fff;
     font-weight: 300;
@@ -246,18 +226,21 @@ body {
 }
 
 .clientPic {
+    margin: 15px 0px 5px 10px;
     width: 80px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 .uploadImg {
+    margin-top: 20px;
     filter: invert(100%);
-    height: 80px;
-    width: 100px;
+    height: 70px;
+    width: 90px;
 }
 
-.uploadPic div p {
+.uploadPic p {
+    margin-top: 35px;
     color: white;
     text-shadow: 2px 2px 1px black;
     cursor: pointer;
