@@ -8,7 +8,7 @@ export function App() {
     <div>
       <Product />
       {/* <UserPage /> */}
-      {/* <Footer /> */}
+      <Footer />
       {/* <UploadAvatar /> */}
     </div>
   );
