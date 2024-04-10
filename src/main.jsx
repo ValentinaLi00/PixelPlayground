@@ -4,3 +4,4 @@ import {App} from './App.jsx'
 import "./style/styleGeneral.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+

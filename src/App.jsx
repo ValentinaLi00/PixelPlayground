@@ -7,19 +7,22 @@ import { Gratis } from "./components/home/Gratis";
 import { Home } from "./components/home/Home";
 import { Incoming } from "./components/home/Incoming";
 import { LoginRegistration } from "./components/login/LoginRegistration";
+import { Navbar } from "./Navbar";
+import "./styles/style_navbar.css"
+import { Route , Routes} from "react-router-dom"
 
 export function App() {
 
   return (
     <>
-
       {/* <LoginRegistration/>
       <AboutUs/>
       <Catalogue/>   */}
       <Home/>
-     
+      <Navbar />
     </>
   )
 }
+
 
 
