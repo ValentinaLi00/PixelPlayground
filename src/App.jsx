@@ -12,6 +12,8 @@ import { Incoming } from "./components/home/Incoming";
 import { LoginRegistration } from "./components/login/LoginRegistration";
 import { Navbar } from "./Navbar";
 import "./styles/style_navbar.css"
+import { Cart } from "./components/cart/Cart";
+import { Payment } from "./components/payment/Payment";
 
 export function App() {
   return (
@@ -19,8 +21,10 @@ export function App() {
       {/* <LoginRegistration/>
       <AboutUs/>
       <Catalogue/>   */}
-      <Home/>
+      <Home />
       <Navbar />
+      < Cart />
+      <Payment />
     </>
   )
 }
