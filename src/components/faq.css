@@ -1,0 +1,85 @@
+body {
+    background-color: #201434;
+    color: white;
+}
+
+.faqPart {
+    height: 100%;
+    margin: 0px 30px 50px 30px;
+}
+
+.upperFaq {
+    display: flex;
+    align-items: flex-end;
+}
+
+.upperFaq h1 {
+    text-shadow: 2px 2px 1px black ;
+    font-family: 'karma';
+    font-size: 85px;
+    color: rgb(189, 174, 44);
+    font-weight: 400;
+}
+
+.faq {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.faq span {
+    text-shadow: 2px 2px 1px black;
+    font-size: larger;
+}
+
+.faq p {
+    text-shadow: 2px 2px 1px black;
+
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqAccordion {
+    width: 500px;
+    text-align: center;
+}
+
+.showHidebtns {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'pixelifySansRegular';
+    text-shadow: 2px 2px 1px black;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 1px black;
+    border-radius: 3px;
+    margin: 0px 0px 0px 5px;
+}
+
+.answer {
+    margin-bottom: 40px;
+    max-height: 0;
+    overflow: hidden;
+    width: 400px;
+    background-color: rgb(127, 105, 149);
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+.answer_shown {
+    margin-bottom: 80px;
+    width: 400px;
+    height: auto;
+    max-height: 999px;
+    transition: 0.8s;
+    background-color: rgba(127, 105, 149, 0.144);
+    box-shadow: 2px 2px 20px rgba(20, 16, 25, 0.428);
+    border-radius: 20px;
+    padding: 20px;
+
+}
