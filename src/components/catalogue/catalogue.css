@@ -1,0 +1,141 @@
+.container_catalogue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #201434;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: white;
+    gap: 50px;
+    
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#sistemi,
+#generi,
+#ordina,
+#prezzi {
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(243, 17, 106, 255);
+    color: rgba(243, 17, 106, 255);
+    background-color: #cf00d300;
+    border: 1px solid white;
+    cursor: pointer;
+    outline: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#sistemi:hover,
+#sistemi:focus {
+    color: rgba(243, 17, 106, 255);
+    border: 4px solid rgba(243, 17, 106, 255);
+}
+
+#generi:hover,
+#generi:focus {
+    color: rgba(243, 17, 106, 255);
+    border: 4px solid rgba(243, 17, 106, 255);
+}
+
+
+#ordina:hover,
+#ordina:focus {
+    color: rgba(243, 17, 106, 255);
+    border: 4px solid rgba(243, 17, 106, 255);
+}
+
+#prezzi:hover,
+#prezzi:focus {
+    color: rgba(243, 17, 106, 255);
+    border: 4px solid rgba(243, 17, 106, 255);
+}
+
+label[for='sistemi'] {
+    font-size: 20px;
+}
+
+label[for='generi'] {
+    font-size: 20px;
+}
+
+label[for='ordina'] {
+    font-size: 20px;
+}
+
+label[for='prezzi'] {
+    font-size: 20px;
+}
+
+/*games*/
+
+.container_game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 90%;
+    color: white;
+}
+
+.container_img {
+    width: 250px;
+    cursor: pointer;
+    transition: width 1s ease 0s;
+}
+
+.container_img:hover {
+    width: 300px;
+}
+
+.container_img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container_description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_btn {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.mostraAltro {
+    cursor: pointer;
+    color: #FFFFFFFF;
+    font-size: 18px;
+    background-color: #cf00d300;
+    border: none;
+}
+
+.mostraAltro:hover {
+    background-color: #FFFFFF00;
+    color: rgba(243, 17, 106, 255);
+    border: 1px solid #c2440a00;
+}
+
+
