@@ -1,5 +1,5 @@
-import { Wishlist } from "./Wishlist";
-import { Faq } from "./faq";
+import { Wishlist } from "./components/Wishlist";
+import { Faq } from "./components/faq";
 
 
 export function App() {
