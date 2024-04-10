@@ -1,0 +1,397 @@
+.product_component {
+  background-color: #201434;
+}
+
+p {
+  color: whitesmoke;
+}
+
+/** COPERTINA */
+
+.product_thumbnail_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  margin-bottom: 250px;
+}
+
+.product_thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.product_thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+/** ANTEPRIMA VIDEO E PREZZO */
+
+.super_container {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  top: 360px;
+}
+
+.trailer_container {
+  width: 600px;
+  height: 250px;
+  border-radius: 24px;
+}
+
+.trailer {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.price_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: rgba(254, 254, 254, 0.8);
+  width: 450px;
+  height: 250px;
+  border-radius: 24px;
+}
+
+.sales_date {
+  margin: 0px 0px 0px 130px;
+  color: black;
+}
+
+.sales_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 58px;
+  right: 500px;
+  width: 150px;
+  height: 90px;
+  background-color: red;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  font-size: xx-large;
+}
+
+.previous_price {
+  color: #000;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0px 100px 10px 0px;
+  font-size: x-large;
+  color: black;
+}
+
+.priceBtn_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 15px;
+}
+
+.addToCartBtn {
+  margin: 5px;
+  background-color: #2BA3DC;
+  border: none;
+  border-radius: 16px;
+  width: 150px;
+  height: 45px;
+  color: whitesmoke;
+}
+
+
+
+.buyNowBtn {
+  margin: 5px;
+  background-color: #FF315A;
+  border: none;
+  border-radius: 16px;
+  width: 150px;
+  height: 45px;
+  color: whitesmoke;
+}
+
+.wishlistBtn {
+  margin: px;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  width: 50px;
+  height: 50px;
+}
+
+/** TITOLO PRODOTTO */
+
+.product_title {
+  margin: 0px 40px;
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.product_subTitle {
+  margin: 0px 40px 30px 40px;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+/** DESCRIZIONE */
+
+.descriptionAndDetails_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description_container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  overflow-y: hidden;
+  margin: 0px 40px 30px 40px;
+  padding: 10px;
+  background-color: rgba(79, 22, 203, 0.3);
+}
+
+.title_description {
+  margin-bottom: 15px;
+  color: whitesmoke;
+  border-bottom: 1px solid gainsboro;
+}
+
+/** DETTAGLI DI GIOCO*/
+
+.details_container {
+  width: 50%;
+  height: 100%;
+  margin: 0px 40px 30px 40px;
+  padding: 10px;
+}
+
+.details_title {
+  color: whitesmoke;
+  border-bottom: 1px solid gainsboro;
+}
+
+.details_table_container {
+  width: 100%;
+  height: 100%;
+}
+
+.details_table {
+  background-color: rgba(79, 22, 203, 0.3);
+  color: whitesmoke;
+  margin: 30px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.details_table td {
+  padding: 10px;
+}
+
+/** GALLERIA IMMAGINI DI GIOCO */
+
+.product_gallery {
+  background-color: #000;
+  margin: 0px 0px 30px 0px;
+  padding: 10px;
+}
+
+.productGallery_title {
+  margin: 30px 40px;
+  color: whitesmoke;
+  border-bottom: 1px solid gainsboro;
+}
+
+.product_gallery_subContainer {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.product_gallery_subContainer div {
+  width: 350px;
+  height: 200px;
+  margin: 0px 30px;
+  border: 5px solid rgba(93, 27, 177, 255)
+}
+
+.product_gallery_subContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.mainFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 450px;
+  margin: 40px;
+}
+
+.mainFrame img {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryBtn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.leftGalleryBtn {
+  font-size: xx-large;
+  color: white;
+  background-color: transparent;
+  width: 60px;
+  height: 50px;
+  margin-right: 15px;
+  border: 2px solid rgba(93, 27, 177, 255);
+  border-radius: 6px;
+  box-shadow: 2px 2px rgb(109, 4, 247);
+}
+
+.rightGalleryBtn {
+  font-size: xx-large;
+  color: white;
+  background-color: transparent;
+  width: 60px;
+  height: 50px;
+  margin-left: 15px;
+  border: 2px solid rgba(93, 27, 177, 255);
+  border-radius: 6px;
+  box-shadow: -2px 2px rgb(109, 4, 247)
+}
+
+/** REQUISITI DI SISTEMA */
+
+.requirements_container {
+  margin: 0px 40px 30px 40px;
+  padding: 10px;
+}
+
+.requirements_title {
+  margin-bottom: 30px;
+  color: whitesmoke;
+  border-bottom: 1px solid gainsboro;
+}
+
+.minimumRequirements_title {
+  border-bottom: 1px solid gainsboro;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.suggestedRequirements_title {
+  border-bottom: 1px solid gainsboro;
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.requirements_subContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.minimumRequirements_container {
+
+  margin: 0px 15px 30px 15px;
+}
+
+.suggestedRequirements_container {
+  margin: 0px 15px 30px 15px;
+}
+
+.minimumRequirements_table td {
+  color: white;
+  padding: 10px;
+  font-size: large;
+  background-color: rgba(79, 22, 203, 0.3);
+}
+
+.suggestedRequirements_table td {
+  color: white;
+  padding: 10px;
+  font-size: large;
+  background-color: rgba(79, 22, 203, 0.3);
+}
+
+/** RECENSIONI */
+
+.mainReview_container {
+  background-color: black;
+  /* margin: 0px 40px 30px 40px; */
+  padding: 10px;
+}
+
+.review_title {
+  margin-bottom: 30px;
+  color: whitesmoke;
+  border-bottom: 1px solid gainsboro;
+  margin: 0px 40px 30px 40px;
+}
+
+/** USER */
+
+.userReviewer_container {
+  display: flex;
+  margin: 0px 40px 30px 40px;
+  background-color: rgba(79, 22, 203, 0.7);
+}
+
+.userReviewer_avatar_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.userReviewer_avatar_container span {
+  color: whitesmoke;
+}
+
+.stars_container {
+  margin: 10px 30px 0px 30px;
+}
+
+.starThumbnail {
+  width: 25px;
+  height: 25px;
+  margin: 0px 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.starThumbnail img {
+  width: 100%;
+}
+
+.blackStar {
+  display: none;
+}
+
+.subReview_container {
+  margin: 20px 0px 0px 0px;
+}
