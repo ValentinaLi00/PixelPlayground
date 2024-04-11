@@ -1,19 +1,4 @@
-import logoVettoriale from "../images/logo-removebg-preview.png";
-import pcIcon from "../images/pc.png";
-import xbox from "../images/logo_xbox.png";
-import ps from "../images/logo_playstation.png";
-import nintendo from "../images/logo_nintendoSwitch.png";
-import lente from "../images/lente1.png";
-import cart from "../images/cart_empty.png";
-import heart from "../images/heart.png";
-import background from "../images/desktop_img.png";
-import user from "../images/user_avatar.png";
 import "./styles/style_navbar.css";
-import instagram from "../images/instagram.png";
-import facebook from "../images/facebook.png";
-import x from "../images/x.png";
-import youtube from "../images/youtube.png";
-import hamburger from "../images/hamburger_home_menu.png";
 import { useState } from "react";
 
 export function Navbar() {
@@ -34,7 +19,7 @@ export function Navbar() {
         <div className="panel_navbar">
           <div className="panel_logo">
             <img
-              src={hamburger}
+              src="src\assets\imagesGabriele\hamburger_home_menu.png"
               id="logo_vettoriale_nav"
               onClick={toggleContainers}
               alt="menu"
@@ -43,7 +28,7 @@ export function Navbar() {
           <div className="user_container">
             <div
               className="user_image"
-              style={{ backgroundImage: ` url(${user})` }}
+              style={{ backgroundImage: ` url("src/assets/imagesGabriele/user_avatar.png")` }}
             ></div>
           </div>
           <div className="sections_panel">
@@ -57,10 +42,10 @@ export function Navbar() {
             <h3>faq</h3>
           </div>
           <div className="social_panels">
-            <img src={facebook} id="social_icons" />
-            <img src={instagram} id="social_icons" />
-            <img src={x} id="x_icon" />
-            <img src={youtube} id="youtube_icon" />
+            <img src="src\assets\imagesGabriele\facebook.png" id="social_icons" />
+            <img src="src\assets\imagesGabriele\instagram.png" id="social_icons" />
+            <img src="src\assets\imagesGabriele\x.png" id="x_icon" />
+            <img src="src\assets\imagesGabriele\youtube.png" id="youtube_icon" />
           </div>
         </div>
         <div className="content_console">
@@ -70,9 +55,9 @@ export function Navbar() {
           <h1>Nintendo</h1>
         </div>
         <div className="icons_panel">
-          <img src={lente} id="nav_search" alt="search" />
-          <img src={cart} id="nav_cart" alt="carrello" />
-          <img src={heart} id="nav_heart" alt="wishlist" />
+          <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" alt="search" />
+          <img src="src\assets\imagesGabriele\cart_empty.png" id="nav_cart" alt="carrello" />
+          <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" alt="wishlist" />
         </div>
       </div>
       <div
@@ -81,32 +66,32 @@ export function Navbar() {
       >
         <div className="nav_first_section">
           <img
-            src={hamburger}
+            src="src\assets\imagesGabriele\hamburger_home_menu.png"
             id="logo_vettoriale_nav"
             onClick={toggleContainers}
           />
         </div>
         <div className="center_navbar">
-          <img src={logoVettoriale} id="logo_vettoriale" />
+          <img src="src\assets\imagesGabriele\logo_vettoriale.png" id="logo_vettoriale" />
           <div className="nav_second_section">
             <div className="first_logo_nav">
-              <img src={pcIcon} id="pc_icon" />
+              <img src="src\assets\imagesGabriele\pc.png" id="pc_icon" />
             </div>
             <div className="first_logo_nav">
-              <img src={xbox} id="xbox_icon" />
+              <img src="src\assets\imagesGabriele\logo_xbox.png" id="xbox_icon" />
             </div>
             <div className="first_logo_nav">
-              <img src={ps} id="ps_icon" />
+              <img src="src\assets\imagesGabriele\logo_playstation.png" id="ps_icon" />
             </div>
             <div className="first_logo_nav">
-              <img src={nintendo} id="nintendo_icon" />
+              <img src="src\assets\imagesGabriele\logo_nintendoSwitch.png" id="nintendo_icon" />
             </div>
           </div>
         </div>
         <div className="nav_third_section">
-          <img src={lente} id="nav_search" />
-          <img src={cart} id="nav_cart" />
-          <img src={heart} id="nav_heart" />
+          <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" />
+          <img src="src\assets\imagesGabriele\cart_empty.png" id="nav_cart" />
+          <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" />
         </div>
       </div>
     </div>
