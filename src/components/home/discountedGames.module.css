@@ -2,6 +2,7 @@
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 30px;
     background-color: #201434;
@@ -17,6 +18,8 @@
     max-width: 1700px;
     overflow: hidden;
     display: flex;
+    height: 200px;
+    align-items: center;
     gap: 30px;
     position: relative;
 }
@@ -25,7 +28,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    animation: 30s slide infinite linear;
+
+    animation: 20s slide infinite linear;
     gap: 30px;
 }
 
@@ -83,6 +87,32 @@
 }
 
 .discount {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.discount {
+    --r: .4em;
+    /* control the ribbon shape (the radius) */
+    --c: red;
+
+    position: absolute;
+    top: 10px;
+    left: calc(-1*var(--r));
+    line-height: 1.4;
+    padding: 0 .5em calc(2*var(--r));
+    border-radius: var(--r) 0 0 var(--r);
+    background:
+        radial-gradient(100% 50% at left, var(--c) 98%, #0000 101%) 100% 0/.5lh calc(100% - 2*var(--r)),
+        radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 100%/var(--r) calc(2*var(--r)),
+        conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)), #0000 25%, var(--c) 0) 0 0/calc(101% - .5lh) 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+/* .discount {
     background-color: red;
     border-radius: 15px 5px;
     color: #fff;
@@ -91,7 +121,7 @@
     width: 70px;
     height: 30px;
     left: 0px;
-}
+} */
 
 .name_price {
     display: flex;

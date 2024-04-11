@@ -1,0 +1,41 @@
+.container {
+    background-image: url('src/assets/valentinaLiAssets/home/background.jpg');
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 53px));
+
+}
+
+.container h2 {
+    width: 560px;
+    margin-bottom: 30px;
+}
+
+.container_card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 800px;
+    margin-left: 300px;
+}
+
+.card {
+    width: 300px;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.description {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}

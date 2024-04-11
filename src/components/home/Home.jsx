@@ -4,17 +4,16 @@ import { Genres } from "./Genres";
 import { Gratis } from "./Gratis";
 import { Incoming } from "./Incoming";
 import { Reviews } from "./Reviews";
-
+import classes from './home.module.css'
 export function Home() {
     return (
-        <div>
-            <Incoming/>
-            <Bestsellers/>
+        <div className={classes.container}>
+            <Incoming />
+            <Bestsellers />
             <DiscountedGames />
-            <Genres />
             <Gratis />
-            
-            <Reviews/>
+            <Genres />
+            <Reviews />
         </div>
     )
 }
