@@ -42,25 +42,29 @@
     display: flex;
     flex-direction: column;
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
+    z-index: 10;
 }
 
 @-webkit-keyframes color-change-2x {
     0% {
-      background: rgba(128, 0, 128, 0.738);
+        background: rgba(128, 0, 128, 0.738);
     }
+
     100% {
-      background: #412cffb7;
+        background: #412cffb7;
     }
-  }
-  @keyframes color-change-2x {
+}
+
+@keyframes color-change-2x {
     0% {
-      background: #2019eaaa;
+        background: #2019eaaa;
     }
+
     100% {
-      background: rgba(128, 0, 128, 0.677);
+        background: rgba(128, 0, 128, 0.677);
     }
-  }
+}
 
 .panel_logo {
     width: 30%;
@@ -188,7 +192,7 @@
     align-items: center;
     gap: 2em;
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
 }
 
 #pc_icon {
@@ -245,10 +249,7 @@
     height: 40px;
 }
 
-#nav_search{
+#nav_search {
     width: 40px;
     height: 40px;
 }
-
-
-
