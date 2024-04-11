@@ -5,7 +5,7 @@ export function Gratis() {
         <div className={classes.container}>
             <div className={classes.title}>
                 <h2>GRATUITI</h2>
-                <img src="src\assets\valentinaLiAssets\home\gift.png" alt="" style={{ width: '40px' }} />
+                {/* <img src="src\assets\valentinaLiAssets\home\gift.png" alt="" style={{ width: '40px' }} /> */}
             </div>
 
             <div className={classes.containerImg}>

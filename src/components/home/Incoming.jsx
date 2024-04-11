@@ -12,8 +12,9 @@ export function Incoming() {
                         <p>Elden Rings</p>
                         <p>30.99€</p>
                     </div>
+                    
                     <div className={classes.pre_order}>
-                        <p>Preordina 24 maggio 2024</p>
+                        <p>24 maggio 2024</p>
                     </div>
                 </div>
 
@@ -24,7 +25,7 @@ export function Incoming() {
                         <p>25.90€</p>
                     </div>
                     <div className={classes.pre_order}>
-                        <p>Preordina 24 maggio 2024</p>
+                        <p> 24 maggio 2024</p>
                     </div>
                 </div>
 
@@ -35,7 +36,7 @@ export function Incoming() {
                         <p>20.90€</p>
                     </div>
                     <div className={classes.pre_order}>
-                        <p>Preordina 24 maggio 2024</p>
+                        <p>24 maggio 2024</p>
                     </div>
                 </div>
             </div>

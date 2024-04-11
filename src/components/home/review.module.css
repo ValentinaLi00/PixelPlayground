@@ -8,15 +8,20 @@
     color: white;
 }
 
+.container h2 {
+    font-size: 28px;
+}
+
 .scroller {
 
-    max-width: 1600px;
+    max-width: 1500px;
     overflow: hidden;
     display: flex;
     height: 200px;
     align-items: center;
     gap: 30px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .scroller_inner {
@@ -65,7 +70,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgba(79, 22, 203, 0.7);
+    background-color: #4f16cbb3;
     border-radius: 16px;
 }
 
