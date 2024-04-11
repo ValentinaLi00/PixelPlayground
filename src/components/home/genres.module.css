@@ -1,0 +1,204 @@
+.container {
+    overflow: hidden;
+    background-color: #201434;
+    margin-bottom: 100px;
+}
+
+.containerImg {
+    background: linear-gradient(to right,
+            #00f260,
+            #0575e6);
+    --mask:
+        radial-gradient(149.82px at 50% 201px, #000 99%, #0000 101%) calc(50% - 134px) 0/268px 51% repeat-x,
+        radial-gradient(149.82px at 50% -134px, #0000 99%, #000 101%) 50% 67px/268px calc(51% - 67px) repeat-x,
+        radial-gradient(149.82px at 50% calc(100% - 201px), #000 99%, #0000 101%) calc(50% - 134px) 100%/268px 51% repeat-x,
+        radial-gradient(149.82px at 50% calc(100% + 134px), #0000 99%, #000 101%) 50% calc(100% - 67px)/268px calc(51% - 67px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    height: 400px;
+}
+
+.containerImg img {
+    height: 100%;
+    width: 100%;
+}
+
+/*Genres*/
+
+.containerGenres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    margin-top: 50px;
+}
+
+.containerGenres h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.containerCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    gap: 30px;
+}
+
+.card {
+    background-size: cover;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.action {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/action.jpg');
+}
+
+.fighting {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/fighting.jpg');
+}
+
+.adventures {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/adventures.jpg');
+}
+
+.multiplayer {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/multiplayer.jpg');
+}
+
+.fps {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/fps.jpg');
+}
+
+.sport {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/sport.jpg');
+}
+
+.indie {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/indie.webp');
+}
+
+.racing {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/racing.webp');
+}
+
+.rpg {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/rpg.jpg');
+}
+
+.simulator {
+    background-image: url('src/assets/valentinaLiAssets/home/genres/simulator.jpeg');
+}
+
+.character {
+    position: absolute;
+    transition: transform 0.3s;
+    background-color: transparent;
+}
+
+.figure_action {
+    height: 190px;
+    top: 0;
+    right: 80px;
+}
+
+
+.figure_fighting {
+    height: 180px;
+    top: 10px;
+    right: 90px;
+}
+
+.figure_adventures {
+    height: 180px;
+    top: 10px;
+    right: 80px;
+}
+
+.figure_multiplayer {
+    height: 180px;
+    top: 10px;
+    right: 10px;
+}
+
+.figure_fps,
+.figure_sport {
+    height: 180px;
+    top: 8px;
+    right: 50px;
+}
+
+
+.figure_indie {
+    height: 220px;
+    top: -10px;
+    right: 0;
+}
+
+.figure_racing {
+    height: 150px;
+    top: 50px;
+    right: 70px;
+}
+
+.figure_rpg {
+    height: 200px;
+    top: 0;
+    right: 50px;
+}
+
+.figure_simulator {
+    height: 180px;
+    top: 20px;
+    right: 20px;
+}
+
+.card:hover .character {
+    transform: scale(1.1);
+ 
+
+}
+
+.ribbon {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .ribbon {
+    --r: .4em; /* control the ribbon shape (the radius) */
+    --c: #0070fa;
+  
+    position: absolute;
+    bottom: 20px;
+    left: calc(-1*var(--r));
+    line-height: 1.8; 
+    padding: 0 .5em calc(2*var(--r));
+    border-radius: var(--r) 0 0 var(--r);
+    background: 
+      radial-gradient(100% 50% at left,var(--c) 98%,#0000 101%)
+       100% 0/.5lh calc(100% - 2*var(--r)),
+      radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 
+       0 100%/var(--r) calc(2*var(--r)),
+      conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,var(--c) 0)
+       0 0/calc(101% - .5lh) 100%;
+    background-repeat: no-repeat;   
+  }
+
+
+.card h3 {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(228, 32, 205);
+}

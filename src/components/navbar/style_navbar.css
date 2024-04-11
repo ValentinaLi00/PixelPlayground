@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container_of_all {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: gainsboro;
+    display: flex;
+    flex-direction: row;
+}
+
+.video_background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*panel section*/
+
+.panel_container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+}
+
+.panel_navbar {
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
+    z-index: 10;
+}
+
+@-webkit-keyframes color-change-2x {
+    0% {
+        background: rgba(128, 0, 128, 0.738);
+    }
+
+    100% {
+        background: #412cffb7;
+    }
+}
+
+@keyframes color-change-2x {
+    0% {
+        background: #2019eaaa;
+    }
+
+    100% {
+        background: rgba(128, 0, 128, 0.677);
+    }
+}
+
+.panel_logo {
+    width: 30%;
+    height: 15%;
+}
+
+.user_container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.user_image {
+    width: 30%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.content_console {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    color: white;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icons_panel {
+    display: flex;
+    width: 15%;
+    height: 15%;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 20px;
+}
+
+.sections_panel {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.other_links_panel {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 2em;
+}
+
+.social_panels {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+#social_icons {
+    width: 35px;
+    height: 35px;
+}
+
+#youtube_icon {
+    width: 55px;
+    height: 35px;
+}
+
+#x_icon {
+    height: 30px;
+    width: 35px;
+}
+
+/*panel section end*/
+
+.navbar_content {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background_website {
+    height: 100vh;
+    width: 100%;
+}
+
+/*first section*/
+
+.nav_first_section {
+    width: 12%;
+    height: 100%;
+}
+
+#logo_vettoriale_nav {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*second section*/
+
+.nav_second_section {
+    width: 55%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both;
+}
+
+#pc_icon {
+    height: 75px;
+    width: 75px;
+}
+
+#nintendo_icon {
+    height: 75px;
+    width: 75px;
+}
+
+#ps_icon {
+    height: 75px;
+    width: 75px;
+}
+
+#xbox_icon {
+    height: 75px;
+    width: 75px;
+}
+
+.center_navbar {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo_vettoriale {
+    width: 90x;
+    height: 90px;
+}
+
+
+
+/*third section*/
+
+.nav_third_section {
+    width: 12.5%;
+    height: 50%;
+    display: flex;
+    gap: 1em;
+}
+
+#nav_heart {
+    width: 40px;
+    height: 40px;
+}
+
+#nav_cart {
+    width: 40px;
+    height: 40px;
+}
+
+#nav_search {
+    width: 40px;
+    height: 40px;
+}

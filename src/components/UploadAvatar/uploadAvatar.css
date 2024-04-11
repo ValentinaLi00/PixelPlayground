@@ -1,0 +1,39 @@
+
+
+@media screen and (max-width: 768px) {
+    .uploadPic h1 {
+        font-size: 30px;
+    }
+    .clientPic {
+        width: 300px;
+    }
+    .uploadPic {
+        animation: scroll 100s linear infinite;
+        background-size: 290px;
+        padding-top: 0px;
+    }
+
+    .uploadImg{
+        margin-left: 20px;
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .uploadPic h1 {
+        font-size: 23px;
+    }
+    .clientPic {
+        width: 150px;
+    }
+    .uploadPic {
+        animation: scroll 100s linear infinite;
+        background-size: 230px;
+    }
+    .uploadImg{
+        margin-left: 20px;
+        height: 200px;
+        width: 250px;
+    }
+}

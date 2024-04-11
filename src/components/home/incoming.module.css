@@ -1,0 +1,81 @@
+.container {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    background-color: #201434;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+.containerImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* .card img:hover {
+    width: 310px;
+} */
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.pre_order {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pre_order {
+    --r: .4em;
+    /* control the ribbon shape (the radius) */
+    --c: #0070fa;
+
+    position: absolute;
+    bottom:50px;
+        left: calc(-1*var(--r));
+    line-height: 1.8;
+    padding: calc(2*var(--r)) .5em 0;
+    border-radius: var(--r) 0 0 var(--r);
+    background:
+        radial-gradient(100% 50% at left, var(--c) 98%, #0000 101%) 100% 100%/.5lh calc(100% - 2*var(--r)),
+        radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 0/var(--r) calc(2*var(--r)),
+        conic-gradient(at var(--r) calc(2*var(--r)), #0000 25%, var(--c) 0) 0 0/calc(101% - .5lh) 100%;
+    background-repeat: no-repeat;
+
+}
+
+.pre_order:hover {
+    width: 150px;
+    height: 60px;
+}
+
+.pre_order p {
+    color: white;
+    margin: 5px;
+    font-size: 14px;
+}

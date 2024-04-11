@@ -1,15 +1,13 @@
-import { Wishlist } from "./components/Wishlist";
-import { Faq } from "./components/faq";
-
+import { Home } from "./components/home/Home";
+import "./style/styleGeneral.css";
+import { Product } from "./components/product/Product";
 
 export function App() {
-
   return (
     <>
-    {/* <Wishlist /> */}
-    <Faq />
+      
+      {/* <Product/> */}
+      <Home />
     </>
-  )
+  );
 }
-
-
