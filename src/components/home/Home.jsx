@@ -1,3 +1,4 @@
+import { Navbar } from "../navbar/Navbar";
 import { Bestsellers } from "./Bestsellers";
 import { DiscountedGames } from "./DiscountedGames";
 import { Genres } from "./Genres";
@@ -8,6 +9,7 @@ import classes from './home.module.css'
 export function Home() {
     return (
         <div className={classes.container}>
+            <Navbar/>
             <Incoming />
             <Bestsellers />
             <DiscountedGames />
