@@ -2,20 +2,22 @@
     overflow: hidden;
     background-color: #201434;
     margin-bottom: 100px;
+    height: 100%;
+    width: 100%;
 }
 
 .containerImg {
-    background: linear-gradient(to right,
-            #00f260,
-            #0575e6);
-    --mask:
+    /* --mask:
         radial-gradient(149.82px at 50% 201px, #000 99%, #0000 101%) calc(50% - 134px) 0/268px 51% repeat-x,
         radial-gradient(149.82px at 50% -134px, #0000 99%, #000 101%) 50% 67px/268px calc(51% - 67px) repeat-x,
         radial-gradient(149.82px at 50% calc(100% - 201px), #000 99%, #0000 101%) calc(50% - 134px) 100%/268px 51% repeat-x,
         radial-gradient(149.82px at 50% calc(100% + 134px), #0000 99%, #000 101%) 50% calc(100% - 67px)/268px calc(51% - 67px) repeat-x;
     -webkit-mask: var(--mask);
-    mask: var(--mask);
-    height: 400px;
+    mask: var(--mask); */
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 101px),calc(50% + 174.94px) calc(100% - 101px),50% 100%,calc(50% - 174.94px) calc(100% - 101px),0 calc(100% - 101px));
+
+
+
 }
 
 .containerImg img {
@@ -164,7 +166,7 @@
 
 .card:hover .character {
     transform: scale(1.1);
- 
+
 
 }
 
@@ -172,26 +174,25 @@
     font-size: 22px;
     font-weight: bold;
     color: #fff;
-  }
-  .ribbon {
-    --r: .4em; /* control the ribbon shape (the radius) */
+}
+
+.ribbon {
+    --r: .4em;
+    /* control the ribbon shape (the radius) */
     --c: #0070fa;
-  
+
     position: absolute;
     bottom: 20px;
     left: calc(-1*var(--r));
-    line-height: 1.8; 
+    line-height: 1.8;
     padding: 0 .5em calc(2*var(--r));
     border-radius: var(--r) 0 0 var(--r);
-    background: 
-      radial-gradient(100% 50% at left,var(--c) 98%,#0000 101%)
-       100% 0/.5lh calc(100% - 2*var(--r)),
-      radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 
-       0 100%/var(--r) calc(2*var(--r)),
-      conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)),#0000 25%,var(--c) 0)
-       0 0/calc(101% - .5lh) 100%;
-    background-repeat: no-repeat;   
-  }
+    background:
+        radial-gradient(100% 50% at left, var(--c) 98%, #0000 101%) 100% 0/.5lh calc(100% - 2*var(--r)),
+        radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 100%/var(--r) calc(2*var(--r)),
+        conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)), #0000 25%, var(--c) 0) 0 0/calc(101% - .5lh) 100%;
+    background-repeat: no-repeat;
+}
 
 
 .card h3 {

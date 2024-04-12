@@ -1,3 +1,4 @@
+import { Footer } from "../footer/Footer";
 import { Navbar } from "../navbar/Navbar";
 import { Bestsellers } from "./Bestsellers";
 import { DiscountedGames } from "./DiscountedGames";
@@ -16,6 +17,7 @@ export function Home() {
             <Gratis />
             <Genres />
             <Reviews />
+            <Footer/>
         </div>
     )
 }
