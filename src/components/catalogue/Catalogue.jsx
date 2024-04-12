@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
-import './catalogue.css';
 import { Game } from './Game';
-// import classes from './catalogue.module.css'
+import classes from './catalogue.module.css'
 
 export function Catalogue() {
 
     const [data, setData] = useState([])
     const [show, setShow] = useState(9)
-    const [platform, setPlatform] = useState('')
 
     async function handleFecthData() {
         try {
@@ -22,7 +20,7 @@ export function Catalogue() {
     useEffect(() => {
         handleFecthData()
     }, [])
-    
+
 
     function handleShowmore() {
         setShow((prevShow) => prevShow + 8)
@@ -33,28 +31,30 @@ export function Catalogue() {
     }
 
     function handlePlatformChange(event) {
-        setPlatform(event.target.value)
+        const selectedPlatform = event.target.value
+        const filteredData = data.filter((game) => game.platform === selectedPlatform)
+        setData(filteredData)
     }
 
 
     return (
-        <div className="container_catalogue">
-            <div className="container_filter">
+        <div className={classes.container_catalogue}>
+            <div className={classes.container_filter}>
 
-                <div className='filter'>
+                <div className={classes.filter}>
                     <label htmlFor="sistemi" onChange={handlePlatformChange}>Sistemi</label>
-                    <select name="sistemi" id="sistemi" placeholder='sistemi'>
+                    <select name="sistemi" id={classes.sistemi} placeholder='sistemi'>
                         <option selected>Seleziona sistema</option>
                         <option value="pc">PC</option>
                         <option value="Playstation 4">Playstation</option>
-                        <option value="Xbox One">Xbox</option>
-                        <option value="Switch">Switch</option>
+                        <option value="Xbox One">XBOX</option>
+                        <option value="Switch">Nintendo</option>
                     </select>
                 </div>
 
-                <div className='filter'>
+                <div className={classes.filter}>
                     <label htmlFor="generi">Generi</label>
-                    <select name="generi" id="generi">
+                    <select name="generi" id={classes.generi}>
                         <option selected>Seleziona genere</option>
                         <option value="Action">Action</option>
                         <option value="Adventure">Adventure</option>
@@ -62,15 +62,15 @@ export function Catalogue() {
                         <option value="FPS">FPS</option>
                         <option value="Fighting">Fighting</option>
                         <option value="Indies">Indies</option>
-                        <opton value="Multiplayer">Multiplayer</opton>
+                        <option value="Multiplayer">Multiplayer</option>
                         <option value="Racing">Racing</option>
                         <option value="Single player">RPG</option>
                     </select>
                 </div>
 
-                <div className='filter'>
+                <div className={classes.filter}>
                     <label htmlFor="ordina">Ordina</label>
-                    <select name="ordina" id="ordina">
+                    <select name="ordina" id={classes.ordina}>
                         <option selected>Seleziona per</option>
                         <option value="Bestseller">Bestseller</option>
                         <option value="Scontati">Scontati</option>
@@ -80,9 +80,9 @@ export function Catalogue() {
                     </select>
                 </div>
 
-                <div className='filter'>
+                <div className={classes.filter}>
                     <label htmlFor="prezzi">Prezzi</label>
-                    <select name="prezzi" id="prezzi">
+                    <select name="prezzi" id={classes.prezzi}>
                         <option selected>Seleziona range di prezzo</option>
                         <option value="low">da 0€ a 10€</option>
                         <option value="medium-low">da 10€ a 20€</option>
@@ -94,7 +94,7 @@ export function Catalogue() {
                 </div>
             </div>
 
-            <div className="container_game">
+            <div className={classes.container_game}>
                 {/* card */}
 
                 {data.length > 0 && data.slice(1, show).map((game) => (
@@ -103,9 +103,9 @@ export function Catalogue() {
 
             </div>
 
-            <div className='container_btn'>
-                <button className='mostraAltro' onClick={handleShowmore}>Mostra altro</button>
-                <button className='mostraAltro' onClick={handleShowLess}>Mostra meno</button>
+            <div className={classes.container_btn}>
+                <button className={classes.mostraAltro} onClick={handleShowmore}>Mostra altro</button>
+                <button className={classes.mostraAltro} onClick={handleShowLess}>Mostra meno</button>
             </div>
 
 
