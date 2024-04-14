@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wishlistBackground {
+    position: relative;
+}
+
+.wishlistBackgroundImg {
+    width: 100%;
+    height: 100%;
+    filter: brightness(20%);
+}
+
+.wishlistContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow-y: scroll ;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 30px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:  hsl(340deg 100% 32%);
+    border-radius: 30px;
+  }
+.favContainer {
+    width: 75%;
+    height: 160px;
+    display: flex;
+    margin-left:15%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.115);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.474);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    padding: 10px 70px 10px 20px;
+    text-shadow: 2px 2px 1px black ;
+}
+
+.favContainer img {
+    border-radius: 30px;
+    filter: saturate(0%);
+    padding: 10px;
+}
+
+
+.upperWishlist {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 40px;
+}
+
+.upperWishlist h1 {
+    font-size: 40px;
+    color:  hsl(340deg 100% 32%);
+    padding-top: 50px;
+    font-family: 'minecraft';
+    letter-spacing: 5px;
+text-shadow:1px 1px 0px white
+}
+
+.favProdName,
+.favProdPrice, .favProdStatus {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    gap: 20px;
+}
+.prodDetails, .favProdStatus{
+    font-size: large;
+    text-transform: uppercase;
+    color:  hsl(340deg 100% 32%);
+    font-weight: bolder;
+    text-shadow:1px 1px 1px rgba(255, 255, 255, 0.804);
+
+}
+.addRemoveBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addRemoveBtns button {
+    width: 120%;
+    cursor: pointer;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 50px;
+    text-shadow: 2px 2px 1px black ;
+    border: none;
+    transition: 0.4s ease-in-out;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.244);
+    background: linear-gradient(to bottom,
+            hsl(340, 33%, 47%) 8%,
+            hsl(340deg 100% 32%) 92%,
+            hsl(339, 100%, 50%) 100%);
+            
+}
+.addRemoveBtns button:hover{
+    color:  hsl(340deg 100% 32%);
+    font-weight: 900;
+    background: white;
+    text-shadow: 1px 1px 1px rosybrown;
+    border: 2px solid  hsl(340deg 100% 32%);
+    width: 130%;
+    transition: 0.4s ease-in-out;
+
+}
+
+@media screen and (max-width: 800px){
+    .favContainer {
+        width: 90%; 
+        display: flex;
+        justify-content: center;
+        margin-left:5%;
+    }
+
+
+}
+@media screen and (max-width: 650px) {
+
+    .favContainer {
+        width: 90%;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        margin-left:5%;
+        gap: 10px 50px;
+        flex-wrap: wrap;
+        padding: 10px 10px 10px 10px;
+    }
+    .wishlistBackgroundImg {
+        width: 140%;
+        max-width: fit-content;
+        object-fit: cover;
+    }
+    .upperWishlist h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+}

@@ -1,16 +1,26 @@
-body {
-    background-color: #201434;
-    color: white;
+
+.gif{
+    position: relative;
 }
 
 .faqPart {
     height: 100%;
-    margin: 0px 30px 50px 30px;
+    padding: 0px 30px 50px 30px;
+    background-color: #201434;
+    color: pink;
+  background-image: url('src/assets/loghi/ariGiaccariAssets/gifCat.gif'); 
+background-blend-mode: multiply;
 }
 
 .upperFaq {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+}
+
+.upperFaq div{
+    display: flex;
+    align-items: center;
 }
 
 .upperFaq h1 {
@@ -23,8 +33,7 @@ body {
 
 .faq {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -36,6 +45,10 @@ body {
 .faq p {
     text-shadow: 2px 2px 1px black;
 
+}
+
+.questionGuy{
+    margin: 50px 50px 0px 0px ;
 }
 
 .question {
@@ -68,7 +81,7 @@ body {
     width: 400px;
     background-color: rgb(127, 105, 149);
     border-radius: 20px;
-    transition: 0.8s;
+    transition: ease-in-out 0.8s;
 }
 
 .answer_shown {
@@ -76,7 +89,7 @@ body {
     width: 400px;
     height: auto;
     max-height: 999px;
-    transition: 0.8s;
+    transition: ease-in-out 0.8s;
     background-color: rgba(127, 105, 149, 0.144);
     box-shadow: 2px 2px 20px rgba(20, 16, 25, 0.428);
     border-radius: 20px;

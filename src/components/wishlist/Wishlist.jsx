@@ -15,13 +15,13 @@ export function Wishlist() {
                 </div>
 
                 <div className="favContainer">
-                    <img style={{ width: '200px', height: '100%' }} src="src\assets\loghi\ariGiaccariAssets\sfondo_wishlist.png" alt="" />
+                    <img style={{ width: '200px', height: 'auto' }} src="src\assets\loghi\ariGiaccariAssets\sfondo_wishlist.png" alt="" />
                     <div className="favProdName">
-                        <p>nome del prodotto</p>
+                        <p className='prodDetails'>nome</p>
                         <p>Hello World</p>
                     </div>
                     <div className="favProdPrice">
-                        <p>prezzo</p>
+                        <p className='prodDetails'>prezzo</p>
                         <p>£12,99</p>
                     </div>
                     <div className="favProdStatus">disponibile?</div>
