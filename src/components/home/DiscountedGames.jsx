@@ -9,18 +9,6 @@ export function DiscountedGames() {
 
                 {/* scroller inner 1 */}
                 <div className={classes.scroller_inner}>
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
 
                     <div className={classes.card}>
                         <div className={classes.game_discount}>
@@ -122,19 +110,6 @@ export function DiscountedGames() {
                     <div className={classes.card}>
                         <div className={classes.game_discount}>
                             <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount2}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
                             <span className={classes.discount}>
                                 10%
                             </span>
@@ -145,6 +120,7 @@ export function DiscountedGames() {
                         </div>
                     </div>
 
+                   
                 </div>
 
             </div>

@@ -5,7 +5,7 @@ export function Genres() {
         <div className={classes.container}>
 
             <div className={classes.containerImg}>
-                <img src="src\assets\valentinaLiAssets\home\hollow.jpg" alt="" />
+                <img src="src\assets\valentinaLiAssets\home\horizon_bc.jpg" alt="" />
             </div>
 
             <div className={classes.containerGenres}>

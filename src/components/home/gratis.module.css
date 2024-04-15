@@ -44,7 +44,7 @@
 }
 
 .card img:hover {
-    width: 310px;
+    transform: scale(1.05);
 }
 
 .description {

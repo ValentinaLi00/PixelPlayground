@@ -1,47 +1,86 @@
-import './catalogue.css';
-// import classes from './catalogue.module.css'
+import { useEffect, useState } from 'react';
+import { Game } from './Game';
+import classes from './catalogue.module.css'
 
 export function Catalogue() {
-    return (
-        <div className="container_catalogue">
-            <div className="container_filter">
 
-                <div className='filter'>
+    const [data, setData] = useState([])
+    const [show, setShow] = useState(9)
+    const [platform, setPlatform] = useState('selectPlatform')
+    const [genre, setGenre] = useState('selectGenre')
+
+    async function handleFecthData() {
+        try {
+            const response = await fetch('http://localhost:5001/api/oggetti')
+            const responseJson = await response.json()
+            setData(responseJson)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        handleFecthData()
+    }, [])
+
+
+    function handleShowmore() {
+        setShow((prevShow) => prevShow + 8)
+    }
+
+    function handleShowLess() {
+        setShow((prevShow) => prevShow - 8)
+    }
+
+    function handleSelectChange(event) {
+        setPlatform(event.target.value)
+        setGenre(event.target.value)
+    }
+
+    const filterGames = data.filter(game =>
+        (platform === "selectPlatform" || game.platform === platform) ||
+        (genre === "selectGenre" || game.genre === genre)
+    );
+
+
+    // const filterPlatform = platform === "selectPlatform" ? data : data.filter(game => game.platform === platform) & genre === "selectGenre" ? data : data.filter(game => game.genre === genre);
+
+
+    return (
+        <div className={classes.container_catalogue}>
+            <div className={classes.container_filter}>
+
+                <div className={classes.filter}>
                     <label htmlFor="sistemi">Sistemi</label>
-                    <select name="sistemi" id="sistemi" placeholder='sistemi'>
-                        <option selected>Seleziona sistema</option>
-                        <option value="pc">PC</option>
-                        <option value="Playstation 4">Playstation 4</option>
-                        <option value="Playstation 5">Playstation 5</option>
-                        <option value="Xbox One">Xbox One</option>
-                        <option value="Xbox Series X|S">Xbox Series X|S</option>
-                        <option value="Switch">Switch</option>
+                    <select name="sistemi" id={classes.sistemi} placeholder='sistemi' onChange={handleSelectChange}>
+                        <option value='selectPlatform' selected>Seleziona sistema</option>
+                        <option value="PC">PC</option>
+                        <option value="Playstation">Playstation</option>
+                        <option value="XBOX">XBOX</option>
+                        <option value="Nintendo">Switch</option>
                     </select>
                 </div>
 
-                <div className='filter'>
+                <div className={classes.filter}>
                     <label htmlFor="generi">Generi</label>
-                    <select name="generi" id="generi">
+                    <select name="generi" id={classes.generi} onChange={handleSelectChange}>
                         <option selected>Seleziona genere</option>
                         <option value="Action">Action</option>
                         <option value="Adventure">Adventure</option>
                         <option value="Arcade">Arcade</option>
-                        <option value="Cooperation">Cooperation</option>
                         <option value="FPS">FPS</option>
                         <option value="Fighting">Fighting</option>
-                        <option value="Free to Play">Free to Play</option>
                         <option value="Indies">Indies</option>
-                        <option value="MMO">MMO</option>
                         <option value="Multiplayer">Multiplayer</option>
                         <option value="Racing">Racing</option>
-                        <option value="Single player">Single player</option>
-                        <option value="Wargame">Wargame</option>
+                        <option value="RPG">RPG</option>
+                        <option value="sport">Sport</option>
                     </select>
                 </div>
 
-                <div className='filter'>
+                <div className={classes.filter}>
                     <label htmlFor="ordina">Ordina</label>
-                    <select name="ordina" id="ordina">
+                    <select name="ordina" id={classes.ordina}>
                         <option selected>Seleziona per</option>
                         <option value="Bestseller">Bestseller</option>
                         <option value="Scontati">Scontati</option>
@@ -51,113 +90,30 @@ export function Catalogue() {
                     </select>
                 </div>
 
-                <div className='filter'>
+                <div className={classes.filter}>
                     <label htmlFor="prezzi">Prezzi</label>
-                    <select name="prezzi" id="prezzi">
+                    <select name="prezzi" id={classes.prezzi}>
                         <option selected>Seleziona range di prezzo</option>
                         <option value="low">da 0€ a 10€</option>
-                        <option value="medium-low">da 10€ a 20€</option>
-                        <option value="medium">da 20€ a 30€</option>
-                        <option value="medium-high">da 30€ a 40€</option>
-                        <option value="high">da 40€ a 50€</option>
-                        <option value="other_high">da 50€ in su</option>
+                        <option value="medium-low">da 10€ a 30€</option>
+                        <option value="medium">da 30€ a 50€</option>
+                        <option value="high">da 50€ in su</option>
                     </select>
                 </div>
             </div>
 
-            <div className="container_game">
+            <div className={classes.container_game}>
                 {/* card */}
-                <div className="card">
-                    <div className="container_img" >
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
 
-                <div className="card">
-                    <div className="container_img">
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
-
-
-                <div className="card">
-                    <div className="container_img">
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
-
-
-                <div className="card">
-                    <div className="container_img">
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
-
-
-                <div className="card">
-                    <div className="container_img">
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="container_img">
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="container_img" >
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <div className="container_img">
-                        <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="mario kart deluxe" />
-                    </div>
-                    <div className="container_description">
-                        <h3>Nome gioco</h3>
-                        <p>49,90€</p>
-                    </div>
-                </div>
-
-
-
+                {filterGames.length > 0 && filterGames.slice(1, show).map((game) => (
+                    <Game key={game.id} game={game} />
+                ))}
 
             </div>
 
-            <div className='container_btn'>
-                <button className='mostraAltro'>Mostra altro</button>
-
+            <div className={classes.container_btn}>
+                <button className={classes.mostraAltro} onClick={handleShowmore}>Mostra altro</button>
+                <button className={classes.mostraAltro} onClick={handleShowLess}>Mostra meno</button>
             </div>
 
 
