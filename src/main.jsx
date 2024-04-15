@@ -26,7 +26,14 @@ const router = createBrowserRouter([
     path: "/catalogue",
     element: <Catalogue />,
   },
+<<<<<<< HEAD
 
+=======
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+>>>>>>> 720eb00322da67eba75d7d82ba74274f41b2cb5f
   { path: "/wishlist", element: <Wishlist /> },
 ]);
 
