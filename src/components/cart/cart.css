@@ -1,7 +1,7 @@
-.cart_component_background {
+/* .cart_component_background {
     height: 100vh;
     background-color: rgb(19, 1, 48);
-}
+} */
 
 .cart-component {
     width: 100%;
@@ -18,12 +18,14 @@
 .cart-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #9d69f0c4;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 70%;
+    width: 100%;
 
 }
 
@@ -31,19 +33,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
     font-size: 1.5rem;
     color: white;
+    width: 30%;
+    padding: 20px;
+
 }
 
 .cart-items {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 20px;
     color: white;
-    
+
 }
 
 .cart-item {
@@ -51,18 +55,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 10px;
     margin-bottom: 10px;
     background-color: rgba(221, 211, 243, 0.7);
-    
-    
+
+
 }
-.cart-item-thumbnail{
+
+.cart-item-thumbnail {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:20px
-
+    gap: 20px
 }
 
 .cart-item-thumbnail img {
@@ -118,13 +122,15 @@
 } */
 
 .remove-button {
+    display: flex;
+    align-items: center;
     background-color: rgba(243, 17, 106, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     width: 100px;
     height: 30px;
     color: #fff;
     border-radius: 5px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -161,6 +167,7 @@
 .checkout-button {
     width: 150px;
     background-color: #1a662a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 20px;
     font-size: 1rem;
@@ -171,11 +178,12 @@
 
 .checkout-button:hover {
     background-color: #28a744;
-    ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .continue-shopping-button {
     width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     background-color: #014b99;
     color: #fff;
     padding: 10px 20px;
@@ -188,4 +196,5 @@
 
 .continue-shopping-button:hover {
     background-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
