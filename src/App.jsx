@@ -7,6 +7,7 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
 import { AboutUs } from "./components/about_us/AboutUs";
 import { DiscountedGames } from "./components/home/DiscountedGames";
+import { LoginRegistration } from "./components/login/LoginRegistration";
 
 
 export function App() {
@@ -15,12 +16,12 @@ export function App() {
 
       
       {/* <Product/> */}
-
+      <LoginRegistration />
       {/* <Catalogue/> */}
       {/* <Game/> */}
       {/* <Navbar /> */}
       {/* <AboutUs/> */}
-      <Home />
+      {/* <Home /> */}
       {/* <Footer/> */}
       {/* <DiscountedGames/> */}
     </>
