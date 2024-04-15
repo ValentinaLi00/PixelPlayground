@@ -4,6 +4,7 @@
 
 p {
   color: whitesmoke;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.738);
 }
 
 /** COPERTINA */
@@ -111,8 +112,6 @@ p {
   color: whitesmoke;
 }
 
-
-
 .buyNowBtn {
   margin: 5px;
   background-color: #FF315A;
@@ -130,6 +129,7 @@ p {
   border-radius: 16px;
   width: 50px;
   height: 50px;
+  
 }
 
 /** TITOLO PRODOTTO */
@@ -342,7 +342,7 @@ p {
 /** RECENSIONI */
 
 .mainReview_container {
-  background-color: black;
+  /* background-color: black; */
   /* margin: 0px 40px 30px 40px; */
   padding: 10px;
 }
@@ -359,7 +359,12 @@ p {
 .userReviewer_container {
   display: flex;
   margin: 0px 40px 30px 40px;
-  background-color: rgba(79, 22, 203, 0.7);
+  background: linear-gradient(109.8deg, rgb(62, 5, 116) -5.2%, rgb(41, 14, 151) -5.2%, rgb(216, 68, 201) 103.3%);
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.userReviewer_container img{
+  border-radius: 20px;
 }
 
 .userReviewer_avatar_container {
@@ -369,6 +374,8 @@ p {
 
 .userReviewer_avatar_container span {
   color: whitesmoke;
+  text-align: center;
+
 }
 
 .stars_container {
@@ -393,5 +400,5 @@ p {
 }
 
 .subReview_container {
-  margin: 20px 0px 0px 0px;
+  margin: 15px 0px 20px 0px;
 }
