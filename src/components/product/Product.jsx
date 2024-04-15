@@ -565,12 +565,6 @@ export function Product() {
             </div>
           </div>
         </div>
-
-
-
-
-
-
       </div>
     </div>
   );
