@@ -4,11 +4,10 @@ import "./style/styleGeneral.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Product } from "./components/product/Product.jsx";
 import { Catalogue } from "./components/catalogue/Catalogue.jsx";
-import { Cart } from "./components/cart/Cart.jsx";
 import { Home } from "./components/home/Home.jsx";
 import { Wishlist } from "./components/wishlist/Wishlist.jsx";
-import { Login } from "./components/login/LoginRegistration.jsx";
-import { Payment } from "./components/payment/Payment.jsx";
+import { LoginRegistration } from "./components/login/LoginRegistration.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -17,7 +16,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Login />,
+    element: <LoginRegistration />,
   },
   {
     path: "/product",
@@ -27,14 +26,7 @@ const router = createBrowserRouter([
     path: "/catalogue",
     element: <Catalogue />,
   },
-  {
-    path: "/cart",
-    element: <Cart />,
-  },
-  {
-    path: "/cart/payment",
-    element: <Payment />,
-  },
+
   { path: "/wishlist", element: <Wishlist /> },
 ]);
 
