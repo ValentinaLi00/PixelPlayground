@@ -8,6 +8,8 @@ export function Catalogue() {
     const [show, setShow] = useState(9)
     const [platform, setPlatform] = useState('selectPlatform')
     const [genre, setGenre] = useState('selectGenre')
+  
+
 
     async function handleFecthData() {
         try {
@@ -35,16 +37,17 @@ export function Catalogue() {
     function handleSelectChange(event) {
         setPlatform(event.target.value)
         setGenre(event.target.value)
+        setIncreasingPrice(event.target.value)
     }
+
+
+
 
     const filterGames = data.filter(game =>
         (platform === "selectPlatform" || game.platform === platform) ||
         (genre === "selectGenre" || game.genre === genre)
+       
     );
-
-
-    // const filterPlatform = platform === "selectPlatform" ? data : data.filter(game => game.platform === platform) & genre === "selectGenre" ? data : data.filter(game => game.genre === genre);
-
 
     return (
         <div className={classes.container_catalogue}>
@@ -64,13 +67,12 @@ export function Catalogue() {
                 <div className={classes.filter}>
                     <label htmlFor="generi">Generi</label>
                     <select name="generi" id={classes.generi} onChange={handleSelectChange}>
-                        <option selected>Seleziona genere</option>
+                        <option value="selectGenre" selected>Seleziona genere</option>
                         <option value="Action">Action</option>
                         <option value="Adventure">Adventure</option>
-                        <option value="Arcade">Arcade</option>
                         <option value="FPS">FPS</option>
                         <option value="Fighting">Fighting</option>
-                        <option value="Indies">Indies</option>
+                        <option value="Indie">Indies</option>
                         <option value="Multiplayer">Multiplayer</option>
                         <option value="Racing">Racing</option>
                         <option value="RPG">RPG</option>
@@ -80,10 +82,10 @@ export function Catalogue() {
 
                 <div className={classes.filter}>
                     <label htmlFor="ordina">Ordina</label>
-                    <select name="ordina" id={classes.ordina}>
+                    <select name="ordina" id={classes.ordina} onChange={handleSelectChange}>
                         <option selected>Seleziona per</option>
                         <option value="Bestseller">Bestseller</option>
-                        <option value="Scontati">Scontati</option>
+                        <option value="Scontati">Gratuiti</option>
                         <option value="Prezzo: crescente">Prezzo: crescente</option>
                         <option value="Prezzo: decrescente">Prezzo: decrescente</option>
                         <option value="Nuovi arrivi">Nuovi arrivi</option>

@@ -1,6 +1,27 @@
+import { useEffect, useState } from 'react'
+import { DiscountedGame } from './DiscountedGame'
 import classes from './discountedGames.module.css'
 
 export function DiscountedGames() {
+
+    const [data, setData] = useState([])
+    const [show, setShow] = useState(10)
+
+    async function handleFecthData() {
+        try {
+            const response = await fetch('http://localhost:5001/api/oggetti')
+            const responseJson = await response.json()
+            setData(responseJson)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        handleFecthData()
+    }, [])
+
+
     return (
         <div className={classes.container}>
             <h2>GIOCHI SCONTATI</h2>
@@ -9,118 +30,12 @@ export function DiscountedGames() {
 
                 {/* scroller inner 1 */}
                 <div className={classes.scroller_inner}>
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
+                    {data.slice(1, show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
                 </div>
 
                 {/* scroller inner 2 */}
-
                 <div className={classes.scroller_inner}>
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-                    <div className={classes.card}>
-                        <div className={classes.game_discount}>
-                            <img src="src\assets\valentinaLiAssets\catalogue\maro_kart.jpg" alt="" />
-                            <span className={classes.discount}>
-                                10%
-                            </span>
-                        </div>
-                        <div className={classes.name_price}>
-                            <span>Mario Kart</span>
-                            <span>20.99€</span>
-                        </div>
-                    </div>
-
-                   
+                    {data.slice(1, show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
                 </div>
 
             </div>

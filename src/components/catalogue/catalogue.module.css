@@ -110,9 +110,34 @@ label[for='prezzi'] {
     
 }
 
+.discount {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.discount {
+    --r: .4em;
+    /* control the ribbon shape (the radius) */
+    --c: red;
+
+    position: absolute;
+    top: 10px;
+    left: calc(-1*var(--r));
+    line-height: 1.4;
+    padding: 0 .5em calc(2*var(--r));
+    border-radius: var(--r) 0 0 var(--r);
+    background:
+        radial-gradient(100% 50% at left, var(--c) 98%, #0000 101%) 100% 0/.5lh calc(100% - 2*var(--r)),
+        radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 100%/var(--r) calc(2*var(--r)),
+        conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)), #0000 25%, var(--c) 0) 0 0/calc(101% - .5lh) 100%;
+    background-repeat: no-repeat;
+}
+
 .container_img {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .container_img img {
@@ -163,3 +188,4 @@ p {
     color: rgba(243, 17, 106, 255);
     border: 1px solid #c2440a00;
 }
+

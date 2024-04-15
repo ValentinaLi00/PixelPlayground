@@ -5,27 +5,25 @@ import { Catalogue } from "./components/catalogue/Catalogue";
 import { Game } from "./components/catalogue/Game";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
-import { Faq } from "./components/faq/faq";
-import { Wishlist } from "./components/wishlist/Wishlist";
-import { UserPage } from "./components/userPage/UserPage";
+import { AboutUs } from "./components/about_us/AboutUs";
+import { DiscountedGames } from "./components/home/DiscountedGames";
 import { LoginRegistration } from "./components/login/LoginRegistration";
 
 
 export function App() {
   return (
     <>
-{/* <LoginRegistration /> */}
+
+      
       {/* <Product/> */}
+      <LoginRegistration />
       {/* <Catalogue/> */}
       {/* <Game/> */}
-      <Navbar />
-
-      <Home />
-   
-      <UserPage />  
-       <Footer/>
-      {/* <Faq />
-      <Wishlist /> */}
-          </>
+      {/* <Navbar /> */}
+      {/* <AboutUs/> */}
+      {/* <Home /> */}
+      {/* <Footer/> */}
+      {/* <DiscountedGames/> */}
+    </>
   );
 }

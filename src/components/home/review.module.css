@@ -13,8 +13,7 @@
 }
 
 .scroller {
-
-    max-width: 1500px;
+    width: 95%;
     overflow: hidden;
     display: flex;
     height: 200px;
@@ -28,7 +27,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
     animation: 20s slide infinite linear;
     gap: 30px;
 }
@@ -102,4 +100,5 @@
 
 .review {
     margin: 10px;
+    text-align: center;
 }

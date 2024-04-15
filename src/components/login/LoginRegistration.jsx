@@ -2,9 +2,23 @@
 import { useState } from 'react'
 import classes from './loginRegistration.module.css'
 
+
+
 export function LoginRegistration() {
 
     const [isLeft, setIsLeft] = useState(false)
+    const [dataRegistration, setDataRegistration] = useState({
+        username: '',
+        email: '',
+        password: '',
+    })
+
+
+    function handleSubmit(event) {
+        event.preventDefault();
+        localStorage.setItem('user', JSON.stringify(dataRegistration))
+       
+    }
 
     function handleMoveImgLeft() {
         setIsLeft(true)
@@ -13,6 +27,8 @@ export function LoginRegistration() {
     function handleMoveImgRight() {
         setIsLeft(false)
     }
+
+
 
     return (
         <div className={classes.card}>
@@ -24,14 +40,14 @@ export function LoginRegistration() {
                     <h2>Ben Tornato!</h2>
                 </div>
                 {/* form */}
-                <div className={classes.login_container_form}>
+                <form className={classes.login_container_form}>
                     <h3>Accedi</h3>
                     <input type="text" name="username_login" className={classes.username_login_input} placeholder='username' />
                     <input type="password" name="password_login" className={classes.password_login_input} placeholder='password' />
                     <button type="submit" name='submit_login' className={classes.login_submit}>Accedi</button>
                     <p>oppure</p>
-                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google"  />
-                </div>
+                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" />
+                </form>
 
                 {/* registration */}
                 <div className={classes.login_container_registration}>
@@ -41,8 +57,8 @@ export function LoginRegistration() {
             </div>
 
             {/* image */}
-            <div className={`${classes.img_container} ${isLeft? classes.move_left : classes.move_right}` }>
-                <img src="src\assets\valentinaLiAssets\background\desktop_img.png" alt="immagine di login"/>
+            <div className={`${classes.img_container} ${isLeft ? classes.move_left : classes.move_right}`}>
+                <img src="src\assets\valentinaLiAssets\background\desktop_img.png" alt="immagine di login" />
             </div>
 
             {/* Registration*/}
@@ -51,15 +67,15 @@ export function LoginRegistration() {
                     <h2>Unisciti a Noi!</h2>
                     <img src="src\assets\loghi\logo2.png" alt="logo PixelPlayground" className={classes.registration_logo} />
                 </div>
-                <div className={classes.registration_container_form}>
+                <form className={classes.registration_container_form} onSubmit={handleSubmit}>
                     <h3>Registrati</h3>
-                    <input type="text" name='username_registration' className={classes.username_registration} placeholder='username' />
-                    <input type="email" name='email_registration' className={classes.email_registration} placeholder='email' />
-                    <input type="password" name='password_registration' className={classes.password_registration} placeholder='password' />
+                    <input type="text" name='username_registration' value={dataRegistration.username} onChange={(e) => setDataRegistration({ ...dataRegistration, [e.target.username]: e.target.value })} className={classes.username_registration} placeholder='username' />
+                    <input type="email" name='email_registration' value={dataRegistration.email} onChange={(e) => setDataRegistration({ ...dataRegistration, [e.target.email]: e.target.value })} className={classes.email_registration} placeholder='email' />
+                    <input type="password" name='password_registration'value={dataRegistration.password} onChange={(e) => setDataRegistration({ ...dataRegistration, [e.target.password]: e.target.value })} className={classes.password_registration} placeholder='password' />
                     <button type="submit" name='submit_registration' className={classes.registration_submit}>Registrati</button>
                     <p>oppure</p>
-                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" className={classes.login_google_img}  />
-                </div>
+                    <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" className={classes.login_google_img} />
+                </form>
                 <div className={classes.registration_container_login}>
                     <p onClick={handleMoveImgRight}>Hai già un account?</p>
                 </div>
