@@ -26,7 +26,6 @@
     align-items: center;
     gap: 30px;
     position: relative;
-    
 }
 
 .scroller_inner {
@@ -62,7 +61,6 @@
     position: absolute;
     width: 100px;
     z-index: 2;
-    
 }
 
 .scroller::before {
