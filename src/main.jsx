@@ -1,7 +1,43 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { App } from './App.jsx' 
-import "./style/styleGeneral.css"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./style/styleGeneral.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Product } from "./components/product/Product.jsx";
+import { Catalogue } from "./components/catalogue/Catalogue.jsx";
+import { Cart } from "./components/cart/Cart.jsx";
+import { Home } from "./components/home/Home.jsx";
+import { Wishlist } from "./components/wishlist/Wishlist.jsx";
+import { Login } from "./components/login/LoginRegistration.jsx";
+import { Payment } from "./components/payment/Payment.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/product",
+    element: <Product />,
+  },
+  {
+    path: "/catalogue",
+    element: <Catalogue />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+  {
+    path: "/cart/payment",
+    element: <Payment />,
+  },
+  { path: "/wishlist", element: <Wishlist /> },
+]);
 
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RouterProvider router={router} />
+);
