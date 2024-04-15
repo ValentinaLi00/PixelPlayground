@@ -7,10 +7,13 @@ export function Game({ game }) {
         <div className={classes.card}>
             <div className={classes.container_img} >
                 <img src={game.image_url} />
+                <span className={classes.discount}>
+                   {`${game.discount}%`}
+                </span>
             </div>
             <div className={classes.container_description}>
                 <h4>{game.sub_title}</h4>
-                <p>{game.price}€</p>
+                <p>{game.discount_price}€</p>
             </div>
         </div>
     )

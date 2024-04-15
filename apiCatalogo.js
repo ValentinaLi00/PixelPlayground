@@ -1217,6 +1217,22 @@ const users = [
   video_url: "https://youtu.be/PrlE5PmeasA",
   platform: "PC",
 },
+{
+  id: 81,
+  title: "Balatro",
+  sub_title: "Balatro",
+  genre: "Indie",
+  rating: "PEGI 18",
+  developer: "LocalThunk",
+  description: "Il roguelike a tema poker. Balatro è un gioco di costruzione di mazzi in cui formi mani di poker illegali, scopri jolly che stravolgono la partita e attivi combo adrenaliniche e stravaganti, provando una soddisfazione ipnotica.", 
+  price: 19.99,
+  discount: 15,
+  discount_price: 4.99,
+  image_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/2379780/header.jpg?t=1712664935",
+  video_url: "https://youtu.be/3m6bgbFr82Q",
+  platform: "PC",
+},
+
 ]
 
 

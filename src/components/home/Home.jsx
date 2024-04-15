@@ -10,14 +10,14 @@ import classes from './home.module.css'
 export function Home() {
     return (
         <div className={classes.container}>
-            <Navbar/>
+            {/* <Navbar/> */}
             <Incoming />
             <Bestsellers />
             <DiscountedGames />
             <Gratis />
             <Genres />
             <Reviews />
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

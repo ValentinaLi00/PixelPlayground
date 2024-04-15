@@ -5,19 +5,24 @@ import { Catalogue } from "./components/catalogue/Catalogue";
 import { Game } from "./components/catalogue/Game";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
+import { AboutUs } from "./components/about_us/AboutUs";
+import { DiscountedGames } from "./components/home/DiscountedGames";
+
 
 export function App() {
   return (
     <>
 
+      
       {/* <Product/> */}
 
-      <Catalogue/>
+      {/* <Catalogue/> */}
       {/* <Game/> */}
       {/* <Navbar /> */}
-
-      {/* <Home /> */}
+      {/* <AboutUs/> */}
+      <Home />
       {/* <Footer/> */}
+      {/* <DiscountedGames/> */}
     </>
   );
 }
