@@ -51,12 +51,9 @@ export function Navbar() {
           </div>
           <div className="user_container">
             <Link to="/userpage">
-              <div
-                className="user_image"
-                style={{
-                  backgroundImage: ` url("src/assets/imagesGabriele/user_avatar.png")`,
-                }}
-              ></div>
+              <div className="user_image">
+                <img src="src/assets/imagesGabriele/user_avatar.png" alt="" />
+              </div>
             </Link>
           </div>
           <div className="sections_panel">

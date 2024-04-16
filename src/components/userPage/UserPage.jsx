@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { Footer } from "../footer/Footer";
+import { Navbar } from "../navbar/Navbar";
 import "./userPage.css";
 
 export function UserPage() {
@@ -22,6 +24,7 @@ export function UserPage() {
 
   return (
     <>
+      <Navbar />
       <div className="userPagediv">
         <div className="wholeUserPage">
           <div className="leftUserPart">
@@ -240,6 +243,7 @@ export function UserPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
