@@ -80,6 +80,10 @@
     display: flex;
     justify-content: center;
 }
+.user_container img {
+    width: 100px;
+    height:110%;
+}
 
 .user_image {
     width: 25%;
