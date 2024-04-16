@@ -11,11 +11,11 @@
 } */
 
 /* form */
-form {
+#paymentForm {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
@@ -29,7 +29,7 @@ form {
 }
 
 
-h1 {
+.titles {
     font-size: 1.5rem;
     color: white;
     display: flex;
@@ -165,7 +165,7 @@ img:hover {
     padding: 20px 0 0 0;
 }
 
-button {
+.payment_btn {
     width: 150px;
     background-color: #1a662a;
     color: #fff;
@@ -176,7 +176,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.payment_btn:hover {
     background-color: #28a744;
 }
 
@@ -195,7 +195,7 @@ button:hover {
 
 }
 
-.cart-title-resume{
+.cart-title-resume {
     color: rgb(255, 255, 255);
     padding: 20px;
 }
@@ -205,10 +205,10 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
-.cart-resume-thumbnail{
+.cart-resume-thumbnail {
     width: 750px;
     display: flex;
     align-items: center;
@@ -216,11 +216,29 @@ button:hover {
     padding: 10px;
     margin-bottom: 10px;
     background-color: rgba(221, 211, 243, 0.7);
-   
+
 }
 
-.check_items{
+.check_items {
     display: flex;
     gap: 20px;
 }
 
+.remove_btn {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    background-color: rgba(243, 17, 106, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.remove_btn:hover {
+    background-color: rgb(187, 4, 77, 255)
+}

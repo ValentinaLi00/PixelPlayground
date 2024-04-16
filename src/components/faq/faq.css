@@ -96,3 +96,6 @@ background-blend-mode: multiply;
     padding: 20px;
 
 }
+.answer p, .answer_shown p {
+    font-size: 18px;
+}

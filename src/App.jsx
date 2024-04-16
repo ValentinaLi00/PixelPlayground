@@ -8,15 +8,14 @@ import { Footer } from "./components/footer/Footer";
 import { AboutUs } from "./components/about_us/AboutUs";
 import { DiscountedGames } from "./components/home/DiscountedGames";
 import { LoginRegistration } from "./components/login/LoginRegistration";
-
+import { Payment } from "./components/payment/Payment";
 
 export function App() {
   return (
     <>
-
-      
+      <Payment />
       {/* <Product/> */}
-      <LoginRegistration />
+      {/* <LoginRegistration /> */}
       {/* <Catalogue/> */}
       {/* <Game/> */}
       {/* <Navbar /> */}

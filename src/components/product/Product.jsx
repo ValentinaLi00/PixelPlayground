@@ -327,6 +327,7 @@ export function Product() {
               alt=""
               width="80px"
               height="80px"
+
             />
             <span>User's name</span>
           </div>

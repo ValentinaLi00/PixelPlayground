@@ -1,4 +1,5 @@
 import "./style_navbar.css";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export function Navbar() {
@@ -28,36 +29,76 @@ export function Navbar() {
           <div className="user_container">
             <div
               className="user_image"
-              style={{ backgroundImage: ` url("src/assets/imagesGabriele/user_avatar.png")` }}
+              style={{
+                backgroundImage: ` url("src/assets/imagesGabriele/user_avatar.png")`,
+              }}
             ></div>
           </div>
           <div className="sections_panel">
-            <h2>Login/sign up</h2>
+            <Link to="/login">
+              <h2>Accedi o Registrati</h2>
+            </Link>
           </div>
           <div className="other_links_panel">
-            <h3>carrello</h3>
-            <h3>lista dei desideri</h3>
-            <h3>assistenza</h3>
-            <h3>about us</h3>
-            <h3>faq</h3>
+            <Link to="/cart">
+              <h3>Carrello</h3>
+            </Link>
+            <Link to="/wishlist">
+              <h3>Lista dei desideri</h3>
+            </Link>
+            <Link to="/aboutus">
+              <h3>Chi siamo</h3>
+            </Link>
+            <Link to="/faq">
+              <h3>FAQ</h3>
+            </Link>
           </div>
           <div className="social_panels">
-            <img src="src\assets\imagesGabriele\facebook.png" id="social_icons" />
-            <img src="src\assets\imagesGabriele\instagram.png" id="social_icons" />
+            <img
+              src="src\assets\imagesGabriele\facebook.png"
+              id="social_icons"
+            />
+            <img
+              src="src\assets\imagesGabriele\instagram.png"
+              id="social_icons"
+            />
             <img src="src\assets\imagesGabriele\x.png" id="x_icon" />
-            <img src="src\assets\imagesGabriele\youtube.png" id="youtube_icon" />
+            <img
+              src="src\assets\imagesGabriele\youtube.png"
+              id="youtube_icon"
+            />
           </div>
         </div>
         <div className="content_console">
-          <h1>PC</h1>
-          <h1>Playstation</h1>
-          <h1>Xbox</h1>
-          <h1>Nintendo</h1>
+          <Link to="catalogue">
+            <h1>PC</h1>
+          </Link>
+          <Link to="catalogue">
+            <h1>Playstation</h1>
+          </Link>
+          <Link to="catalogue">
+            <h1>Xbox</h1>
+          </Link>
+          <Link to="catalogue">
+            <h1>Nintendo</h1>
+          </Link>
         </div>
         <div className="icons_panel">
-          <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" alt="search" />
-          <img src="src\assets\imagesGabriele\cart_empty.png" id="nav_cart" alt="carrello" />
-          <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" alt="wishlist" />
+          <img
+            src="src\assets\imagesGabriele\lente1.png"
+            id="nav_search"
+            alt="search"
+          />
+          <img
+            src="src\assets\imagesGabriele\cart_empty.png"
+            id="nav_cart"
+            alt="carrello"
+          />
+          <img
+            src="src\assets\imagesGabriele\heart.png"
+            id="nav_heart"
+            alt="wishlist"
+          />
         </div>
       </div>
       <div
@@ -72,26 +113,59 @@ export function Navbar() {
           />
         </div>
         <div className="center_navbar">
-          <img src="src\assets\imagesGabriele\logo_vettoriale.png" id="logo_vettoriale" />
+          <img
+            src="src\assets\imagesGabriele\logo_vettoriale.png"
+            id="logo_vettoriale"
+          />
           <div className="nav_second_section">
             <div className="first_logo_nav">
-              <img src="src\assets\imagesGabriele\pc.png" id="pc_icon" />
+              <Link to="catalogue">
+                <img src="src\assets\imagesGabriele\pc.png" id="pc_icon" />
+              </Link>
             </div>
             <div className="first_logo_nav">
-              <img src="src\assets\imagesGabriele\logo_xbox.png" id="xbox_icon" />
+              <Link to="catalogue">
+                <img
+                  src="src\assets\imagesGabriele\logo_xbox.png"
+                  id="xbox_icon"
+                />
+              </Link>
             </div>
             <div className="first_logo_nav">
-              <img src="src\assets\imagesGabriele\logo_playstation.png" id="ps_icon" />
+              <Link to="catalogue">
+                <img
+                  src="src\assets\imagesGabriele\logo_playstation.png"
+                  id="ps_icon"
+                />
+              </Link>
             </div>
             <div className="first_logo_nav">
-              <img src="src\assets\imagesGabriele\logo_nintendoSwitch.png" id="nintendo_icon" />
+              <Link to="catalogue">
+                <img
+                  src="src\assets\imagesGabriele\logo_nintendoSwitch.png"
+                  id="nintendo_icon"
+                />
+              </Link>
             </div>
           </div>
         </div>
         <div className="nav_third_section">
-          <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" />
-          <img src="src\assets\imagesGabriele\cart_empty.png" id="nav_cart" />
-          <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" />
+          {/* <div>
+            <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" />
+          </div> */}
+          <div>
+            <Link to="/cart">
+              <img
+                src="src\assets\imagesGabriele\cart_empty.png"
+                id="nav_cart"
+              />
+            </Link>
+          </div>
+          <div>
+            <Link to="/wishlist">
+              <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
