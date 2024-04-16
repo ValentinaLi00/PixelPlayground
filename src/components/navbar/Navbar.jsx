@@ -50,12 +50,14 @@ export function Navbar() {
             />
           </div>
           <div className="user_container">
-            <div
-              className="user_image"
-              style={{
-                backgroundImage: ` url("src/assets/imagesGabriele/user_avatar.png")`,
-              }}
-            ></div>
+            <Link to="/userpage">
+              <div
+                className="user_image"
+                style={{
+                  backgroundImage: ` url("src/assets/imagesGabriele/user_avatar.png")`,
+                }}
+              ></div>
+            </Link>
           </div>
           <div className="sections_panel">
             <Link to="/login">
@@ -137,10 +139,7 @@ export function Navbar() {
         </div>
         <div className="center_navbar">
           <Link to="/">
-            <img
-              src="src\assets\loghi\logo2.png"
-              id="logo_vettoriale"
-            />
+            <img src="src\assets\loghi\logo2.png" id="logo_vettoriale" />
           </Link>
           <div className="nav_second_section">
             <div className="first_logo_nav">
