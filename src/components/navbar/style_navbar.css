@@ -193,8 +193,9 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-    animation: color-change-2x 2s linear infinite alternate both;
+    background-color: #4f16cbb3 ;
+    /* -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both; */
 }
 
 #pc_icon {
