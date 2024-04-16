@@ -56,7 +56,9 @@ export function Navbar() {
                 style={{
                   backgroundImage: ` url("src/assets/imagesGabriele/user_avatar.png")`,
                 }}
-              ></div>
+              >
+                <img src="src/assets/imagesGabriele/user_avatar.png" alt="" />
+              </div>
             </Link>
           </div>
           <div className="sections_panel">
