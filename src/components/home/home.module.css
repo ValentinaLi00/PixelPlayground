@@ -3,22 +3,3 @@
     /* position: relative; */
 }
 
-.scrollUp {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 20px;
-    margin-right: 60px;
-}
-
-.torna_su {
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    border: 1px solid rgba(243, 17, 106, 255);
-    background-color: rgba(243, 17, 106, 255);
-    color: white;
-}
-
-.torna_su:hover {
-    transform: scale(1.1);
-}
