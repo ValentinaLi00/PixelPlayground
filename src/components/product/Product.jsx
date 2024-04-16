@@ -1,6 +1,9 @@
 import classes from "./product.module.css";
 
 export function Product() {
+
+  
+
   return (
     <div className={classes.product_component}>
       <div className={classes.product_thumbnail_container}>

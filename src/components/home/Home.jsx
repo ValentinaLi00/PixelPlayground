@@ -9,6 +9,7 @@ import { Incoming } from "./Incoming";
 import { Reviews } from "./Reviews";
 import classes from "./home.module.css";
 import { ScrollUp } from "../footer/ScrollUp";
+import { SingleProd } from "../product/SingleProd";
 export function Home() {
 
   
@@ -24,6 +25,7 @@ export function Home() {
       <Reviews />
       <ScrollUp/>
       <Footer />
+      <SingleProd />
     </div>
   );
 }

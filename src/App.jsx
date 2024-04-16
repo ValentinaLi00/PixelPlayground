@@ -14,7 +14,7 @@ export function App() {
   return (
     <>
       {/* <Payment /> */}
-      {/* <Product/> */}
+      <Product/>
       {/* <LoginRegistration /> */}
       {/* <Catalogue/> */}
       {/* <Game/> */}

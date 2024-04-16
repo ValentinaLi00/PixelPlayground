@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom'
 import classes from './catalogue.module.css'
+import { Product } from '../product/Product'
 
 export function Game({ game }) {
 
 
     return (
-        <div className={classes.card}>
+        <Link to="/product"><div className={classes.card}>
             <div className={classes.container_img} >
                 <img src={game.image_url} />
                 <span className={classes.discount}>
@@ -16,5 +18,6 @@ export function Game({ game }) {
                 <p>{game.discount_price}€</p>
             </div>
         </div>
+        </Link>
     )
 }
