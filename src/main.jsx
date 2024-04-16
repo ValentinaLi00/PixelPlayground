@@ -36,6 +36,7 @@ const router = createBrowserRouter([
   { path: "/wishlist", element: <Wishlist /> },
   { path: "/faq", element: <Faq /> },
   { path: "/aboutus", element: <AboutUs /> },
+  { path: "/userPage", element: <UserPage /> }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

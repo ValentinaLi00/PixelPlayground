@@ -84,6 +84,7 @@
     width: 30%;
     height: 100%;
     border: 2px solid black;
+    border-radius: 90px
 }
 
 .content_console {
