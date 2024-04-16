@@ -1,15 +1,38 @@
 import "./style_navbar.css";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [showPanelContainer, setShowPanelContainer] = useState(false);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   const toggleContainers = () => {
     setShowNavbar(!showNavbar);
     setShowPanelContainer(!showPanelContainer);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calcola la posizione dello scroll
+      const currentScrollPos = window.scrollY;
+      // Calcola la differenza di scroll rispetto alla posizione precedente
+      const isScrollingDown = currentScrollPos > prevScrollPos;
+      // Imposta lo stato in base alla direzione dello scroll
+      setIsNavbarVisible(!isScrollingDown || currentScrollPos <= 0);
+      // Aggiorna la posizione precedente dello scroll
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    // Aggiunge un listener per lo scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Rimuove il listener quando il componente viene smontato
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   return (
     <div className="container_of_all">
