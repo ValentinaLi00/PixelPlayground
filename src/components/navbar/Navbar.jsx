@@ -40,7 +40,9 @@ export function Navbar() {
             </Link>
           </div>
           <div className="other_links_panel">
-            <h3>Carrello</h3>
+            <Link to="/cart">
+              <h3>Carrello</h3>
+            </Link>
             <Link to="/wishlist">
               <h3>Lista dei desideri</h3>
             </Link>
@@ -152,7 +154,12 @@ export function Navbar() {
             <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" />
           </div> */}
           <div>
-            <img src="src\assets\imagesGabriele\cart_empty.png" id="nav_cart" />
+            <Link to="/cart">
+              <img
+                src="src\assets\imagesGabriele\cart_empty.png"
+                id="nav_cart"
+              />
+            </Link>
           </div>
           <div>
             <Link to="/wishlist">

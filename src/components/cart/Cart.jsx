@@ -1,6 +1,11 @@
-import { useState } from "react";
-// import "./cart.css";
+import { Navbar } from "../navbar/Navbar";
+import { Footer } from "../footer/Footer";
 import { Payment } from "../payment/Payment";
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import "./cart.css";
 
 export function Cart() {
   const [showPayment, setShowPayment] = useState(false);
@@ -12,6 +17,7 @@ export function Cart() {
   return (
     /*BACKGROUND PROVA*/
     <>
+      <Navbar />
       {!showPayment && (
         <div className="cart_component_background">
           <div className="cart-component">
@@ -51,12 +57,19 @@ export function Cart() {
                   <p className="cart-discount">$XX.XX</p>
                 </div>
                 <div className="cart-resume-buttons">
-                  <button className="checkout-button" onClick={handleCheckout}>
-                    Vai al checkout
-                  </button>
-                  <button className="continue-shopping-button">
-                    Continua lo shopping
-                  </button>
+                  <Link to="/cart/payment">
+                    <button
+                      className="checkout-button"
+                      onClick={handleCheckout}
+                    >
+                      Vai al checkout
+                    </button>
+                  </Link>
+                  <Link to="/catalogue">
+                    <button className="continue-shopping-button">
+                      Continua lo shopping
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -64,6 +77,7 @@ export function Cart() {
         </div>
       )}
       {showPayment && <Payment />}
+      <Footer />
     </>
     //fine background
   );
