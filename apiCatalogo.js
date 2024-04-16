@@ -1339,7 +1339,7 @@ const users = [
   platform: "XBOX",
 },
 {
-  id: 89,
+  id: 90,
   title: "Super Smash Bros",
   sub_title: "Super Smash Bros: Ultimate",
   genre: "Fighting",
@@ -1354,7 +1354,7 @@ const users = [
   platform: "Nintendo",
 },
 {
-  id: 90,
+  id: 91,
   title: "Tekken",
   sub_title: "Tekken 6",
   genre: "Fighting",
@@ -1369,7 +1369,7 @@ const users = [
   platform: "PC",
 },
 {
-  id: 91,
+  id: 92,
   title: "WWE",
   sub_title: "WWE 2K22",
   genre: "Fighting",
@@ -1384,7 +1384,7 @@ const users = [
   platform: "XBOX",
 },
 {
-  id: 92,
+  id: 93,
   title: "Red dead redemption",
   sub_title: "Red dead Redemption 2",
   genre: "Bestseller", 
@@ -1399,7 +1399,7 @@ const users = [
   platform: "Playstation",
 },
 {
-  id: 93,
+  id: 94,
   title: "Horizion",
   sub_title: "Horizon: Forbidden West",
   genre: "Bestseller",
@@ -1414,7 +1414,7 @@ const users = [
   platform: "Playstation",
 },
 {
-  id: 94,
+  id: 95,
   title: "God of War",
   sub_title: "God of War: Ragnarok",
   genre: "Bestseller",
@@ -1429,7 +1429,7 @@ const users = [
   platform: "Playstation",
 },
 {
-  id: 95,
+  id: 96,
   title: "Final Fantasy ",
   sub_title: "Final Fantasy XIV: Dawntrail",
   genre: "Bestseller",
@@ -1451,6 +1451,16 @@ app.use(cors());
 
 app.get('/api/oggetti', (req, res) => {
   res.json(users);
+});
+
+app.get('/api/oggetti/:id', (req, res) => {
+  const gameId = parseInt(req.params.id);
+  const game = users.find(game => game.id === gameId);
+  if (game) {
+    res.json(game);
+  } else {
+    res.status(404).json({ error: 'Gioco non trovato' });
+  }
 });
 
 const port = 5001;
