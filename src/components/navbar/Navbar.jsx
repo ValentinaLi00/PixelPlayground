@@ -138,7 +138,7 @@ export function Navbar() {
         <div className="center_navbar">
           <Link to="/">
             <img
-              src="src\assets\imagesGabriele\logo_vettoriale.png"
+              src="src\assets\loghi\logo2.png"
               id="logo_vettoriale"
             />
           </Link>
