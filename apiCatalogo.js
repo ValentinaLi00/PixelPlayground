@@ -1453,6 +1453,16 @@ app.get('/api/oggetti', (req, res) => {
   res.json(users);
 });
 
+app.get('/api/oggetti/:id', (req, res) => {
+  const gameId = parseInt(req.params.id);
+  const game = users.find(game => game.id === gameId);
+  if (game) {
+    res.json(game);
+  } else {
+    res.status(404).json({ error: 'Gioco non trovato' });
+  }
+});
+
 const port = 5001;
 
 app.listen(port, () => {
