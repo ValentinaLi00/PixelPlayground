@@ -55,7 +55,7 @@
     position: relative;
 }
 
-.crossed_out {
+/* .crossed_out {
     background-color: red;
     position: absolute;
     width: 50px;
@@ -63,4 +63,4 @@
     right: 1px;
     top: 8px;
     transform: rotate(-10deg);
-}
+} */
