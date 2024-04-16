@@ -1,9 +1,10 @@
 footer {
     display: flex;
     flex-direction: column;
-    background: rgb(93, 27, 177);
-    background: linear-gradient(111deg, rgba(93, 27, 177, 1) 16%, rgba(243, 17, 106, 1) 63%, rgba(252, 164, 58, 1) 100%);
+    background: #4f16cbb3;
     width: 100%;
+    height: 180px;
+    color: white;
 }
 
 .logo_container {
@@ -39,20 +40,21 @@ footer {
 .footer_language_menu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 40px;
+
+    justify-content: center;
+    /* margin-bottom: 50px; */
 }
 
-.footer_language_menu span {
-    margin: 20px 20px 20px 280px;
-}
+/* .footer_language_menu span {
+    
+} */
 
-.torna_su {
+/* .torna_su {
     width: 120px;
     height: 70px;
-    /* position: fixed;
+     position: fixed;
     bottom: 10px;
-    right: 10px; */
+    right: 10px; 
     color: white;
     border-radius: 30px;
     font-size: large;
@@ -67,9 +69,9 @@ footer {
             hsl(340, 67%, 17%) 100%);
     transition: all 0.3s ease-in-out;
     
-}
+} */
 
-.select {
+/* .select {
     width: 120px;
     height: 70px;
     color: white;
@@ -87,4 +89,5 @@ footer {
 .select option{
      color: black;
      background-color:  rgb(255, 113, 224);
-}
+} */
+

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Footer } from "../footer/Footer";
 import { Navbar } from "../navbar/Navbar";
 import { Bestsellers } from "./Bestsellers";
@@ -7,7 +8,11 @@ import { Gratis } from "./Gratis";
 import { Incoming } from "./Incoming";
 import { Reviews } from "./Reviews";
 import classes from "./home.module.css";
+import { ScrollUp } from "../footer/ScrollUp";
 export function Home() {
+
+  
+
   return (
     <div className={classes.container}>
       <Navbar />
@@ -17,6 +22,7 @@ export function Home() {
       <Gratis />
       <Genres />
       <Reviews />
+      <ScrollUp/>
       <Footer />
     </div>
   );

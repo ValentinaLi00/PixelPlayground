@@ -947,21 +947,7 @@ const users = [
   video_url: "https://youtu.be/nNO1k5NCDOk",
   platform: "Playstation",
 },
-{
-  id: 64,
-  title: "Star Wars",
-  sub_title: "Star Wars: Jedi Edition",
-  genre: "Action",
-  rating: "PEGI 12",
-  developer: "Electronic Arts",
-  description:"STAR WARS Jedi: Survivor™ è ambientato cinque anni dopo gli eventi di STAR WARS Jedi: Fallen Order™. Cal deve sempre guardarsi le spalle dall'Impero e continua a sentire il peso di essere uno degli ultimi Jedi rimasti nella galassia.", 
-  price: 49.99,
-  discount: 20,
-  discount_price: 29.99,
-  image_url: "https://store-images.s-microsoft.com/image/apps.29317.14188092651145353.c3919981-fb28-4755-b504-a3b021220351.b3f7aff1-6ea2-4b36-b05b-f00ce95ea0e4?q=90&w=480&h=270",
-  video_url: "https://youtu.be/bmj3ty-Wt48",
-  platform: "Playstation",
-},
+
 {
   id: 64,
   title: "Super Mario Bros: Wonder",

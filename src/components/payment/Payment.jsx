@@ -2,7 +2,7 @@ import { Navbar } from "../navbar/Navbar";
 import { Footer } from "../footer/Footer";
 
 import { useState } from "react";
-import "./payment.css";
+
 
 export function Payment() {
   const [show, setShow] = useState(false);

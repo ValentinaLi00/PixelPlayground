@@ -13,7 +13,7 @@ import { Payment } from "./components/payment/Payment";
 export function App() {
   return (
     <>
-      <Payment />
+      {/* <Payment /> */}
       {/* <Product/> */}
       {/* <LoginRegistration /> */}
       {/* <Catalogue/> */}
