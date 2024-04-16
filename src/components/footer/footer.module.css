@@ -1,9 +1,11 @@
 footer {
     display: flex;
     flex-direction: column;
-    background: rgb(93, 27, 177);
-    background: linear-gradient(111deg, rgba(93, 27, 177, 1) 16%, rgba(243, 17, 106, 1) 63%, rgba(252, 164, 58, 1) 100%);
+    background: #4f16cbb3;
+    /* background: linear-gradient(111deg, rgba(93, 27, 177, 1) 16%, rgba(243, 17, 106, 1) 63%, rgba(252, 164, 58, 1) 100%); */
     width: 100%;
+    height: 180px;
+    color: white;
 }
 
 .logo_container {
@@ -38,23 +40,25 @@ footer {
 .footer_language_menu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    justify-content: center;
+    /* margin-bottom: 50px; */
 }
 
-.footer_language_menu span {
-    margin: 20px 20px 20px 280px;
-}
+/* .footer_language_menu span {
+    
+} */
 
 .footer_language_menu select {
     margin: 20px 80px 20px 80px;
 
 }
 
-.torna_su {
-    width: 70px;
-    height: 70px;
+/* .torna_su {
+    width: 60px;
+    height: 60px;
     border-radius: 30px;
+    border: 1px solid rgba(243,17,106,255);
+    background-color: rgba(243,17,106,255);
+    color: white;
     
-
-}
+} */

@@ -17,12 +17,12 @@ export function Footer() {
       </div>
       <div className={classes.footer_language_menu}>
         <span>Tutti i diritti riservati a Team-B&#174;</span>
-        <select name="language" id="language">
+        {/* <select name="language" id="language">
           <option value="ita">Italiano</option>
           <option value="en">English</option>
-        </select>
-        <label htmlFor="torna su"></label>
-        <button className={classes.torna_su} name="torna_su">Torna su</button>
+        </select> */}
+        {/* <label htmlFor="torna su"></label>
+        <button className={classes.torna_su} name="torna_su">Torna su</button> */}
       </div>
 
     </footer>
