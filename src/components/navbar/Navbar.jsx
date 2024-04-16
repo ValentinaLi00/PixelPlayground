@@ -136,10 +136,12 @@ export function Navbar() {
           />
         </div>
         <div className="center_navbar">
-          <img
-            src="src\assets\imagesGabriele\logo_vettoriale.png"
-            id="logo_vettoriale"
-          />
+          <Link to="/">
+            <img
+              src="src\assets\imagesGabriele\logo_vettoriale.png"
+              id="logo_vettoriale"
+            />
+          </Link>
           <div className="nav_second_section">
             <div className="first_logo_nav">
               <Link to="catalogue">
