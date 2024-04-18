@@ -129,7 +129,6 @@ export function Catalogue() {
               .slice(1, show)
               .map((game) => <Game key={game.id} game={game} />)}
         </div>
-
         <div className={classes.container_btn}>
           <button className={classes.mostraAltro} onClick={handleShowmore}>
             Mostra altro
