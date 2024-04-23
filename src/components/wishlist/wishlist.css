@@ -5,6 +5,11 @@ body {
 
 .wishlistBackground {
     position: relative;
+    height: 100vh;
+}
+
+.wishlistBackgroundImg{
+    height: 100%;
 }
 
 .wishlistBackground p {
