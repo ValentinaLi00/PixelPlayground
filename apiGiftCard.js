@@ -146,6 +146,38 @@ const giftCard = [
         discount: 8,
         price: 91.99,
         image_url: "https://gaming-cdn.com/images/products/14097/616x353/nintendo-eshop-card-100eur-eur100-card-switch-game-nintendo-eshop-europe-cover.jpg?v=1694007138",
+    },
+    {
+        id: 19,
+        title: "Steam Gift Card 20€",
+        order: 'GiftCard',
+        discount: 3,
+        price: 19.49,
+        image_url: "https://gaming-cdn.com/images/products/808/616x353/steam-gift-card-20eur-20-euros-card-pc-game-steam-cover.jpg?v=1697644479",
+    },
+    {
+        id: 20,
+        title: "Steam Gift Card 25€",
+        order: 'GiftCard',
+        discount: 2,
+        price: 24.49,
+        image_url: "https://gaming-cdn.com/images/products/13454/616x353/steam-gift-card-25eur-25-euros-card-pc-game-steam-cover.jpg?v=1674549128",
+    },
+    {
+        id: 21,
+        title: "Steam Gift Card 50€",
+        order: 'GiftCard',
+        discount: 2,
+        price: 49.25,
+        image_url: "https://gaming-cdn.com/images/products/809/616x353/steam-gift-card-50eur-50-euros-card-pc-game-steam-cover.jpg?v=1674143813",
+    },
+    {
+        id: 22,
+        title: "Steam Gift Card 100€",
+        order: 'GiftCard',
+        discount: 1,
+        price: 98.99,
+        image_url: "https://gaming-cdn.com/images/products/810/616x353/steam-gift-card-100eur-100-euros-card-pc-game-steam-cover.jpg?v=1674143816",
     }
 ];
 
