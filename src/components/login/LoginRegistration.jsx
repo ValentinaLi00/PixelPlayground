@@ -1,6 +1,7 @@
 // import './loginRegistration.css'
 import { useState } from 'react'
 import classes from './loginRegistration.module.css'
+import { Link } from 'react-router-dom';
 
 
 
@@ -36,7 +37,7 @@ export function LoginRegistration() {
             <div className={classes.login_container}>
                 {/* logo */}
                 <div className={classes.login_container_logo}>
-                    <img src="src\assets\loghi\logo2.png" alt="logo PixelPlayground" className={classes.login_logo} />
+                    <Link to="/"><img src="src\assets\loghi\logo2.png" alt="logo PixelPlayground" className={classes.login_logo} /></Link>
                     <h2>Ben Tornato!</h2>
                 </div>
                 {/* form */}
@@ -65,7 +66,7 @@ export function LoginRegistration() {
             <div className={classes.registration_container}>
                 <div className={classes.registration_container_logo}>
                     <h2>Unisciti a Noi!</h2>
-                    <img src="src\assets\loghi\logo2.png" alt="logo PixelPlayground" className={classes.registration_logo} />
+                   <Link to="/"><img src="src\assets\loghi\logo2.png" alt="logo PixelPlayground" className={classes.registration_logo} /></Link> 
                 </div>
                 <form className={classes.registration_container_form} onSubmit={handleSubmit}>
                     <h3>Registrati</h3>
