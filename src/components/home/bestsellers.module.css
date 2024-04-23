@@ -37,7 +37,7 @@
     border-radius: 15px;
 }
 
-.card img:hover {
+.card:hover {
     transform: scale(1.05);
 }
 
