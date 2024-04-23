@@ -37,7 +37,6 @@ export function Catalogue() {
   function handleSelectChange(event) {
     setPlatform(event.target.value);
     setGenre(event.target.value);
-    setIncreasingPrice(event.target.value);
   }
 
   const filterGames = data.filter(
@@ -95,14 +94,10 @@ export function Catalogue() {
 
           <div className={classes.filter}>
             <label htmlFor="ordina">Ordina</label>
-            <select
-              name="ordina"
-              id={classes.ordina}
-              onChange={handleSelectChange}
-            >
+            <select name="ordina"id={classes.ordina} onChange={handleSelectChange}>
               <option selected>Seleziona per</option>
               <option value="Bestseller">Bestseller</option>
-              <option value="Scontati">Gratuiti</option>
+              <option value="GiftCard">GiftCard</option>
               <option value="Prezzo: crescente">Prezzo: crescente</option>
               <option value="Prezzo: decrescente">Prezzo: decrescente</option>
               <option value="Nuovi arrivi">Nuovi arrivi</option>
