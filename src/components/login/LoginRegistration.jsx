@@ -8,17 +8,13 @@ import { Link } from 'react-router-dom';
 export function LoginRegistration() {
 
     const [isLeft, setIsLeft] = useState(false)
-    const [dataRegistration, setDataRegistration] = useState({
-        username: '',
-        email: '',
-        password: '',
-    })
-
+    const [username , setUsername] = useState("")
+    const [email , setEmail] = useState("")
+    const [password , setPassword] = useState("")
 
     function handleSubmit(event) {
         event.preventDefault();
-        localStorage.setItem('user', JSON.stringify(dataRegistration))
-       
+        onLogin();
     }
 
     function handleMoveImgLeft() {
@@ -29,6 +25,31 @@ export function LoginRegistration() {
         setIsLeft(false)
     }
 
+    //functions onChange:
+     
+   function handleUsernameChange(event) {
+        setUsername(event.target.value);
+   }
+   function handleEmailChange(event) {
+        setEmail(event.target.value);
+    }
+    function handlePasswordChange(event) {
+        setPassword(event.target.value);
+    }
+
+    //onLogin:
+
+    function onLogin() {
+        return new Promise((resolve, reject) => {
+            if(username) {
+                console.log("login avvenuto con successo");
+                resolve(localStorage.setItem("username", username))
+            } else {
+                console.log("email o password non corretti");
+                reject("the email is not correct")
+            }
+    }
+)}
 
 
     return (
@@ -41,10 +62,10 @@ export function LoginRegistration() {
                     <h2>Ben Tornato!</h2>
                 </div>
                 {/* form */}
-                <form className={classes.login_container_form}>
+                <form className={classes.login_container_form} onSubmit={handleSubmit}>
                     <h3>Accedi</h3>
-                    <input type="text" name="username_login" className={classes.username_login_input} placeholder='username' />
-                    <input type="password" name="password_login" className={classes.password_login_input} placeholder='password' />
+                    <input type="text" name="username_login" className={classes.username_login_input} placeholder='username' onChange={handleUsernameChange} value={username}/>
+                    <input type="password" name="password_login" className={classes.password_login_input} placeholder='password' onChange={handlePasswordChange} value={password}/>
                     <button type="submit" name='submit_login' className={classes.login_submit}>Accedi</button>
                     <p>oppure</p>
                     <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" />
@@ -70,9 +91,9 @@ export function LoginRegistration() {
                 </div>
                 <form className={classes.registration_container_form} onSubmit={handleSubmit}>
                     <h3>Registrati</h3>
-                    <input type="text" name='username_registration' value={dataRegistration.username} onChange={(e) => setDataRegistration({ ...dataRegistration, [e.target.username]: e.target.value })} className={classes.username_registration} placeholder='username' />
-                    <input type="email" name='email_registration' value={dataRegistration.email} onChange={(e) => setDataRegistration({ ...dataRegistration, [e.target.email]: e.target.value })} className={classes.email_registration} placeholder='email' />
-                    <input type="password" name='password_registration'value={dataRegistration.password} onChange={(e) => setDataRegistration({ ...dataRegistration, [e.target.password]: e.target.value })} className={classes.password_registration} placeholder='password' />
+                    <input type="text" name='username_registration' value={username} onChange={handleUsernameChange} className={classes.username_registration} placeholder='username' />
+                    <input type="email" name='email_registration' value={email} onChange={handleEmailChange} className={classes.email_registration} placeholder='email' />
+                    <input type="password" name='password_registration'value={password} onChange={handlePasswordChange} className={classes.password_registration} placeholder='password' />
                     <button type="submit" name='submit_registration' className={classes.registration_submit}>Registrati</button>
                     <p>oppure</p>
                     <img src="src\assets\valentinaLiAssets\login\google.png" alt="google" className={classes.login_google_img} />
