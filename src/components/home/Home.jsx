@@ -4,12 +4,12 @@ import { Navbar } from "../navbar/Navbar";
 import { Bestsellers } from "./Bestsellers";
 import { DiscountedGames } from "./DiscountedGames";
 import { Genres } from "./Genres";
-import { Gratis } from "./Gratis";
 import { Incoming } from "./Incoming";
 import { Reviews } from "./Reviews";
 import classes from "./home.module.css";
 import { ScrollUp } from "../footer/ScrollUp";
 import { SingleProd } from "../product/SingleProd";
+import { GiftCards } from "./GiftCards";
 export function Home() {
   return (
     <div className={classes.container}>
@@ -28,7 +28,7 @@ export function Home() {
       <Incoming />
       <Bestsellers />
       <DiscountedGames />
-      <Gratis />
+      <GiftCards />
       <Genres />
       <Reviews />
       <ScrollUp />

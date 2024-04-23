@@ -1232,6 +1232,7 @@ const users = [
   image_url: "https://multiplayer.net-cdn.it/thumbs/images/2023/06/12/star-wars-outlaws-key-art_article-feature_73a536a1_04vqqz1_jpeg_1600x900_crop_q85.jpg",
   video_url: "https://youtu.be/tcdKEy-aJ6o",
   platform: "Playstation",
+  dataRilascio: '27 agosto 2024'
 },
 {
   id: 83,
@@ -1247,6 +1248,7 @@ const users = [
   image_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/1371980/header.jpg?t=1713196618",
   video_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/257016040/movie480_vp9.webm?t=1713186182",
   platform: "PC",
+  dataRilascio: '18 aprile 2024'
 },
 {
   id: 84,
@@ -1262,6 +1264,7 @@ const users = [
   image_url: "https://media.contentapi.ea.com/content/dam/ea/tales-of-kenzera/zau/common/olorun-fpo-feat-img.png.adapt.crop16x9.1023w.png",
   video_url: "https://youtu.be/5lEbG0Bx83U",
   platform: "Nintendo",
+  dataRilascio: '1 febbraio 2024'
 },
 {
   id: 85,
@@ -1277,6 +1280,7 @@ const users = [
   image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202401/2211/40e7cfd126a11fe5118310ebce6d9b3a23e7cabaca717217.png",
   video_url: "https://youtu.be/iSeHgk0RO4M",
   platform: "Playstation",
+  dataRilascio: '9 marzo 2024'
 },
 {
   id: 86,
@@ -1292,6 +1296,7 @@ const users = [
   image_url: "https://cdn1.epicgames.com/offer/ef7baa6ce017413ab33e7f7e3f466a96/EGS_Homeworld3_BlackbirdInteractive_S1_2560x1440-983f993cb4a722947ee3f404ded3ae95",
   video_url: "https://youtu.be/uGXP7oSeoW0",
   platform: "Playstation",
+  dataRilascio: '13 maggio 2024'
 },
 {
   id: 87,
@@ -1307,6 +1312,7 @@ const users = [
   image_url: "https://nerdmovieproductions.it/wp-content/uploads/2023/06/FyEzEGPaIAAnKIq.jpg",
   video_url: "https://youtu.be/JbKjqVtthPk",
   platform: "Playstation",
+  dataRilascio: '25 aprile 2024'
 },
 {
   id: 88,

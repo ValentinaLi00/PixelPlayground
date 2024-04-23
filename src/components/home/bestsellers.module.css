@@ -32,8 +32,8 @@
 }
 
 .card img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 170px;
     border-radius: 15px;
 }
 
@@ -47,12 +47,12 @@
     justify-content: space-between;
 }
 
-.ribbon {
+.discount {
     font-size: 28px;
     font-weight: bold;
     color: #fff;
   }
-  .ribbon {
+  .discount {
     --r: .4em; /* control the ribbon shape (the radius) */
     --c: red;
   
