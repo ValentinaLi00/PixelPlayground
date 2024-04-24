@@ -15,9 +15,6 @@
     -webkit-mask: var(--mask);
     mask: var(--mask); */
     clip-path: polygon(0 0,100% 0,100% calc(100% - 101px),calc(50% + 174.94px) calc(100% - 101px),50% 100%,calc(50% - 174.94px) calc(100% - 101px),0 calc(100% - 101px));
-
-
-
 }
 
 .containerImg img {

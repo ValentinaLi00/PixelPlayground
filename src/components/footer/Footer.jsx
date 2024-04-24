@@ -1,30 +1,53 @@
+import { useEffect, useState } from "react";
 import classes from "./footer.module.css";
 
 export function Footer() {
-  return (
-    <footer>
-      <div className={classes.footer_navigation_menu}>
-        <div className={classes.logo_container}>
-          <img src="src\assets\loghi\logo-removebg-preview.png" alt="" />
-        </div>
-        <div className={classes.footer_p_container}>
-          <p>Condizioni d'uso</p>
-          <p>Informazioni sulla privacy</p>
-          <p>Contatti</p>
-          <p>Gift Cards</p>
-          <p>Ultime notizie</p>
-        </div>
-      </div>
-      <div className={classes.footer_language_menu}>
-        <span>Tutti i diritti riservati a Team-B&#174;</span>
-        <select name="language" id="language">
-          <option value="ita">Italiano</option>
-          <option value="en">English</option>
-        </select>
-        <label htmlFor="torna su"></label>
-        <button className={classes.torna_su} name="torna_su">Torna su</button>
-      </div>
 
+  function backToTopButton() {
+    const [backToTopButton, setBackToTopButton] = useState(false);
+
+    useEffect(() => {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          setBackToTopButton(true)
+        } else { setBackToTopButton(false) }
+      })
+
+    }, []);
+  }
+
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
+  return (
+    <footer className={classes.container}>
+      {/* social */}
+      <div className={classes.social}>
+        <div className={classes.social_h3}><h3>CONNETTITI CON NOI:</h3></div>
+        <div className={classes.social_image}>
+          <img src="src\assets\imagesGabriele\facebook.png" alt="" style={{ width: '30px' }} />
+          <img src="src\assets\imagesGabriele\instagram.png" alt="" style={{ width: '34px' }} />
+          <img src="src\assets\imagesGabriele\youtube.png" alt="" style={{ width: '42px' }} />
+          <img src="src\assets\imagesGabriele\x.png" alt="" style={{ width: '30px' }} />
+        </div>
+      </div>
+      {/* informativa */}
+      <div className={classes.informativa}>
+        <div className={classes.info}>
+          <p>Condizioni d'uso</p>
+          <p>Informativa sulla privacy</p>
+          <p>GiftCard</p>
+        </div>
+        <div className={classes.copyright}>
+          <p>Tutti i diritti riservati:</p>
+          <img src="src\assets\loghi\logo-removebg-preview.png" alt="" style={{ width: '60px' }} />
+          <p>PixelPlayground</p>
+        </div>
+      </div>
     </footer>
   );
 }

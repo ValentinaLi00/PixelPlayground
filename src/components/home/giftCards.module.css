@@ -1,55 +1,80 @@
 .container {
-    background-image: url('src/assets/valentinaLiAssets/home/bestseller_bc.jpg');
     width: 100%;
-    height: 80vh;
+    height: 100%;
+    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 53px));
-
+    align-items: center;
+    margin-bottom: 100px;
+    background-color: #201434;
 }
 
-.container h2 {
-    font-size: 28px;
-    width: 560px;
-    margin-bottom: 30px;
-}
-
-.container_card {
+.title {
     display: flex;
+    width: 200px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.title h2 {
+    font-size: 28px;
+}
+
+.title img {
+    margin-bottom: 10px;
+}
+
+.containerImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    width: 50%;
+    width: 80%;
+    gap: 30px;
+    margin-top: 20px;
+    row-gap: 40px;
+    max-width: 1000px;
 }
 
 .card {
-    width: 310px;
-    height: 180px;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.card img {
     width: 300px;
     height: 170px;
-    border-radius: 15px;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
 .description {
-    color: white;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin: 5px;
+    position: relative;
+}
+
+.game_discount {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+}
+
+.game_discount img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 .discount {
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 26px;
     color: #fff;
 }
 
@@ -69,6 +94,9 @@
         radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 100%/var(--r) calc(2*var(--r)),
         conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)), #0000 25%, var(--c) 0) 0 0/calc(101% - .5lh) 100%;
     background-repeat: no-repeat;
-    font-size: 25px;
 }
 
+.name_price {
+    display: flex;
+    justify-content: space-between;
+}

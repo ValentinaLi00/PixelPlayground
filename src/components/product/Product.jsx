@@ -1,6 +1,9 @@
 import classes from "./product.module.css";
 
 export function Product() {
+
+  
+
   return (
     <div className={classes.product_component}>
       <div className={classes.product_thumbnail_container}>
@@ -327,6 +330,7 @@ export function Product() {
               alt=""
               width="80px"
               height="80px"
+
             />
             <span>User's name</span>
           </div>

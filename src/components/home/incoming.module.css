@@ -19,21 +19,34 @@
     flex-direction: row;
     justify-content: center;
     width: 80%;
+    height: 200px;
     gap: 30px;
     margin-top: 20px;
 }
 
 .card {
     width: 300px;
+    height: 170px;
+}
+
+.game_discount {
+    width: 100%;
+    height: 100%;
+}
+
+ .card {
+    width: 300px;
+    height: 170px;
     position: relative;
 }
 
 .card img {
     width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
-.card:hover  {
+.card:hover {
     transform: scale(1.05);
 }
 
@@ -44,20 +57,20 @@
     margin: 5px;
 }
 
-.pre_order {
+.discount{
     font-size: 28px;
     font-weight: bold;
     color: #fff;
-}
+} 
 
-.pre_order {
+.discount {
     --r: .4em;
     /* control the ribbon shape (the radius) */
     --c: #0070fa;
 
     position: absolute;
-    bottom:50px;
-        left: calc(-1*var(--r));
+    bottom: 20px;
+    left: calc(-1*var(--r));
     line-height: 1.8;
     padding: calc(2*var(--r)) .5em 0;
     border-radius: var(--r) 0 0 var(--r);
@@ -66,16 +79,11 @@
         radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 0/var(--r) calc(2*var(--r)),
         conic-gradient(at var(--r) calc(2*var(--r)), #0000 25%, var(--c) 0) 0 0/calc(101% - .5lh) 100%;
     background-repeat: no-repeat;
-
-}
-
-/* .pre_order:hover {
-    width: 150px;
-    height: 60px;
-} */
-
-.pre_order p {
-    color: white;
-    margin: 5px;
     font-size: 14px;
 }
+
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+

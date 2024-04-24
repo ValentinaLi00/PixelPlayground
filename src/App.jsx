@@ -7,26 +7,25 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/footer/Footer";
 import { AboutUs } from "./components/about_us/AboutUs";
 import { DiscountedGames } from "./components/home/DiscountedGames";
-import { Cart } from "./components/cart/Cart";
+import { LoginRegistration } from "./components/login/LoginRegistration";
 import { Payment } from "./components/payment/Payment";
-
 
 export function App() {
   return (
     <>
-
-      
+      {/* <Payment /> */}
       <Product/>
-      <Catalogue/>
-      <Game/>
-      <Navbar />
-      <AboutUs/>
-      <Home />
-      <Footer/>
-      <DiscountedGames/>
+      {/* <LoginRegistration /> */}
+      {/* <Catalogue/> */}
+      {/* <Game/> */}
+      {/* <Navbar /> */}
+      {/* <AboutUs/> */}
+      {/* <Home /> */}
+      {/* <Footer/> */}
+      {/* <DiscountedGames/> */}
       <Cart >
-        <Payment />
-      </Cart>
+      <Payment />
+    </Cart>
     </>
   );
 }

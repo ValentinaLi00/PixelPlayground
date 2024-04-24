@@ -1,26 +1,19 @@
-import { useEffect, useState } from 'react'
-import { DiscountedGame } from './DiscountedGame'
-import classes from './discountedGames.module.css'
+import { DiscountedGame } from './DiscountedGame';
+import classes from './discountedGames.module.css';
+import { useFetchGames } from './useFetchGames';
 
 export function DiscountedGames() {
+    const { data, loading, error } = useFetchGames(); 
 
-    const [data, setData] = useState([])
-    const [show, setShow] = useState(10)
-
-    async function handleFecthData() {
-        try {
-            const response = await fetch('http://localhost:5001/api/oggetti')
-            const responseJson = await response.json()
-            setData(responseJson)
-        } catch (error) {
-            console.log(error)
-        }
+    if (loading) {
+        return <p>Caricamento in corso...</p>;
     }
 
-    useEffect(() => {
-        handleFecthData()
-    }, [])
+    if (error) {
+        return <p>Si è verificato un errore: {error.message}</p>;
+    }
 
+    const show = 5;
 
     return (
         <div className={classes.container}>
@@ -30,15 +23,15 @@ export function DiscountedGames() {
 
                 {/* scroller inner 1 */}
                 <div className={classes.scroller_inner}>
-                    {data.slice(1, show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
+                    {data && data.slice(0, show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
                 </div>
 
                 {/* scroller inner 2 */}
                 <div className={classes.scroller_inner}>
-                    {data.slice(1, show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
+                    {data && data.slice(show, 2*show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
                 </div>
 
             </div>
         </div>
-    )
+    );
 }

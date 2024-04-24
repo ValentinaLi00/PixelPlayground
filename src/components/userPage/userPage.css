@@ -245,3 +245,12 @@
     text-shadow: 2px 2px 1px black;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+
+    .wholeUserPage {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+}

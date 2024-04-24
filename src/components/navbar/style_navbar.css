@@ -43,8 +43,9 @@
     border-bottom-right-radius: 30px;
     display: flex;
     flex-direction: column;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-    animation: color-change-2x 2s linear infinite alternate both;
+    background-color: #4f16cbb3;
+    /* -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both; */
     z-index: 10;
 }
 
@@ -79,11 +80,16 @@
     display: flex;
     justify-content: center;
 }
+.user_container img {
+    width: 100px;
+    height:110%;
+}
 
 .user_image {
-    width: 30%;
-    height: 100%;
+    width: 25%;
+    height: 80%;
     border: 2px solid black;
+    border-radius: 90px
 }
 
 .content_console {
@@ -193,8 +199,9 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-    animation: color-change-2x 2s linear infinite alternate both;
+    background-color: #4f16cbb3;
+    /* -webkit-animation: color-change-2x 2s linear infinite alternate both;
+    animation: color-change-2x 2s linear infinite alternate both; */
 }
 
 #pc_icon {

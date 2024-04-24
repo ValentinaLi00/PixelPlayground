@@ -1,44 +1,26 @@
+import { IncomingGame } from './IncomingGame';
 import classes from './incoming.module.css'
+import { useFetchGames } from './useFetchGames';
 
 export function Incoming() {
+
+    const { data, loading, error } = useFetchGames();
+    const show = 3;
+
+    if (loading) {
+        return <p>Caricamento in corso...</p>;
+    }
+
+    if (error) {
+        return <p>Si è verificato un errore: {error.message}</p>;
+    }
+
     return (
         <div className={classes.container}>
             <h2>IN ARRIVO</h2>
             <div className={classes.containerImg}>
-
-                <div className={classes.card}>
-                    <img src="src\assets\valentinaLiAssets\home\elden_rings.jpg" alt="" />
-                    <div className={classes.description}>
-                        <p>Elden Rings</p>
-                        <p>30.99€</p>
-                    </div>
-                    
-                    <div className={classes.pre_order}>
-                        <p>24 maggio 2024</p>
-                    </div>
-                </div>
-
-                <div className={classes.card}>
-                    <img src="src\assets\valentinaLiAssets\home\eiyuden_chronicle.jpg" alt="" />
-                    <div className={classes.description}>
-                        <p>Eiyuden chronicle</p>
-                        <p>25.90€</p>
-                    </div>
-                    <div className={classes.pre_order}>
-                        <p> 24 maggio 2024</p>
-                    </div>
-                </div>
-
-                <div className={classes.card}>
-                    <img src="src\assets\valentinaLiAssets\home\stalker2.jpg" alt="" />
-                    <div className={classes.description}>
-                        <p>stalker 2</p>
-                        <p>20.90€</p>
-                    </div>
-                    <div className={classes.pre_order}>
-                        <p>24 maggio 2024</p>
-                    </div>
-                </div>
+                {/* Card */}
+                {data && data.filter((game) => game.genre === 'In arrivo').slice(0, show).map((game) => (<IncomingGame key={game.id} game={game} />))}
             </div>
         </div>
     )
