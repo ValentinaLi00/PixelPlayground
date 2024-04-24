@@ -12,6 +12,9 @@ import { AboutUs } from "./components/about_us/AboutUs.jsx";
 import { Cart } from "./components/cart/Cart.jsx";
 import { Payment } from "./components/payment/Payment.jsx";
 import { UserPage } from "./components/userPage/UserPage.jsx";
+import { TermOfUse } from "./components/footer/TermOfUse.jsx";
+import { Privacy } from "./components/footer/Privacy.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -36,7 +39,9 @@ const router = createBrowserRouter([
   { path: "/wishlist", element: <Wishlist /> },
   { path: "/faq", element: <Faq /> },
   { path: "/aboutus", element: <AboutUs /> },
-  { path: "/userPage", element: <UserPage /> }
+  { path: "/userPage", element: <UserPage /> },
+  {path: '/termOfUse', element: <TermOfUse/> },
+  {path:'/privacy', element: <Privacy/> }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

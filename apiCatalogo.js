@@ -16,6 +16,7 @@ const users = [
       image_url: "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
       video_url: "https://youtu.be/gmA6MrX81z4",
       platform: "Playstation",
+      order: 'Bestseller'
   },
   {
       id: 2,
@@ -31,6 +32,7 @@ const users = [
       image_url: "https://gaming-cdn.com/images/products/8432/616x353/mortal-kombat-11-ultimate-ps4-ps5-ultimate-playstation-4-playstation-5-game-playstation-store-europe-cover.jpg?v=1701345153",
       video_url: "https://youtu.be/UoTams2yc0s",
       platform: "Playstation",
+      order: 'Bestseller'
   },
   {
       id: 3,
@@ -46,6 +48,7 @@ const users = [
       image_url: "https://gaming-cdn.com/images/products/9312/616x353/god-of-war-ragnarok-ps5-playstation-5-game-playstation-store-europe-cover.jpg?v=1683626731",
       video_url:"https://youtu.be/ItyO3chi9bo",
       platform: "Playstation",
+      order: 'Bestseller'
   },
   {
       id: 4,
@@ -61,6 +64,7 @@ const users = [
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202310/0416/5c565008ffe01b5ee17799a0b76f5d1052fcb6aba1adab9e.jpg",
       video_url: "https://youtu.be/NniXc724TtU",
       platform: "Playstation",
+      order: 'Bestseller'
   },
   {
       id: 5,
@@ -76,6 +80,7 @@ const users = [
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/cb7gh5N3DjSRathadczu40S9.png",
       video_url: "https://youtu.be/Lq594XmpPBg",
       platform: "Playstation",
+      order: 'Bestseller'
   },
   {
       id: 6,
@@ -151,6 +156,7 @@ const users = [
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/DwVjpbKOsFOyPdNzmSTSWuxG.png",
       video_url: "https://youtu.be/ai3o0XtrnM8",
       platform: "Playstation",
+      order: 'Bestseller'
   },
   {
       id: 11,
@@ -226,6 +232,7 @@ const users = [
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202107/1612/Y5RHNmzAtc6sRYwZlYiKHAxN.png",
       video_url: "https://youtu.be/AKXiKBnzpBQ",
       platform: "XBOX",
+      order: 'Bestseller'
   },
   {
       id: 16,
@@ -571,6 +578,7 @@ const users = [
   image_url: "https://gaming-cdn.com/images/products/15658/616x353/final-fantasy-xiv-dawntrail-early-access-pc-game-europe-cover.jpg?v=1711621232",
   video_url: "https://youtu.be/kgiuQwzB6aU",
   platform: "PC",
+  order: 'Bestseller'
 },
 {
   id: 39,
@@ -1222,7 +1230,7 @@ const users = [
   id: 82,
   title: "Star Wars",
   sub_title: "Star Wars: Outlaw",
-  genre: "In arrivo",
+  genre: "Action",
   rating: "PEGI 12",
   developer: "Ubisoft",
   description: "Star Wars Outlaws è un gioco di azione e avventura di prossima uscita ambientato nell'universo di Star Wars sviluppato da Massive Entertainment e pubblicato da Ubisoft su licenza di Lucasfilm Games. Il gioco è ambientato nel periodo tra L'Impero colpisce ancora e Il ritorno dello Jedi.", 
@@ -1232,13 +1240,14 @@ const users = [
   image_url: "https://multiplayer.net-cdn.it/thumbs/images/2023/06/12/star-wars-outlaws-key-art_article-feature_73a536a1_04vqqz1_jpeg_1600x900_crop_q85.jpg",
   video_url: "https://youtu.be/tcdKEy-aJ6o",
   platform: "Playstation",
-  dataRilascio: '27 agosto 2024'
+  dataRilascio: '27 agosto 2024',
+  order: 'In arrivo'
 },
 {
   id: 83,
   title: "No rest for the wicked",
   sub_title: "No rest for the wicked",
-  genre: "In arrivo",
+  genre: "Action",
   rating: "PEGI 12",
   developer: "Moon Studios",
   description: "No Rest for the Wicked è un videogioco di ruolo d'azione di prossima uscita sviluppato da Moon Studios e pubblicato da Private Division. Ambientato nell'anno 841, il giocatore assume il controllo di un sacro guerriero che deve recarsi sull'isola di Isola Sacra per indagare su una piaga chiamata 'Pestilenza'.", 
@@ -1248,13 +1257,14 @@ const users = [
   image_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/1371980/header.jpg?t=1713196618",
   video_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/257016040/movie480_vp9.webm?t=1713186182",
   platform: "PC",
-  dataRilascio: '18 aprile 2024'
+  dataRilascio: '18 aprile 2024',
+  order: 'In arrivo'
 },
 {
   id: 84,
   title: "Tales of Kenzera",
   sub_title: "Tales of Kenzera",
-  genre: "In arrivo",
+  genre: "Adventure",
   rating: "PEGI 7",
   developer: "Surgent Studio",
   description: "Tales of Kenzera: ZAU è un videogioco Metroidvania di prossima uscita sviluppato da Surgent Studios e pubblicato da Electronic Arts sotto la sua etichetta EA Originals. Il gioco sarà rilasciato per PC Windows, Nintendo Switch, PlayStation 5 e Xbox Series X e Series S nell'aprile 2024.", 
@@ -1264,13 +1274,14 @@ const users = [
   image_url: "https://media.contentapi.ea.com/content/dam/ea/tales-of-kenzera/zau/common/olorun-fpo-feat-img.png.adapt.crop16x9.1023w.png",
   video_url: "https://youtu.be/5lEbG0Bx83U",
   platform: "Nintendo",
-  dataRilascio: '1 febbraio 2024'
+  dataRilascio: '1 febbraio 2024',
+  order: 'In arrivo'
 },
 {
   id: 85,
   title: "Stellar Blade",
   sub_title: "Stellar Blade",
-  genre: "In arrivo",
+  genre: "RPG",
   rating: "PEGI 16",
   developer: "Sony",
   description: "Stellar Blade è un videogioco action RPG e d'avventura sviluppato da Shift Up e distribuito dalla Sony Interactive Entertainment. L'uscita del gioco è programmata per il 26 aprile 2024, come esclusiva per PlayStation 5.", 
@@ -1280,13 +1291,14 @@ const users = [
   image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202401/2211/40e7cfd126a11fe5118310ebce6d9b3a23e7cabaca717217.png",
   video_url: "https://youtu.be/iSeHgk0RO4M",
   platform: "Playstation",
-  dataRilascio: '9 marzo 2024'
+  dataRilascio: '9 marzo 2024',
+  order: 'In arrivo'
 },
 {
   id: 86,
   title: "Homeworld",
   sub_title: "Homeworld 3",
-  genre: "In arrivo",
+  genre: "Indie",
   rating: "PEGI 12",
   developer: "Sony",
   description: "Homeworld 3 è un videogioco di strategia in tempo reale di prossima uscita sviluppato da Blackbird Interactive e pubblicato da Gearbox Software. L'uscita del gioco è prevista per il 13 maggio 2024.", 
@@ -1296,13 +1308,14 @@ const users = [
   image_url: "https://cdn1.epicgames.com/offer/ef7baa6ce017413ab33e7f7e3f466a96/EGS_Homeworld3_BlackbirdInteractive_S1_2560x1440-983f993cb4a722947ee3f404ded3ae95",
   video_url: "https://youtu.be/uGXP7oSeoW0",
   platform: "Playstation",
-  dataRilascio: '13 maggio 2024'
+  dataRilascio: '13 maggio 2024',
+  order: 'In arrivo'
 },
 {
   id: 87,
   title: "Sand Land",
   sub_title: "Sand Land",
-  genre: "In arrivo",
+  genre: "Action",
   rating: "PEGI 12",
   developer: "Bandai Namco",
   description: "Stellar Blade è un videogioco action RPG e d'avventura sviluppato da Shift Up e distribuito dalla Sony Interactive Entertainment. L'uscita del gioco è programmata per il 26 aprile 2024, come esclusiva per PlayStation 5.", 
@@ -1312,7 +1325,8 @@ const users = [
   image_url: "https://nerdmovieproductions.it/wp-content/uploads/2023/06/FyEzEGPaIAAnKIq.jpg",
   video_url: "https://youtu.be/JbKjqVtthPk",
   platform: "Playstation",
-  dataRilascio: '25 aprile 2024'
+  dataRilascio: '25 aprile 2024',
+  order: 'In arrivo'
 },
 {
   id: 88,
@@ -1388,66 +1402,6 @@ const users = [
   image_url: "https://gaming-cdn.com/img/products/10504/pcover/1920x620/10504.jpg?v=1705662308",
   video_url: "https://youtu.be/WC6lrFviM88",
   platform: "XBOX",
-},
-{
-  id: 93,
-  title: "Red dead redemption",
-  sub_title: "Red dead Redemption 2",
-  genre: "Bestseller", 
-  rating: "PEGI 18",
-  developer: "Rockstar Games",
-  description: "America, 1899. Arthur Morgan e la banda di Van der Linde sono in fuga. Con gli agenti federali e i migliori cacciatori di taglie alle costole, la banda deve rapinare, combattere e rubare per farsi strada e cercare di sopravvivere nel cuore di un'America dura e selvaggia. Una serie di conflitti e divisioni rischiano di mettere a repentaglio l'unità del gruppo, e Arthur si ritrova costretto a scegliere tra i suoi ideali e la lealtà nei confronti della banda che l'ha cresciuto.", 
-  price: 29.99,
-  discount: 10,
-  discount_price: 19.99,
-  image_url: "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
-  video_url: "https://youtu.be/gmA6MrX81z4",
-  platform: "Playstation",
-},
-{
-  id: 94,
-  title: "Horizion",
-  sub_title: "Horizon: Forbidden West",
-  genre: "Bestseller",
-  rating: "PEGI 16",
-  developer: "Guerrilla Games",
-  description: "Unisciti ad Aloy nell'esplorazione dell'Ovest Proibito, una pericolosa frontiera che nasconde nuove e misteriose minacce.", 
-  price: 36.42,
-  discount: 12,
-  discount_price: 24.99,
-  image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/cb7gh5N3DjSRathadczu40S9.png",
-  video_url: "https://youtu.be/Lq594XmpPBg",
-  platform: "Playstation",
-},
-{
-  id: 95,
-  title: "God of War",
-  sub_title: "God of War: Ragnarok",
-  genre: "Bestseller",
-  rating: "PEGI 18",
-  developer: "Santa Monica Studio",
-  description: "Unisciti a Kratos e Atreus in un viaggio mitico alla ricerca di risposte prima che sopraggiunga il Ragnarök. Insieme, padre e figlio si spingeranno al limite nel corso del loro viaggio in ognuno dei nove regni.", 
-  price: 47.99,
-  discount: 20,
-  discount_price: 27.99,
-  image_url: "https://gaming-cdn.com/images/products/9312/616x353/god-of-war-ragnarok-ps5-playstation-5-game-playstation-store-europe-cover.jpg?v=1683626731",
-  video_url:"https://youtu.be/ItyO3chi9bo",
-  platform: "Playstation",
-},
-{
-  id: 96,
-  title: "Final Fantasy ",
-  sub_title: "Final Fantasy XIV: Dawntrail",
-  genre: "Bestseller",
-  rating: "PEGI 12",
-  developer: "Square Enix",
-  description:"Blue seas, clear skies, and boundless possibilities await in Dawntrail, the newest expansion pack for the critically acclaimed FINAL FANTASY XIV Online! Explore uncharted territories with familiar faces as you discover new tribes, confront formidable threats, and expand your horizons as hope's light dawns once more.", 
-  price: 35.99,
-  discount: 11,
-  discount_price: 24.99,
-  image_url: "https://gaming-cdn.com/images/products/15658/616x353/final-fantasy-xiv-dawntrail-early-access-pc-game-europe-cover.jpg?v=1711621232",
-  video_url: "https://youtu.be/kgiuQwzB6aU",
-  platform: "PC",
 },
 {
   id: 97,
