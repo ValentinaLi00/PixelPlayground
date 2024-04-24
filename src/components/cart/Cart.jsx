@@ -26,24 +26,6 @@ export function Cart() {
               <div className="cart-items">
                 {/* Mappare qui gli articoli nel carrello */}
 
-<<<<<<< HEAD
-                            {/* Esempio di struttura per un singolo elemento del carrello */}
-                            {/* Sostituire con dati reali */}
-                            <div className="cart-item">
-                                <div className="cart-item-thumbnail">
-                                    <input type="checkbox" />
-                                    <img src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="Titolo del gioco" />
-                                    <div className="cart-item-details">
-                                        <p className="cart-item-title">Titolo del gioco</p>
-                                        <p className="cart-item-price">Prezzo: $XX.XX</p>
-                                    </div>
-                                </div>
-                                <div className="cart-buttons">
-                                    <button className="remove-button_cart">Rimuovi</button>
-                                </div>
-                            </div>
-                        </div>
-=======
                 {/* Esempio di struttura per un singolo elemento del carrello */}
                 {/* Sostituire con dati reali */}
                 <div className="cart-item">
@@ -56,7 +38,6 @@ export function Cart() {
                     <div className="cart-item-details">
                       <p className="cart-item-title">Titolo del gioco</p>
                       <p className="cart-item-price">Prezzo: $XX.XX</p>
->>>>>>> 5c01e09641a436b0ffb1f3b6fbcfa7b0519f0d2e
                     </div>
                   </div>
                   <div className="cart-buttons">
