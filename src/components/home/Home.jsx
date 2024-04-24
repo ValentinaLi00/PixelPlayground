@@ -10,7 +10,7 @@ import classes from "./home.module.css";
 import { ScrollUp } from "../footer/ScrollUp";
 import { SingleProd } from "../product/SingleProd";
 import { GiftCards } from "./GiftCards";
-import { ProvaFooter } from "../footer/provaFooter";
+
 
 export function Home() {
   return (
@@ -34,8 +34,8 @@ export function Home() {
       <Genres />
       <Reviews />
       <ScrollUp />
-      {/* <Footer /> */}
-      <ProvaFooter/>
+      <Footer />
+
       <SingleProd />
       
     </div>
