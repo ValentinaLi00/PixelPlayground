@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <LoginRegistration />,
   },
   {
-    path: "/product",
+    path: "/product/:id",
     element: <Product />,
   },
   {
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   { path: "/wishlist", element: <Wishlist /> },
   { path: "/faq", element: <Faq /> },
   { path: "/aboutus", element: <AboutUs /> },
-  { path: "/userPage", element: <UserPage /> }
+  { path: "/userPage", element: <UserPage /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
