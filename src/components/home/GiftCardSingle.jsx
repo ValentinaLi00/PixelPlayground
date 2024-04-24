@@ -10,8 +10,8 @@ export function GiftCardSingle({ game }) {
                 </span>
             </div>
             <div className={classes.name_price}>
-                <span>{game.title}</span>
-                <span>{game.price}€</span>
+                <span>{game.sub_title}</span>
+                <span>{game.discount_price}€</span>
             </div>
         </div>
     )

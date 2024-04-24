@@ -35,7 +35,6 @@ export function Home() {
       <Reviews />
       <ScrollUp />
       <Footer />
-
       <SingleProd />
       
     </div>
