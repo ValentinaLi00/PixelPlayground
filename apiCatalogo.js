@@ -16,7 +16,8 @@ const users = [
       image_url: "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
       video_url: "https://youtu.be/gmA6MrX81z4",
       platform: "Playstation",
-      order: 'Bestseller'
+      order: 'Bestseller',
+      prezzi: 'low'
   },
   {
       id: 2,

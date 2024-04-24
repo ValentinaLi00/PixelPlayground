@@ -5,7 +5,7 @@ import { Game } from "./Game";
 import classes from "./catalogue.module.css";
 
 import { useFetchGames } from "../home/useFetchGames";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export function Catalogue() {
   const { data, loading, error } = useFetchGames();
@@ -13,7 +13,9 @@ export function Catalogue() {
   const [platform, setPlatform] = useState("selectPlatform");
   const [genre, setGenre] = useState("selectGenre");
   const [order, setOrder] = useState('selectOrder');
-  
+  const [price, setPrice] = useState('selectPrice')
+  const {id} = useParams
+
   if (loading) {
     return <p>Caricamento in corso...</p>;
   }
@@ -34,7 +36,7 @@ export function Catalogue() {
     setPlatform(event.target.value);
     setGenre(event.target.value);
     setOrder(event.target.value)
-    
+    setPrice(event.target.value)
   }
 
   return (
@@ -97,8 +99,8 @@ export function Catalogue() {
 
           <div className={classes.filter}>
             <label htmlFor="prezzi">Prezzi</label>
-            <select name="prezzi" id={classes.prezzi}>
-              <option selected>Seleziona range di prezzo</option>
+            <select name="prezzi" id={classes.prezzi} onChange={handleSelectChange}>
+              <option value='selectPrice' selected>Seleziona range di prezzo</option>
               <option value="low">da 0€ a 10€</option>
               <option value="medium-low">da 10€ a 30€</option>
               <option value="medium">da 30€ a 50€</option>
@@ -115,11 +117,11 @@ export function Catalogue() {
             genre === "selectGenre" ||
             game.genre === genre ||
             order === 'selectOrder' ||
-            game.order === order 
-            
-          )
+            game.order === order ||
+            price === 'selectPrice' ||
+            game.prezzi === price)
             .slice(1, show)
-            .map((game) => <Link to={`/product/:${game.id}`}><Game key={game.id} game={game} /></Link>)}
+            .map((game) => <Link to={`/product/${game.id}`}><Game key={game.id} game={game} /></Link>)}
 
         </div>
         <div className={classes.container_btn}>

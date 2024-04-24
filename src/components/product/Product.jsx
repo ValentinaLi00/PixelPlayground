@@ -1,24 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./product.module.css";
 import { useParams } from "react-router-dom";
 
 export function Product() {
-  const [data , setData] = useState([])
-  const {id} = useParams()
+  const [data, setData] = useState([])
+  const { id } = useParams()
 
 
   async function getAPI() {
-    try{
+    try {
       const response = await fetch(`http://localhost:5001/api/oggetti/${id}`)
       const responseJson = await response.json()
       setData(responseJson)
-    }catch(error){
+    } catch (error) {
       console.error(error);
     }
-    
+
   }
 
-  getAPI()
+  useEffect(() => {
+    getAPI()
+  }, [])
+
 
 
   return (
@@ -34,7 +37,7 @@ export function Product() {
           <div className={classes.trailer_container}>
             <iframe
               className={classes.trailer}
-              src={data.video_url}
+              src={data && data.video_url}
               title="Dragon Quest 3 HD-2D Remake - Official Japanese Trailer"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
