@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { GiftCardSingle } from './GiftCardSingle';
 import classes from './giftCards.module.css'
-import { useFetchGiftCard } from './useFetchGiftCard';
+import { useFetchGames } from './useFetchGames';
 
 export function GiftCards() {
 
-    const { data, loading, error } = useFetchGiftCard();
+    const { data, loading, error } = useFetchGames();
     const [randomGiftCard, setRandomGiftCard] = useState([])
     const show = 6;
 
@@ -31,7 +31,7 @@ export function GiftCards() {
             </div>
 
             <div className={classes.containerImg}>
-                {randomGiftCard && randomGiftCard.slice(0, show).map((game) => (<GiftCardSingle key={game.id} game={game} />))}
+                {randomGiftCard && randomGiftCard.filter((game) => game.genre === 'GiftCard').slice(0, show).map((game) => (<GiftCardSingle key={game.id} game={game} />))}
             </div>
         </div>
     )

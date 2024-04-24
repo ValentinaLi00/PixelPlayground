@@ -16,7 +16,7 @@ import { UserPage } from "./components/userPage/UserPage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home/>,
   },
   {
     path: "/login",

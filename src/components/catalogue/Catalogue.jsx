@@ -89,6 +89,7 @@ export function Catalogue() {
               <option value="Racing">Racing</option>
               <option value="RPG">RPG</option>
               <option value="sport">Sport</option>
+              <option value="GiftCard">GiftCard</option>
             </select>
           </div>
 
