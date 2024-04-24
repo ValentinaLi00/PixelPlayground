@@ -72,7 +72,7 @@ const giftCard = [
         order: 'GiftCard',
         discount: 1,
         price: 8.99,
-        image_url: "https://cdn.cdkeys.com/700x700/media/catalog/product/1/0/10euro.jpg",
+        image_url: "https://gaming-cdn.com/images/products/273/616x353/xbox-gift-card-10eur-euro-area-eur10-card-xbox-one-xbox-series-x-s-game-microsoft-store-europe-cover.jpg?v=1711451788",
     },
     {
         id: 10,
