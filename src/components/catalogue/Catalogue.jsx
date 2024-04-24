@@ -5,6 +5,7 @@ import { Game } from "./Game";
 import classes from "./catalogue.module.css";
 
 import { useFetchGames } from "../home/useFetchGames";
+import { Link } from "react-router-dom";
 
 export function Catalogue() {
   const { data, loading, error } = useFetchGames();
@@ -118,7 +119,7 @@ export function Catalogue() {
             
           )
             .slice(1, show)
-            .map((game) => <Game key={game.id} game={game} />)}
+            .map((game) => <Link to={`/product/:${game.id}`}><Game key={game.id} game={game} /></Link>)}
 
         </div>
         <div className={classes.container_btn}>
