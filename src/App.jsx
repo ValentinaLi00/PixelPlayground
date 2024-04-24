@@ -8,24 +8,26 @@ import { Footer } from "./components/footer/Footer";
 import { AboutUs } from "./components/about_us/AboutUs";
 import { DiscountedGames } from "./components/home/DiscountedGames";
 import { LoginRegistration } from "./components/login/LoginRegistration";
-import { Payment } from "./components/payment/Payment";
+import {Payment} from "./components/payment"
+
+
 
 export function App() {
   return (
     <>
-      {/* <Payment /> */}
-      <Product/>
-      {/* <LoginRegistration /> */}
-      {/* <Catalogue/> */}
-      {/* <Game/> */}
-      {/* <Navbar /> */}
-      {/* <AboutUs/> */}
-      {/* <Home /> */}
-      {/* <Footer/> */}
-      {/* <DiscountedGames/> */}
+
+      <Product />
+      <LoginRegistration />
+      <Catalogue />
+      <Game />
+      <Navbar />
+      <AboutUs />
+      <Home />
+      <Footer />
+      <DiscountedGames />
       <Cart >
-      <Payment />
-    </Cart>
+        <Payment />
+      </Cart>
     </>
   );
 }
