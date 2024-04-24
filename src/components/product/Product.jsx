@@ -1,15 +1,32 @@
+import { useState } from "react";
 import classes from "./product.module.css";
+import { useParams } from "react-router-dom";
 
 export function Product() {
+  const [data , setData] = useState([])
+  const {id} = useParams()
 
-  
+
+  async function getAPI() {
+    try{
+      const response = await fetch(`http://localhost:5001/api/oggetti/${id}`)
+      const responseJson = await response.json()
+      setData(responseJson)
+    }catch(error){
+      console.error(error);
+    }
+    
+  }
+
+  getAPI()
+
 
   return (
     <div className={classes.product_component}>
       <div className={classes.product_thumbnail_container}>
         <div className={classes.product_thumbnail}>
           <img
-            src="src\assets\paoloLupoAssets\assetsDiProva\dragon-quest-iii-remake-ps5-remake-edition-playstation-5-gioco-playstation-store-cover.jpg"
+            src={data.image_url}
             alt="product's thumbnail"
           />
         </div>
@@ -17,7 +34,7 @@ export function Product() {
           <div className={classes.trailer_container}>
             <iframe
               className={classes.trailer}
-              src="https://www.youtube.com/embed/FmfiqydPjVk?&mute=1&autoplay=1"
+              src={data.video_url}
               title="Dragon Quest 3 HD-2D Remake - Official Japanese Trailer"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -26,15 +43,15 @@ export function Product() {
             ></iframe>
           </div>
           <div className={classes.price_container}>
-            <p className={classes.sales_date}>L'offerta scade il xx/xx/xxxx</p>
+            <p className={classes.sales_date}>L'offerta scade il 22/12/2024</p>
             <div className={classes.sales_container}>
-              <p className={classes.sales_amount}>-X%</p>
+              <p className={classes.sales_amount}>-{data.discount}$</p>
             </div>
             <div className={classes.price}>
               <p className={classes.previous_price}>
-                <s>xx,xx$</s>
+                <s>{data.price}$</s>
               </p>
-              <h2 className={classes.actual_price}>XX,XX$</h2>
+              <h2 className={classes.actual_price}>{data.discount_price}$</h2>
             </div>
             <div className={classes.priceBtn_container}>
               <button name="wishlistBtn" className={classes.wishlistBtn}>
@@ -53,48 +70,13 @@ export function Product() {
           </div>
         </div>
       </div>
-      <h1 className={classes.product_title}>Titolo prodotto:</h1>
-      <h2 className={classes.product_subTitle}>Sottotitolo prodotto</h2>
+      <h1 className={classes.product_title}>{data.title}</h1>
+      <h2 className={classes.product_subTitle}>{data.sub_title}</h2>
       <div className={classes.descriptionAndDetails_container}>
         <div className={classes.description_container}>
           <h2 className={classes.title_description}>Descrizione</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis quia
-            delectus eos facilis enim at vitae maiores esse architecto nihil.
-            Iste nulla, iure commodi magni nisi facere similique vero dolorum?
-            Iure quos, repudiandae nostrum voluptatum necessitatibus dolorem!
-            Pariatur repellendus vel voluptate delectus alias natus vitae dolore
-            quod possimus cumque exercitationem, veritatis labore sed,
-            necessitatibus sapiente, aliquam facere inventore! Repudiandae,
-            fugit. Alias, quas molestiae ratione vitae voluptatum dolores
-            perspiciatis rem deserunt natus in expedita enim inventore
-            reprehenderit, voluptatibus vel a ipsa, consectetur non velit sunt.
-            Odio nisi laudantium ratione ab et? Aliquid labore reiciendis
-            voluptate cum asperiores dignissimos necessitatibus facilis, ipsa
-            voluptatibus provident explicabo et at qui architecto quibusdam vero
-            rerum esse quidem error numquam enim impedit quos! Quidem, fugit
-            cumque. Odio perspiciatis recusandae eaque laudantium, sapiente
-            voluptatem ad quas consectetur excepturi porro iusto accusamus ut.
-            Enim amet deserunt nemo consectetur error, ab tempore, porro quasi
-            eaque commodi repellendus, dicta quibusdam! Perspiciatis numquam cum
-            error at voluptas rerum dolorem non obcaecati earum, qui atque
-            quisquam labore eveniet omnis optio temporibus mollitia veritatis!
-            Ratione, eveniet. Dolorum saepe repellat atque, cupiditate ex cum.
-            Blanditiis earum temporibus ipsa porro mollitia nobis quos atque
-            veniam dicta tempore fuga quasi quod, magnam asperiores omnis!
-            Dolorem eos consectetur quis. Nihil rerum necessitatibus laudantium
-            quidem provident nam! Accusamus. Doloremque, eaque! Quis sit fuga
-            obcaecati accusantium libero autem, possimus temporibus officia eum
-            cum? Tempore, cupiditate quia nam sequi, nihil facere voluptatem
-            consectetur id, eos sunt laboriosam culpa. Quo, est! Omnis
-            necessitatibus aperiam nam eum labore alias minima adipisci nesciunt
-            harum, optio dolorem tempora voluptatum laboriosam sapiente
-            molestiae mollitia aliquid quae laborum iste porro minus, magni
-            facilis atque! Quasi, beatae! Doloribus commodi et velit magnam
-            exercitationem provident animi veritatis nesciunt! Maiores veniam
-            reprehenderit rem labore beatae consectetur quos consequuntur eius
-            voluptate, exercitationem perspiciatis suscipit ullam, delectus,
-            sapiente molestias autem non.
+            {data.description}
           </p>
         </div>
         <div className={classes.details_container}>
@@ -104,11 +86,11 @@ export function Product() {
               <thead>
                 <tr>
                   <td>Rating:</td>
-                  <td>PEGI 18</td>
+                  <td>{data.rating}</td>
                 </tr>
                 <tr>
                   <td>Sviluppatore:</td>
-                  <td>CAPCOM Co., Ltd</td>
+                  <td>{data.developer}</td>
                 </tr>
                 <tr>
                   <td>Data di rilascio:</td>
@@ -116,7 +98,7 @@ export function Product() {
                 </tr>
                 <tr>
                   <td>Genere:</td>
-                  <td>Giocatore singolo, Azione, RPG</td>
+                  <td>{data.genre}</td>
                 </tr>
               </thead>
             </table>

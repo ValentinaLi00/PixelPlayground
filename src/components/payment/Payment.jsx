@@ -1,5 +1,6 @@
 import { Navbar } from "../navbar/Navbar";
 import { Footer } from "../footer/Footer";
+import './payment.css'
 import { useState } from "react";
 import "./payment.css"
 

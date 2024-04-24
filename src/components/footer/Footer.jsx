@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import classes from "./footer.module.css";
+import { Link } from "react-router-dom";
 
 export function Footer() {
 
@@ -38,8 +39,8 @@ export function Footer() {
       {/* informativa */}
       <div className={classes.informativa}>
         <div className={classes.info}>
-          <p>Condizioni d'uso</p>
-          <p>Informativa sulla privacy</p>
+          <Link to='/termOfUse'><p>Condizioni d'uso</p></Link>
+          <Link to='/privacy'><p>Informativa sulla privacy</p></Link>
           <p>GiftCard</p>
         </div>
         <div className={classes.copyright}>
