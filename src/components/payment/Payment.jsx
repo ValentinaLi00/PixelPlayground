@@ -2,6 +2,8 @@ import { Navbar } from "../navbar/Navbar";
 import { Footer } from "../footer/Footer";
 import './payment.css'
 import { useState } from "react";
+import "./payment.css"
+
 
 
 export function Payment() {
@@ -13,7 +15,7 @@ export function Payment() {
       <form action="#" id="paymentForm">
         <div className="address_container">
           <div className="input_container">
-            <h1 className="titles">Indirizzo di fatturazione</h1>
+            <h1 className="title_address">Indirizzo di fatturazione</h1>
             <br />
             <label htmlFor="input_name">Nome</label>
             <input type="text" name="input_name" id="input_name" />
@@ -49,7 +51,7 @@ export function Payment() {
             </div>
             <div>
               <ul>{/* map lista giochi nel carrello */}</ul>
-              <div className="cart-title_resume">
+              <div className="cart-title-details">
                 <p className="cart-total-text">Totale:</p>
                 <p className="cart-total-amount">$XX.XX</p>
                 <p className="cart-discount">$XX.XX</p>
@@ -63,7 +65,7 @@ export function Payment() {
 
         <div className="payment_box">
           <div className="payment_container">
-            <h1 className="titles">Pagamento</h1>
+            <h1 className="title_address">Pagamento</h1>
             <div className="cards_payment_container">
               <div className="google_payment">
                 <img

@@ -1,15 +1,5 @@
 /* CONTAINER PAGAMENTO */
 
-/*BACKGROUND PROVA*/
-/* .background_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(19, 1, 48);
-} */
-
 /* form */
 #paymentForm {
     height: 100%;
@@ -20,17 +10,15 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 50px 50px 20px 50px;
-    background-color: #9d69f0c4;
     text-shadow: 1px 1px 1px 1px black;
     border-radius: 50px;
-    border: 1px solid #ccc;
+   
     gap: 70px;
 
 }
 
 .title_address {
-    
-    font-size: 1.5rem;
+    font-size: 20px;
     color: white;
     display: flex;
     justify-content: center;
@@ -50,9 +38,9 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: #9d69f0c4;
+    background-color: #4f16cbb3;
     border-radius: 50px;
-    border: 1px solid white;
+    border: 1px solid #4f16cbb3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -89,15 +77,15 @@
     align-items: center;
     padding: 20px;
     gap: 20px;
-    background-color: #9d69f0c4;
+    background-color: #4f16cbb3;
     border-radius: 50px;
-    border: 1px solid white;
+    border: 1px solid #4f16cbb3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
 }
 
 .payment_container {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,13 +115,13 @@
     border-radius: 15px;
 }
 
-<<<<<<< HEAD
+
 .img_cart:hover {
     transform: scale(1.3);
-=======
+}
 img:hover {
     transform: scale(1);
->>>>>>> 5c01e09641a436b0ffb1f3b6fbcfa7b0519f0d2e
+
 }
 
 
@@ -154,6 +142,7 @@ img:hover {
 
 .input_details .card_name,
 .card_number {
+    text-align: center;
     border-radius: 10px;
     height: 30px;
     width: 400px;
@@ -178,11 +167,9 @@ img:hover {
     padding: 20px 0 0 0;
 }
 
-<<<<<<< HEAD
-.pay_button {
-=======
+
 .payment_btn {
->>>>>>> 5c01e09641a436b0ffb1f3b6fbcfa7b0519f0d2e
+
     width: 150px;
     background-color: #1a662a;
     color: #fff;
@@ -193,15 +180,15 @@ img:hover {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 .pay_button:hover {
     transform: scale(1.3);
-=======
+}
 .payment_btn:hover {
     background-color: #28a744;
->>>>>>> 5c01e09641a436b0ffb1f3b6fbcfa7b0519f0d2e
+
 }
 
+/* RIEPILOGO */
 
 .resume_container_payment {
     width: 45%;
@@ -210,16 +197,18 @@ img:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #9d69f0c4;
+    background-color: #4f16cbb3;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid #ccc;
+    border: 1px solid #4f16cbb3;
     border-radius: 50px;
 
 }
 
 .cart-title-resume {
+    font-size: 15px;
     color: rgb(255, 255, 255);
     padding: 20px;
+    
 }
 
 .container_payment_resume {
@@ -240,16 +229,24 @@ img:hover {
     background-color: rgba(221, 211, 243, 0.7);
 
 }
+.cart-resume-thumbnail img{
+    width: 100px;
+}
 
 .check_items {
     display: flex;
     gap: 20px;
 }
 
+.cart-title-details{
+    display: flex;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    gap: 20px;
+}
+
 .remove_btn {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     text-align: center;
     background-color: rgba(243, 17, 106, 255);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
