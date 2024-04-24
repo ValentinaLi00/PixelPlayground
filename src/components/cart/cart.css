@@ -121,8 +121,9 @@
 
 } */
 
-.remove-button {
+.remove-button_cart {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: rgba(243, 17, 106, 255);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -134,7 +135,7 @@
     cursor: pointer;
 }
 
-.remove-button:hover {
+.remove-button_cart:hover {
     background-color: rgb(187, 4, 77, 255)
 }
 

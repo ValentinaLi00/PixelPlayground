@@ -11,7 +11,7 @@ export function Payment() {
             <div className="address_container">
 
                 <div className="input_container">
-                    <h1>Indirizzo di fatturazione</h1>
+                    <h1 className="title_address">Indirizzo di fatturazione</h1>
                     <br />
                     <label htmlFor="input_name">Nome</label>
                     <input type="text" name="input_name" id="input_name" />
@@ -34,14 +34,14 @@ export function Payment() {
                         <div className="cart-resume-thumbnail">
                             <div className="check_items">
                                 <input type="checkbox" />
-                                <img src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="Titolo del gioco" />
+                                <img className="img_cart" src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="Titolo del gioco" />
                             </div>
                             <div className="cart-item-details">
                                 <p className="cart-item-title">Titolo del gioco</p>
                                 <p className="cart-item-price">Prezzo: $XX.XX</p>
                             </div>
                             <div className="cart-buttons_resume">
-                                <button className="remove-button">Rimuovi</button>
+                                <button className="remove-button_cart">Rimuovi</button>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ export function Payment() {
                             <p className="cart-discount">$XX.XX</p>
                         </div>
                         <div className="cart-resume-buttons">
-                            <button>Paga ora</button>
+                            <button className="pay_button">Paga ora</button>
                         </div>
                     </div>
                 </div>
@@ -61,25 +61,27 @@ export function Payment() {
 
             <div className="payment_box">
                 <div className="payment_container">
-                    <h1>Pagamento</h1>
+                    <h1 className="title_address">Pagamento</h1>
                     <div className="cards_payment_container">
 
-                        <div className="google_payment">
-                            <img src="src\assets\melissa_img\payment_icon\Gpay.png"  alt="google pay" />
-                        </div>
-
-                        <div className="paypal_payment">
-                            <img src="src\assets\melissa_img\payment_icon\paypal.png" alt="paypal" />
-                        </div>
-
-                        <div className="visa_payment">
-                            <img src="src\assets\melissa_img\payment_icon\visa.png" onClick={() => setShow(true)} alt="visa" />
-
-                        </div>
-
-                        <div className="mastercard_payment">
-                            <img src="src\assets\melissa_img\payment_icon\mastercard.png" onClick={() => setShow(true)} alt="" />
-                        </div>
+                       <div className="container_img_container">
+                            <div className="google_payment">
+                                <img className="payment_img" src="src\assets\melissa_img\payment_icon\Gpay.png"  alt="google pay" />
+                            </div>
+    
+                            <div className="paypal_payment">
+                                <img className="payment_img" src="src\assets\melissa_img\payment_icon\paypal.png" alt="paypal" />
+                            </div>
+    
+                            <div className="visa_payment">
+                                <img className="payment_img" src="src\assets\melissa_img\payment_icon\visa.png" onClick={() => setShow(true)} alt="visa" />
+    
+                            </div>
+    
+                            <div className="mastercard_payment">
+                                <img className="payment_img" src="src\assets\melissa_img\payment_icon\mastercard.png" onClick={() => setShow(true)} alt="" />
+                            </div>
+                       </div>
 
                     </div>
                     {show ? (<div className="input_details">
@@ -100,7 +102,7 @@ export function Payment() {
                             <label className="checkbox_label" htmlFor="checkbox">Salva per i prossimi acquisti</label>
                         </div>
 
-                        <div className="payment_btn_container"><button>Paga ora</button></div>
+                        <div className="payment_btn_container"><button className="pay_button ">Paga ora</button></div>
                     </div>) : null}
 
                 </div>

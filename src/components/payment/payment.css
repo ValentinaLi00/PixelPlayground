@@ -29,7 +29,7 @@ form {
 }
 
 
-h1 {
+.title_address {
     font-size: 1.5rem;
     color: white;
     display: flex;
@@ -106,7 +106,7 @@ h1 {
 }
 
 
-.cards_payment_container {
+.container_img_container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,12 +114,20 @@ h1 {
     gap: 20px;
 }
 
-img {
+.payment_img{
+    width: 110px;
+    border-radius: 15px;
+}
+.payment_img:hover{
+    transform: scale(1.3);
+}
+
+.img_cart {
     width: 110px;
     border-radius: 15px;
 }
 
-img:hover {
+.img_cart:hover {
     transform: scale(1.3);
 }
 
@@ -165,7 +173,7 @@ img:hover {
     padding: 20px 0 0 0;
 }
 
-button {
+.pay_button {
     width: 150px;
     background-color: #1a662a;
     color: #fff;
@@ -176,8 +184,8 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #28a744;
+.pay_button:hover {
+    transform: scale(1.3);
 }
 
 

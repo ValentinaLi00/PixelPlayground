@@ -31,7 +31,7 @@ export function Cart() {
                                     </div>
                                 </div>
                                 <div className="cart-buttons">
-                                    <button className="remove-button">Rimuovi</button>
+                                    <button className="remove-button_cart">Rimuovi</button>
                                 </div>
                             </div>
                         </div>
