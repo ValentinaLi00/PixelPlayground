@@ -29,7 +29,7 @@ export function Product() {
       <div className={classes.product_thumbnail_container}>
         <div className={classes.product_thumbnail}>
           <img
-            src={data.image_url}
+            src={data.image_background_url}
             alt="product's thumbnail"
           />
         </div>
@@ -37,24 +37,26 @@ export function Product() {
           <div className={classes.trailer_container}>
             <iframe
               className={classes.trailer}
-              src={data && data.video_url}
+              src={data.video_url}
               title="Dragon Quest 3 HD-2D Remake - Official Japanese Trailer"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
+              
             ></iframe>
           </div>
+
           <div className={classes.price_container}>
-            <p className={classes.sales_date}>L'offerta scade il 22/12/2024</p>
-            <div className={classes.sales_container}>
+            {/* <p className={classes.sales_date}>L'offerta scade il 22/12/2024</p> */}
+            {/* <div className={classes.sales_container}>
               <p className={classes.sales_amount}>-{data.discount}$</p>
-            </div>
+            </div> */}
             <div className={classes.price}>
               <p className={classes.previous_price}>
                 <s>{data.price}$</s>
               </p>
-              <h2 className={classes.actual_price}>{data.discount_price}$</h2>
+              <h2 className={classes.actual_price}>{data.discount_price}</h2>
             </div>
             <div className={classes.priceBtn_container}>
               <button name="wishlistBtn" className={classes.wishlistBtn}>
@@ -69,7 +71,11 @@ export function Product() {
               <button name="buyNowBtn" className={classes.buyNowBtn}>
                 Compra ora
               </button>
+
             </div>
+            <span className={classes.discount}>
+              {`Sconto del ${data.discount}%`}
+            </span>
           </div>
         </div>
       </div>
