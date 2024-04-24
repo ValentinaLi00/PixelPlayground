@@ -6,6 +6,7 @@ export function Product() {
   const [data , setData] = useState([])
   const {id} = useParams()
 
+
   async function getAPI() {
     try{
       const response = await fetch(`http://localhost:5001/api/oggetti/${id}`)
@@ -18,6 +19,7 @@ export function Product() {
   }
 
   getAPI()
+
 
   return (
     <div className={classes.product_component}>

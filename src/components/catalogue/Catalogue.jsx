@@ -1,31 +1,25 @@
-import { useEffect, useState } from "react";
-
+import { useState } from "react";
 import { Navbar } from "../navbar/Navbar";
 import { Footer } from "../footer/Footer";
 import { Game } from "./Game";
-
 import classes from "./catalogue.module.css";
-import { Link } from "react-router-dom";
+
+import { useFetchGames } from "../home/useFetchGames";
 
 export function Catalogue() {
-  const [data, setData] = useState([]);
+  const { data, loading, error } = useFetchGames();
   const [show, setShow] = useState(9);
   const [platform, setPlatform] = useState("selectPlatform");
   const [genre, setGenre] = useState("selectGenre");
-
-  async function handleFecthData() {
-    try {
-      const response = await fetch("http://localhost:5001/api/oggetti");
-      const responseJson = await response.json();
-      setData(responseJson);
-    } catch (error) {
-      console.log(error);
-    }
+  const [order, setOrder] = useState('selectOrder');
+  
+  if (loading) {
+    return <p>Caricamento in corso...</p>;
   }
 
-  useEffect(() => {
-    handleFecthData();
-  }, []);
+  if (error) {
+    return <p>Si è verificato un errore: {error.message}</p>;
+  }
 
   function handleShowmore() {
     setShow((prevShow) => prevShow + 8);
@@ -38,15 +32,9 @@ export function Catalogue() {
   function handleSelectChange(event) {
     setPlatform(event.target.value);
     setGenre(event.target.value);
+    setOrder(event.target.value)
+    
   }
-
-  const filterGames = data.filter(
-    (game) =>
-      platform === "selectPlatform" ||
-      game.platform === platform ||
-      genre === "selectGenre" ||
-      game.genre === genre
-  );
 
   return (
     <>
@@ -96,13 +84,13 @@ export function Catalogue() {
 
           <div className={classes.filter}>
             <label htmlFor="ordina">Ordina</label>
-            <select name="ordina"id={classes.ordina} onChange={handleSelectChange}>
-              <option selected>Seleziona per</option>
+            <select name="ordina" id={classes.ordina} onChange={handleSelectChange}>
+              <option value='selectOrder' selected>Seleziona per</option>
               <option value="Bestseller">Bestseller</option>
-              <option value="GiftCard">GiftCard</option>
+              <option value="In arrivo">Nuovi arrivi</option>
               <option value="Prezzo: crescente">Prezzo: crescente</option>
               <option value="Prezzo: decrescente">Prezzo: decrescente</option>
-              <option value="Nuovi arrivi">Nuovi arrivi</option>
+
             </select>
           </div>
 
@@ -120,11 +108,18 @@ export function Catalogue() {
 
         <div className={classes.container_game}>
           {/* card */}
+          {data && data.filter((game) =>
+            platform === "selectPlatform" ||
+            game.platform === platform ||
+            genre === "selectGenre" ||
+            game.genre === genre ||
+            order === 'selectOrder' ||
+            game.order === order 
+            
+          )
+            .slice(1, show)
+            .map((game) => <Game key={game.id} game={game} />)}
 
-          {filterGames.length > 0 &&
-            filterGames
-              .slice(1, show)
-              .map((game) => <Link to={`/product/${game.id}`}><Game key={game.id} game={game} /></Link>)}
         </div>
         <div className={classes.container_btn}>
           <button className={classes.mostraAltro} onClick={handleShowmore}>
