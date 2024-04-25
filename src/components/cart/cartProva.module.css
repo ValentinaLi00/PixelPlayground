@@ -1,0 +1,141 @@
+.container {
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Carrello */
+.cart {
+    height: 80%;
+    width: 50%;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #4f16cbb3;
+    border: 1px solid #4f16cbb3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    background: linear-gradient(90deg, #ea0000 10%, #d7f900 18%, #ddff00 32%, #25ff00 48%, #00def3 68%, #ff720d 90%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+}
+
+/* contenitore di tutti i prodotti */
+
+.products {
+    padding: 20px;
+    width: 100%;
+}
+
+/* singolo prodotto */
+
+.product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: rgba(221, 211, 243, 0.7);
+    color: rgb(255, 255, 255);
+}
+
+.product img {
+    width: 100px;
+}
+.button_delete{
+    background-color: rgba(243, 17, 106, 255);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Riepilogo */
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    background-color: #4f16cbb3;
+    border: 1px solid #4f16cbb3;
+    border-radius: 15px;
+    width: 40%;
+    height: 50%;
+    gap: 100px;
+    row-gap: 20px;
+   
+}
+
+.resume h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+    background: linear-gradient(90deg, #ea0000 10%, #d7f900 18%, #ddff00 32%, #25ff00 48%, #00def3 68%, #ff720d 90%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+    margin-top: 20px;
+}
+
+.resume p{
+    font-size: 20px;
+}
+
+.resume_total{
+    height: 100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.button_resume{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.button_resume button{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 60px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.checkOut_button{
+    background-color: #28a744;
+    font-size: 20px;
+    width: 400px;
+}
+
+.continue_button{
+    background-color: #014b99;
+    font-size: 20px;
+    width: 400px;
+}
+
+.game, .total, .discount{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
