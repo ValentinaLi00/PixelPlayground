@@ -10,13 +10,14 @@ import classes from "./home.module.css";
 import { ScrollUp } from "../footer/ScrollUp";
 import { SingleProd } from "../product/SingleProd";
 import { GiftCards } from "./GiftCards";
+import { Video } from "./Video";
 
 
 export function Home() {
   return (
     <div className={classes.container}>
       <Navbar />
-      <div className={classes.iframe_container}>
+      {/* <div className={classes.iframe_container}>
         <iframe
           className={classes.homeVideo}
           src="https://www.youtube.com/embed/KOhs9ZLImgE?&mute=1&autoplay=1"
@@ -26,7 +27,8 @@ export function Home() {
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-      </div>
+      </div> */}
+      <Video />
       <Incoming />
       <Bestsellers />
       <DiscountedGames />
@@ -36,7 +38,7 @@ export function Home() {
       <ScrollUp />
       <Footer />
       <SingleProd />
-      
+
     </div>
   );
 }
