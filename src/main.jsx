@@ -14,7 +14,6 @@ import { TermOfUse } from "./components/footer/TermOfUse.jsx";
 import { Privacy } from "./components/footer/Privacy.jsx";
 import { CartGeneral } from "./components/cart/CartGeneral.jsx";
 import { PaymentProva } from "./components/payment/PaymentProva.jsx";
-import { Video } from "./components/home/Video.jsx";
 
 
 const router = createBrowserRouter([
@@ -42,8 +41,7 @@ const router = createBrowserRouter([
   { path: "/aboutus", element: <AboutUs /> },
   { path: "/userPage", element: <UserPage /> },
   {path: '/termOfUse', element: <TermOfUse/> },
-  {path:'/privacy', element: <Privacy/> },
-  {path:'/video', element: <Video/> }
+  {path:'/privacy', element: <Privacy/> }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
