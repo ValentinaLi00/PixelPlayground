@@ -1,6 +1,6 @@
 .container {
     margin-top: 50px;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: space-around;
 }
@@ -71,7 +71,7 @@
     border: 1px solid #4f16cbb3;
     border-radius: 15px;
     width: 40%;
-    height: 50%;
+    height: 60%;
     gap: 100px;
     row-gap: 20px;
    
@@ -104,30 +104,31 @@
 
 .button_resume{
     display: flex;
+    justify-content: center;
+    width: 100%;
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 45px;
 }
 
 .button_resume button{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    width: 80%;
-    height: 60px;
     color: #fff;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    width: 200px;
+    height: 60px;
 }
 
 .checkOut_button{
     background-color: #28a744;
     font-size: 20px;
-    width: 400px;
+    
 }
 
 .continue_button{
     background-color: #014b99;
     font-size: 20px;
-    width: 400px;
 }
 
 .game, .total, .discount{
@@ -135,7 +136,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    margin-bottom: 10px;
 }
 
+.discount input {
+    background-color: rgba(243, 17, 106, 255);
+    border-radius: 5px;
+    border: 1px solid yellow;
+    outline: none;
+}
 
