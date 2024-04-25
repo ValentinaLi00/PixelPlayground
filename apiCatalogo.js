@@ -16,7 +16,8 @@ const users = [
       image_url: "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
       video_url: "https://youtu.be/gmA6MrX81z4",
       platform: "Playstation",
-      order: 'Bestseller'
+      order: 'Bestseller',
+      prezzi: 'low'
   },
   {
       id: 2,
@@ -46,7 +47,8 @@ const users = [
       discount: 20,
       discount_price: 27.99,
       image_url: "https://gaming-cdn.com/images/products/9312/616x353/god-of-war-ragnarok-ps5-playstation-5-game-playstation-store-europe-cover.jpg?v=1683626731",
-      video_url:"https://youtu.be/ItyO3chi9bo",
+      video_url:"https://cdn.cloudflare.steamstatic.com/steam/apps/256864004/movie480_vp9.webm?t=1639001817",
+      image_background_url: "https://gaming-cdn.com/img/products/9312/pcover/1920x620/9312.jpg?v=1683626731",
       platform: "Playstation",
       order: 'Bestseller'
   },

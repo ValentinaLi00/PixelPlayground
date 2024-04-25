@@ -1,24 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classes from "./product.module.css";
 import { useParams } from "react-router-dom";
 
 export function Product() {
-  const [data , setData] = useState([])
-  const {id} = useParams()
+  const [data, setData] = useState([])
+  const { id } = useParams()
 
 
   async function getAPI() {
-    try{
+    try {
       const response = await fetch(`http://localhost:5001/api/oggetti/${id}`)
       const responseJson = await response.json()
       setData(responseJson)
-    }catch(error){
+    } catch (error) {
       console.error(error);
     }
-    
+
   }
 
-  getAPI()
+  useEffect(() => {
+    getAPI()
+  }, [])
+
 
 
   return (
@@ -26,7 +29,7 @@ export function Product() {
       <div className={classes.product_thumbnail_container}>
         <div className={classes.product_thumbnail}>
           <img
-            src={data.image_url}
+            src={data.image_background_url}
             alt="product's thumbnail"
           />
         </div>
@@ -40,18 +43,20 @@ export function Product() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
+              
             ></iframe>
           </div>
+
           <div className={classes.price_container}>
-            <p className={classes.sales_date}>L'offerta scade il 22/12/2024</p>
-            <div className={classes.sales_container}>
+            {/* <p className={classes.sales_date}>L'offerta scade il 22/12/2024</p> */}
+            {/* <div className={classes.sales_container}>
               <p className={classes.sales_amount}>-{data.discount}$</p>
-            </div>
+            </div> */}
             <div className={classes.price}>
               <p className={classes.previous_price}>
                 <s>{data.price}$</s>
               </p>
-              <h2 className={classes.actual_price}>{data.discount_price}$</h2>
+              <h2 className={classes.actual_price}>{data.discount_price}</h2>
             </div>
             <div className={classes.priceBtn_container}>
               <button name="wishlistBtn" className={classes.wishlistBtn}>
@@ -66,7 +71,11 @@ export function Product() {
               <button name="buyNowBtn" className={classes.buyNowBtn}>
                 Compra ora
               </button>
+
             </div>
+            <span className={classes.discount}>
+              {`Sconto del ${data.discount}%`}
+            </span>
           </div>
         </div>
       </div>
