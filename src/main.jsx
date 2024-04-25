@@ -9,11 +9,11 @@ import { Wishlist } from "./components/wishlist/Wishlist.jsx";
 import { LoginRegistration } from "./components/login/LoginRegistration.jsx";
 import { Faq } from "./components/faq/faq.jsx";
 import { AboutUs } from "./components/about_us/AboutUs.jsx";
-import { Cart } from "./components/cart/Cart.jsx";
 import { Payment } from "./components/payment/Payment.jsx";
 import { UserPage } from "./components/userPage/UserPage.jsx";
 import { TermOfUse } from "./components/footer/TermOfUse.jsx";
 import { Privacy } from "./components/footer/Privacy.jsx";
+import { CartProva } from "./components/cart/CartProva.jsx";
 
 
 const router = createBrowserRouter([
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     element: <Catalogue />,
   },
   { path: "/userpage", element: <UserPage /> },
-  { path: "/cart", element: <Cart /> },
+  { path: "/cart", element: <CartProva /> },
   { path: "/cart/payment", element: <Payment /> },
   { path: "/wishlist", element: <Wishlist /> },
   { path: "/faq", element: <Faq /> },

@@ -9,6 +9,7 @@ import { AboutUs } from "./components/about_us/AboutUs";
 import { DiscountedGames } from "./components/home/DiscountedGames";
 import { LoginRegistration } from "./components/login/LoginRegistration";
 import {Payment} from "./components/payment"
+import { CartProva } from "./components/cart/CartProva";
 
 
 
@@ -25,9 +26,10 @@ export function App() {
       <Home />
       <Footer />
       <DiscountedGames />
-      <Cart >
+      {/* <Cart >
         <Payment />
-      </Cart>
+      </Cart> */}
+      < CartProva />
     </>
   );
 }

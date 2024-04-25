@@ -1,4 +1,4 @@
-import classes from '/.cartProva.module.css'
+import classes from './cartProva.module.css'
 
 
 export function CartProva() {
@@ -16,7 +16,7 @@ export function CartProva() {
                             <label htmlFor="choose"></label>
                             <input type="checkbox" name='choose' />
                         </div>
-                        <img src="" alt="" />
+                        <img src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="" />
                         <div className={classes.product_title}>
                             <h4>Titolo del gioco</h4>
                             <p>God of war</p>
@@ -39,6 +39,10 @@ export function CartProva() {
             <div className={classes.resume}>
                 <h2>Riepilogo</h2>
                 <div className={classes.resume_total}>
+                    <div className={classes.game}>
+                        <p>Titolo gioco</p>
+                        <p>10€</p>
+                    </div>
                     <div className={classes.total}>
                         <p>Totale</p>
                         <p>150€</p>
@@ -49,8 +53,8 @@ export function CartProva() {
                         <input type="text" name='discount'/>
                     </div>
                     <div className={classes.button_resume}>
-                        <button>Checkout</button>
-                        <button>Continua con lo shopping</button>
+                        <button className={classes.checkOut_button}>Checkout</button>
+                        <button className={classes.continue_button}>Continua con lo shopping</button>
                     </div>
                 </div>
             </div>
