@@ -1,6 +1,9 @@
+import { Link, useNavigate } from 'react-router-dom'
 import classes from './cart.module.css'
 
 export function Cart() {
+
+
     return (
         <div className={classes.container}>
 
@@ -52,8 +55,8 @@ export function Cart() {
                         <input type="text" name='discount' />
                     </div>
                     <div className={classes.button_resume}>
-                        <button className={classes.checkOut_button}>Checkout</button>
-                        <button className={classes.continue_button}>Continua con lo shopping</button>
+                        <Link to='/payment'><button className={classes.checkOut_button}>Checkout</button></Link>
+                        <Link to='/'><button className={classes.continue_button}>Continua con lo shopping</button></Link>
                     </div>
                 </div>
             </div>
