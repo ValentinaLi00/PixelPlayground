@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { GiftCardSingle } from './GiftCardSingle';
 import classes from './giftCards.module.css'
 import { useFetchGames } from './useFetchGames';
+import { Link } from 'react-router-dom';
 
 export function GiftCards() {
 
@@ -31,7 +32,7 @@ export function GiftCards() {
             </div>
 
             <div className={classes.containerImg}>
-                {randomGiftCard && randomGiftCard.filter((game) => game.genre === 'GiftCard').slice(0, show).map((game) => (<GiftCardSingle key={game.id} game={game} />))}
+                {randomGiftCard && randomGiftCard.filter((game) => game.genre === 'GiftCard').slice(0, show).map((game) => (<Link to={`/product/${game.id}`}><GiftCardSingle key={game.id} game={game} /></Link>))}
             </div>
         </div>
     )

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { BestsellerGame } from './BestsellerGame';
 import classes from './bestsellers.module.css'
 import { useFetchGames } from './useFetchGames'
@@ -5,6 +6,7 @@ import { useFetchGames } from './useFetchGames'
 export function Bestsellers() {
     const { data, loading, error } = useFetchGames();
     const show = 4;
+    
     
     if (loading) {
         return <p>Caricamento in corso...</p>;
@@ -19,7 +21,7 @@ export function Bestsellers() {
             <h2>Bestsellers</h2>
             <div className={classes.container_card}>
                 {/* Card */}
-                {data && data.filter((game) => game.order === 'Bestseller').slice(0, show).map((game) => ( <BestsellerGame key={game.id} game={game} /> ))}
+                {data && data.filter((game) => game.order === 'Bestseller').slice(0, show).map((game) => ( <Link to={`/product/${game.id}`}><BestsellerGame key={game.id} game={game} /></Link> ))}
             </div>
         </div>
     )

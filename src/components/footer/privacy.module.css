@@ -26,6 +26,10 @@
     background-clip: text;
 }
 
+.privacy_title {
+    color: white;
+}
+
 .general {
     text-align: center;
     font-size: 18px;

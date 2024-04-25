@@ -26,6 +26,10 @@
     background-clip: text;
 }
 
+.termOfUse_title {
+    color: white;
+}
+
 .general {
     text-align: center;
     font-size: 18px;

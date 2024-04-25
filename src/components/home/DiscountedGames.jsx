@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { DiscountedGame } from './DiscountedGame';
 import classes from './discountedGames.module.css';
 import { useFetchGames } from './useFetchGames';
@@ -23,12 +24,12 @@ export function DiscountedGames() {
 
                 {/* scroller inner 1 */}
                 <div className={classes.scroller_inner}>
-                    {data && data.slice(0, show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
+                    {data && data.slice(0, show).map((game) => (<Link to={`/product/${game.id}`}><DiscountedGame key={game.id} game={game} /></Link>))}
                 </div>
 
                 {/* scroller inner 2 */}
                 <div className={classes.scroller_inner}>
-                    {data && data.slice(show, 2*show).map((game) => (<DiscountedGame key={game.id} game={game} />))}
+                    {data && data.slice(show, 2*show).map((game) => (<Link to={`/product/${game.id}`}><DiscountedGame key={game.id} game={game} /></Link>))}
                 </div>
 
             </div>
