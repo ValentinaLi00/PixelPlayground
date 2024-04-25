@@ -1,84 +1,64 @@
-import { Navbar } from "../navbar/Navbar";
-import { Footer } from "../footer/Footer";
-import { Payment } from "../payment/Payment";
-
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
-import "./cart.css";
+import classes from './cart.module.css'
 
 export function Cart() {
-    const [showPayment, setShowPayment] = useState(false);
-
-    function handleCheckout() {
-        setShowPayment(true);
-    }
-
     return (
-        /*BACKGROUND PROVA*/
-        <>
-            <Navbar />
-            {!showPayment && (
-                <div className="cart_component_background">
-                    <h2 className="cart-title">Carrello</h2>
-                    <div className="cart-component">
-                        <div className="cart-container">
-                            <div className="cart-items">
-                                {/* Mappare qui gli articoli nel carrello */}
+        <div className={classes.container}>
 
-                                {/* Esempio di struttura per un singolo elemento del carrello */}
-                                {/* Sostituire con dati reali */}
-                                <div className="cart-item">
-                                    <div className="cart-item-thumbnail">
-                                        <input type="checkbox" />
-                                        <img
-                                            src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png"
-                                            alt="Titolo del gioco"
-                                        />
-                                        <div className="cart-item-details">
-                                            <p className="cart-item-title">Titolo del gioco</p>
-                                            <p className="cart-item-price">Prezzo: $XX.XX</p>
-                                        </div>
-                                    </div>
-                                    <div className="cart-buttons">
-                                        <button className="remove-button_cart">Rimuovi</button>
-                                    </div>
-                                </div>
-                            </div>
+            {/* Carrello */}
+            <div className={classes.cart}>
+                <h2>Carrello</h2>
+                {/* contenitore di tutti i prodotti */}
+                <div className={classes.products}>
+                    {/* singolo prodotto */}
+                    <div className={classes.product}>
+                        <div className={classes.checkbox}>
+                            <label htmlFor="choose"></label>
+                            <input type="checkbox" name='choose' />
                         </div>
-
-                        <div className="resume_container">
-                            <h2 className="resume-title">Riepilogo</h2>
-                            <div>
-                                <ul>{/* map lista giochi nel carrello */}</ul>
-                                <div className="cart-total">
-                                    <p className="cart-total-text">Totale:</p>
-                                    <p className="cart-total-amount">$XX.XX</p>
-                                    <p className="cart-discount">$XX.XX</p>
-                                </div>
-                                <div className="cart-resume-buttons">
-                                    <Link to="/cart/payment">
-                                        <button
-                                            className="checkout-button"
-                                            onClick={handleCheckout}
-                                        >
-                                            Vai al checkout
-                                        </button>
-                                    </Link>
-                                    <Link to="/catalogue">
-                                        <button className="continue-shopping-button">
-                                            Continua lo shopping
-                                        </button>
-                                    </Link>
-                                </div>
-                            </div>
+                        <img src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="" />
+                        <div className={classes.product_title}>
+                            <h4>Titolo del gioco</h4>
+                            <p>God of war</p>
+                        </div>
+                        <div className={classes.product_price}>
+                            <h4>Prezzo</h4>
+                            <p>50€</p>
+                        </div>
+                        <div className={classes.available}>
+                            <p>disponibile</p>
+                        </div>
+                        <div className={classes.delete}>
+                            <button className={classes.button_delete}>Elimina</button>
                         </div>
                     </div>
                 </div>
-            )}
-            {showPayment && <Payment />}
-            <Footer />
-        </>
-        //fine background
-    );
+            </div>
+
+            {/* Riepilogo */}
+            <div className={classes.resume}>
+                <h2>Riepilogo</h2>
+                <div className={classes.resume_total}>
+                    <div className={classes.game}>
+                        <p>Titolo gioco</p>
+                        <p>10€</p>
+                    </div>
+                    <div className={classes.total}>
+                        <p>Totale</p>
+                        <p>150€</p>
+                    </div>
+                    <div className={classes.discount}>
+                        <p>codice sconto</p>
+                        <label htmlFor="discount"></label>
+                        <input type="text" name='discount' />
+                    </div>
+                    <div className={classes.button_resume}>
+                        <button className={classes.checkOut_button}>Checkout</button>
+                        <button className={classes.continue_button}>Continua con lo shopping</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+
+
 }
