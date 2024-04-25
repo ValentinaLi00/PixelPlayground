@@ -68,21 +68,20 @@ export function Payment() {
             <h1 className="title_address">Pagamento</h1>
             <div className="cards_payment_container">
               <div className="google_payment">
-                <img
-                  src="src\assets\melissa_img\payment_icon\Gpay.png"
+                <img className="img_payment"
+                  src="https://lh3.googleusercontent.com/v-WZaxZB_U1zuemPL0Slj182czueIRBKNibrAhLAxOD2WrstNV3pMa4a4z084j67tSSFeM_uR1No-6_ion1gttRhqV8iVmhyaV6zTg4"
                   alt="google pay"
                 />
               </div>
 
               <div className="paypal_payment">
-                <img
+                <img className="img_payment"
                   src="src\assets\melissa_img\payment_icon\paypal.png"
-                  alt="paypal"
-                />
+                  alt="paypal"/>
               </div>
 
               <div className="visa_payment">
-                <img
+                <img className="img_payment"
                   src="src\assets\melissa_img\payment_icon\visa.png"
                   onClick={() => setShow(true)}
                   alt="visa"
@@ -90,7 +89,7 @@ export function Payment() {
               </div>
 
               <div className="mastercard_payment">
-                <img
+                <img className="img_payment"
                   src="src\assets\melissa_img\payment_icon\mastercard.png"
                   onClick={() => setShow(true)}
                   alt=""
