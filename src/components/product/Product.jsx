@@ -60,7 +60,7 @@ export function Product() {
             <div className={classes.priceBtn_container}>
               <button name="wishlistBtn" className={classes.wishlistBtn}>
                 <img
-                  src="src\assets\paoloLupoAssets\heart_wishlist.png"
+                  src="src\assets\imagesGabriele\heart_wishlist.png"
                   alt=""
                 />
               </button>
