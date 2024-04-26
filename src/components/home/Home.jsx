@@ -8,7 +8,6 @@ import { Incoming } from "./Incoming";
 import { Reviews } from "./Reviews";
 import classes from "./home.module.css";
 import { ScrollUp } from "../footer/ScrollUp";
-import { SingleProd } from "../product/SingleProd";
 import { GiftCards } from "./GiftCards";
 import { Video } from "./Video";
 
@@ -37,7 +36,6 @@ export function Home() {
       <Reviews />
       <ScrollUp />
       <Footer />
-      <SingleProd />
 
     </div>
   );

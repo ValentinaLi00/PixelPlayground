@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import classes from "./product.module.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export function Product() {
   const [data, setData] = useState([])
@@ -22,6 +22,9 @@ export function Product() {
     getAPI()
   }, [])
 
+  function handleAlert() {
+    alert('Il gioco è stato aggiunto al carrello')
+  }
 
 
   return (
@@ -65,12 +68,14 @@ export function Product() {
                   alt=""
                 />
               </button>
-              <button name="addToCartBtn" className={classes.addToCartBtn}>
+              <button name="addToCartBtn" className={classes.addToCartBtn} onClick={handleAlert}>
                 Aggiungi al carrello
               </button>
-              <button name="buyNowBtn" className={classes.buyNowBtn}>
-                Compra ora
-              </button>
+              <Link to='/payment'>
+                <button name="buyNowBtn" className={classes.buyNowBtn}>
+                  Compra ora
+                </button>
+              </Link>
 
             </div>
             <span className={classes.discount}>

@@ -3,6 +3,9 @@ import classes from './cart.module.css'
 
 export function Cart() {
 
+    function handleDelete() {
+        alert('Il prodotto è stato eliminato dal tuo carrello')
+    }
 
     return (
         <div className={classes.container}>
@@ -31,7 +34,7 @@ export function Cart() {
                             <p>disponibile</p>
                         </div>
                         <div className={classes.delete}>
-                            <button className={classes.button_delete}>Elimina</button>
+                            <button className={classes.button_delete} onClick={handleDelete}>Elimina</button>
                         </div>
                     </div>
                 </div>
