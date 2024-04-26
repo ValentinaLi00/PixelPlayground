@@ -15,16 +15,24 @@ export function PaymentProva() {
                     <div className={classes.personal_info}>
                         {/* input per nome e cognome */}
                         <div className={classes.name_surname}>
-                            <label htmlFor="">Nome</label>
-                            <input type="text" name="name" placeholder="name" />
-                            <label htmlFor="">Cognome</label>
-                            <input type="text" name="surname" placeholder="surname" />
+                            <div className={classes.name_person}>
+                                <label htmlFor="">Nome</label>
+                                <input type="text" name="name" placeholder="name" />
+                            </div>
+                            <div className={classes.surname_person}>
+                                <label htmlFor="">Cognome</label>
+                                <input type="text" name="surname" placeholder="surname" />
+                            </div>
                         </div>
                         <div className={classes.email_address}>
-                            <label htmlFor="email">Email</label>
-                            <input type="email" name="email" />
-                            <label htmlFor="address">Indirizzo, numero civico, CAP</label>
-                            <input type="text" name="address" />
+                            <div className={classes.email_person}>
+                                <label htmlFor="email">Email</label>
+                                <input type="email" name="email" placeholder="email"/>
+                            </div>
+                            <div className={classes.address_person}>
+                                <label htmlFor="address">Indirizzo, numero civico, CAP</label>
+                                <input type="text" name="address" placeholder="indirizzo"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -33,30 +41,41 @@ export function PaymentProva() {
                 <div className={classes.payment_info}>
                     <div className={classes.choose_payment}>
                         <h4>Dati di pagamento</h4>
-                        <div className={classes.paypal}>
-                            <img src="src\assets\melissa_img\payment_icon\paypal.png" alt="" />
-                        </div>
-                        <div className={classes.googlePay}>
-                            <img src="src\assets\melissa_img\payment_icon\Gpay.png" alt="" />
-                        </div>
-                        <div className={classes.mastercard}>
-                            <img src="src\assets\melissa_img\payment_icon\mastercard.png" alt="" />
-                        </div>
-                        <div className={classes.visa}>
-                            <img src="src\assets\melissa_img\payment_icon\visa.png" alt="" />
+                        <div className={classes.container_card}>
+                            <div className={classes.paypal}>
+                                <img src="src\assets\melissa_img\payment_icon\paypal.png" alt="" />
+                            </div>
+                            <div className={classes.googlePay}>
+                                <img src="src\assets\melissa_img\payment_icon\Gpay.png" alt="" />
+                            </div>
+                            <div className={classes.mastercard}>
+                                <img src="src\assets\melissa_img\payment_icon\mastercard.png" alt="" />
+                            </div>
+                            <div className={classes.visa}>
+                                <img src="src\assets\melissa_img\payment_icon\visa.png" alt="" />
+                            </div>
                         </div>
                     </div>
-
+                    {/* dati carta cliente */}
                     <div className={classes.payment}>
-                        <label htmlFor="">Titolare della Carda</label>
-                        <input type="text" />
-                        <label htmlFor="">Numero della carta</label>
-                        <input type="number" />
-                        <label htmlFor="">Scadenza</label>
-                        <input type="date" />
-                        <label htmlFor="">CVV</label>
-                        <input type="password" />
-                        <button>Paga ora</button>
+                        <div className={classes.owner_container}>
+                            <div className={classes.owner_card}>
+                                <label htmlFor="" >Titolare della Carda</label>
+                                <input type="text" />
+                            </div>
+                            <div className={classes.card_number}>
+                                <label htmlFor="">Numero della carta</label>
+                                <input type="number" />
+                            </div>
+                            <div className={classes.card_date}>
+                                <label htmlFor="">Scadenza</label>
+                                <input type="date" />
+                            </div>
+                            <div className={classes.cvv}>
+                                <label htmlFor="">CVV</label>
+                                <input type="password" />
+                            </div>
+                        </div>
                     </div>
 
                 </div>
