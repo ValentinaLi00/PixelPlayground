@@ -41,6 +41,8 @@ export function Footer() {
         <div className={classes.info}>
           <Link to='/termOfUse'><p>Condizioni d'uso</p></Link>
           <Link to='/privacy'><p>Informativa sulla privacy</p></Link>
+          <Link to='/aboutus'><p>Chi siamo</p></Link>
+          <Link to='/faq'><p>FAQ</p></Link>
           <Link to='/catalogue'><p>GiftCard</p></Link>
         </div>
         <div className={classes.copyright}>
