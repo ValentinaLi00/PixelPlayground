@@ -42,12 +42,6 @@ export function Navbar() {
       >
         <div className="panel_navbar">
           <div className="panel_logo">
-            <img
-              src="src\assets\imagesGabriele\hamburger_home_menu.png"
-              id="logo_vettoriale_nav"
-              onClick={toggleContainers}
-              alt="menu"
-            />
           </div>
           <div className="user_container">
             <Link to="/userpage"><div className="user_image">
@@ -127,11 +121,6 @@ export function Navbar() {
         style={{ display: showNavbar ? "flex" : "none" }}
       >
         <div className="nav_first_section">
-          <img
-            src="src\assets\imagesGabriele\hamburger_home_menu.png"
-            id="logo_vettoriale_nav"
-            onClick={toggleContainers}
-          />
         </div>
         <div className="center_navbar">
           <Link to="/">
