@@ -121,11 +121,12 @@ export function Navbar() {
         style={{ display: showNavbar ? "flex" : "none" }}
       >
         <div className="nav_first_section">
-        </div>
-        <div className="center_navbar">
-          <Link to="/">
+        <Link to="/">
             <img src="src\assets\loghi\logo2.png" id="logo_vettoriale" />
           </Link>
+        </div>
+        <div className="center_navbar">
+          
           <div className="nav_second_section">
             <div className="first_logo_nav">
               <Link to="catalogue">
@@ -173,6 +174,11 @@ export function Navbar() {
           <div>
             <Link to="/wishlist">
               <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" />
+            </Link>
+          </div>
+          <div>
+            <Link to="/userPage">
+              <img src="src\assets\imagesGabriele\use_icon.png" id="nav_heart" />
             </Link>
           </div>
         </div>
