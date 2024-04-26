@@ -1,8 +1,18 @@
+import { Link } from 'react-router-dom';
 import classes from './genres.module.css'
+import { useFetchGames } from './useFetchGames';
 
 
 export function Genres() {
 
+    const { data, loading, error } = useFetchGames()
+    if (loading) {
+        return <p>Caricamento in corso...</p>;
+    }
+
+    if (error) {
+        return <p>Si è verificato un errore: {error.message}</p>;
+    }
 
 
 
@@ -11,13 +21,16 @@ export function Genres() {
 
             <div className={classes.containerImg}>
                 <img src="src\assets\valentinaLiAssets\home\banner.jpg" alt="" />
-                <div className={classes.container_banner}>
-                    <h3>Tekken 8</h3>
-                    <button>Scopri di più</button>
-                    <span className={classes.discount}>
-                        <p>13%</p>
-                    </span>
-                </div>
+                {data && data.filter((game) => game.title === 'Tekken 8').map((game) => {
+                    return <Link to={`/catalogue/product/${game.id}`}><div className={classes.container_banner}>
+                        <h3>{game.sub_title}</h3>
+                        <button>Scopri di più</button>
+                        <span className={classes.discount}>
+                            <p>{game.discount}%</p>
+                        </span>
+                    </div></Link>
+                })}
+
             </div>
             <div className={classes.containerGenres}>
                 <h2>GENERI</h2>

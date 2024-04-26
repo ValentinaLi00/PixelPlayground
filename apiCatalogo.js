@@ -1593,8 +1593,8 @@ const users = [
   image_url: "https://gaming-cdn.com/images/products/810/616x353/steam-gift-card-100eur-100-euros-card-pc-game-steam-cover.jpg?v=1674143816",
 },
 {
-  id: 91,
-  title: "Tekken",
+  id: 118,
+  title: "Tekken 8",
   sub_title: "Tekken 8",
   genre: "Fighting",
   rating: "PEGI 18",
