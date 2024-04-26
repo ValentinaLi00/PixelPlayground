@@ -6,7 +6,7 @@ export function PaymentProva() {
         <form className={classes.container}>
 
             {/* Payment*/}
-            <div className={classes.payment_title}>
+            <div className={classes.payment_container}>
                 <h2>Pagamento</h2>
                 {/* info personali */}
                 <div className={classes.billing_address}>

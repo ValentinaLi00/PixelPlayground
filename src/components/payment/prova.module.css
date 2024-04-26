@@ -1,0 +1,35 @@
+.container{
+    height:100%;
+    display: flex;
+}
+
+.payment_container{
+    height: 80%;
+    width: 80%;
+    padding: 30px;
+    gap: 10px;
+    border-radius: 15px;
+    background-color: #4f16cbb3;
+    border: 1px solid #4f16cbb3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.payment_container h2{
+   font-size: 30px;
+}
+
+.billing_address{
+    display: flex;
+    flex-direction: column;
+}
+.personal_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.payment_info img{
+    width: 50px;
+}

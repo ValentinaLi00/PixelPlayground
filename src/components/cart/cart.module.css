@@ -110,7 +110,6 @@
 
 .button_resume button{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    width: 80%;
     height: 60px;
     color: #fff;
     border-radius: 5px;
@@ -121,13 +120,14 @@
 .checkOut_button{
     background-color: #28a744;
     font-size: 20px;
-    width: 400px;
+    width: 200px;
 }
 
 .continue_button{
     background-color: #014b99;
     font-size: 20px;
-    width: 400px;
+    width: 200px;
+   
 }
 
 .game, .total, .discount{
