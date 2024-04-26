@@ -7,6 +7,8 @@
 }
 
 .containerImg {
+    height: 100%;
+    width: 100%;
     /* --mask:
         radial-gradient(149.82px at 50% 201px, #000 99%, #0000 101%) calc(50% - 134px) 0/268px 51% repeat-x,
         radial-gradient(149.82px at 50% -134px, #0000 99%, #000 101%) 50% 67px/268px calc(51% - 67px) repeat-x,
@@ -14,12 +16,67 @@
         radial-gradient(149.82px at 50% calc(100% + 134px), #0000 99%, #000 101%) 50% calc(100% - 67px)/268px calc(51% - 67px) repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask); */
-    clip-path: polygon(0 0,100% 0,100% calc(100% - 101px),calc(50% + 174.94px) calc(100% - 101px),50% 100%,calc(50% - 174.94px) calc(100% - 101px),0 calc(100% - 101px));
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 101px), calc(50% + 174.94px) calc(100% - 101px), 50% 100%, calc(50% - 174.94px) calc(100% - 101px), 0 calc(100% - 101px));
+    position: relative;
 }
 
 .containerImg img {
     height: 100%;
     width: 100%;
+}
+
+.container_banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    width: 25%;
+    height: 40%;
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    color: white;
+    font-size: 30px;
+    background-image: radial-gradient(circle at 100% 100%, transparent 19px, #d50000 19px, #d50000 20px, transparent 20px), linear-gradient(to right, #d50000, #304ffe), radial-gradient(circle at 0% 100%, transparent 19px, #304ffe 19px, #304ffe 20px, transparent 20px), linear-gradient(to bottom, #304ffe, #00bfa5), radial-gradient(circle at 0% 0%, transparent 19px, #00bfa5 19px, #00bfa5 20px, transparent 20px), linear-gradient(to left, #00bfa5, #ffd600), radial-gradient(circle at 100% 0%, transparent 19px, #ffd600 19px, #ffd600 20px, transparent 20px), linear-gradient(to top, #ffd600, #d50000);
+    background-size: 20px 20px, calc(100% - 40px) 1px, 20px 20px, 1px calc(100% - 40px);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-repeat: no-repeat;
+}
+
+.discount p {
+    font-size: 30px;
+    color: #fff;
+}
+
+.discount {
+    --r: .4em;
+    /* control the ribbon shape (the radius) */
+    --c: red;
+    position: absolute;
+    top: 10px;
+    left: calc(-1*var(--r));
+    line-height: 1.5;
+    padding: 0 .5em calc(2*var(--r));
+    border-radius: var(--r) 0 0 var(--r);
+    background:
+        radial-gradient(100% 50% at left, var(--c) 98%, #0000 101%) 100% 0/.5lh calc(100% - 2*var(--r)),
+        radial-gradient(100% 50% at right, #0005 98%, #0000 101%) 0 100%/var(--r) calc(2*var(--r)),
+        conic-gradient(from 90deg at var(--r) calc(100% - 2*var(--r)), #0000 25%, var(--c) 0) 0 0/calc(101% - .5lh) 100%;
+    background-repeat: no-repeat;
+}
+
+.container_banner button {
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    width: 150px;
+}
+
+.container_banner button:hover {
+    transform: scale(1.2);
 }
 
 /*Genres*/

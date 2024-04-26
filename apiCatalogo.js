@@ -579,7 +579,7 @@ const users = [
 },
 {
   id: 38,
-  title: "Final Fantasy ",
+  title: "Final Fantasy",
   sub_title: "Final Fantasy XIV: Dawntrail",
   genre: "RPG",
   rating: "PEGI 12",
@@ -1591,6 +1591,22 @@ const users = [
   discount: 1,
   discount_price: 98.99,
   image_url: "https://gaming-cdn.com/images/products/810/616x353/steam-gift-card-100eur-100-euros-card-pc-game-steam-cover.jpg?v=1674143816",
+},
+{
+  id: 118,
+  title: "Tekken 8",
+  sub_title: "Tekken 8",
+  genre: "Fighting",
+  rating: "PEGI 18",
+  developer: "Bandai Namco",
+  description: "Tekken 8 for PC is just the latest in a long line of Tekken games: it is the eighth main game, and tenth release overall. But it is only the second game to be made available on PC: the first being Tekken 7. Tekken (the word comes from the Japanese Tetsu no ken, meaning 'Iron Fist,') is a fighting game, and in this game, the developers have perfected their understanding of what their players want from the game.", 
+  price: 70,
+  discount: 35,
+  discount_price: 45.49,
+  image_url: "https://gaming-cdn.com/images/products/9579/616x353/tekken-8-pc-game-steam-cover.jpg?v=1706550061",
+  video_url: "https://youtu.be/_MM4clV2qjE?si=uMZihMcfwbOeTnme",
+  image_background_url: "https://gaming-cdn.com/img/products/9579/pcover/1920x620/9579.jpg?v=1706550061",
+  platform: "PC",
 }
 
 
