@@ -22,6 +22,10 @@ export function UserPage() {
     setImage(event.target.files[0]);
   }
 
+  function handleSuscribe() {
+    alert('Ti sei iscritto alla newsLetter')
+  }
+
   return (
     <>
       <Navbar />
@@ -196,7 +200,7 @@ export function UserPage() {
               />
               <div className="subscribe">
                 <p>iscriviti per rimanere aggiornato</p>
-                <button>subscribe</button>
+                <button onClick={handleSuscribe}>subscribe</button>
               </div>
             </div>
             <div className="wishlistAndExit">

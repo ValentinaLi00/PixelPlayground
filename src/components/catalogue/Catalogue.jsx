@@ -121,7 +121,7 @@ export function Catalogue() {
             price === 'selectPrice' ||
             game.prezzi === price)
             .slice(1, show)
-            .map((game) => <Link to={`/product/${game.id}`}><Game key={game.id} game={game} /></Link>)}
+            .map((game) => <Link to={`/catalogue/product/${game.id}`}><Game key={game.id} game={game} /></Link>)}
 
         </div>
         <div className={classes.container_btn}>

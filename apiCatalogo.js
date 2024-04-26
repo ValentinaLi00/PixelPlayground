@@ -13,8 +13,9 @@ const users = [
       price: 29.99,
       discount: 10,
       discount_price: 19.99,
+      image_background_url: "https://fanatical.imgix.net/product/original/27410333-afab-4fb3-b326-e5f3118313ca.jpeg?auto=compress,format&w=870&fit=crop&h=489",
       image_url: "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
-      video_url: "https://youtu.be/gmA6MrX81z4",
+      video_url: "https://cdn.akamai.steamstatic.com/steam/apps/256768274/movie480.webm?t=1574881498",
       platform: "Playstation",
       order: 'Bestseller',
       prezzi: 'low'
@@ -30,8 +31,9 @@ const users = [
       price: 44.89,
       discount: 13,
       discount_price: 31.89,
+      image_background_url: "https://cdn.akamai.steamstatic.com/steam/apps/1471870/ss_66c9fedb3a6f6c0a37dfd7cada6ee7fbd4883218.1920x1080.jpg?t=1606327751",
       image_url: "https://gaming-cdn.com/images/products/8432/616x353/mortal-kombat-11-ultimate-ps4-ps5-ultimate-playstation-4-playstation-5-game-playstation-store-europe-cover.jpg?v=1701345153",
-      video_url: "https://youtu.be/UoTams2yc0s",
+      video_url: "https://cdn.akamai.steamstatic.com/steam/apps/256813084/movie480_vp9.webm?t=1607567246",
       platform: "Playstation",
       order: 'Bestseller'
   },
@@ -65,6 +67,7 @@ const users = [
       discount_price: 18.99,
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202310/0416/5c565008ffe01b5ee17799a0b76f5d1052fcb6aba1adab9e.jpg",
       video_url: "https://youtu.be/NniXc724TtU",
+      image_background_url: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/1eBE6zSJOCyhSWm10W6QeT/ae54d4ebd86b63cf9d4606d1b14e3372/JD23_Thumbnail.png",
       platform: "Playstation",
       order: 'Bestseller'
   },
@@ -79,8 +82,9 @@ const users = [
       price: 36.42,
       discount: 12,
       discount_price: 24.99,
+      image_background_url: "https://cdn.akamai.steamstatic.com/steam/apps/2420110/header.jpg?t=1711473066",
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/cb7gh5N3DjSRathadczu40S9.png",
-      video_url: "https://youtu.be/Lq594XmpPBg",
+      video_url: "https://cdn.akamai.steamstatic.com/steam/apps/257007287/movie480_vp9.webm?t=1711032973",
       platform: "Playstation",
       order: 'Bestseller'
   },
@@ -95,8 +99,9 @@ const users = [
       price: 23.99,
       discount: 6,
       discount_price: 17.99,
+      image_background_url: "https://cdn.akamai.steamstatic.com/steam/apps/1129580/header.jpg?t=1712241249",
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202308/1609/9ef2acb3ed2cda2a894342473bd82fda34e73b3a35f57aef.jpg",
-      video_url: "https://youtu.be/0m_XJdDvcf4",
+      video_url: "https://cdn.akamai.steamstatic.com/steam/apps/256987375/movie480_vp9.webm?t=1701962327",
       platform: "Playstation",
   },
   {
@@ -111,7 +116,8 @@ const users = [
       discount: 6,
       discount_price: 34.89,
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/gTUWTlvPHzxFJ2JAxtDyI2eS.png",
-      video_url: "https://youtu.be/F3Wl-OiZCO4",
+      video_url: "https://cdn.akamai.steamstatic.com/steam/apps/256910607/movie480_vp9.webm?t=1671505478",
+      image_background_url: "https://cdn.akamai.steamstatic.com/steam/apps/1659420/header_italian.jpg?t=1705616565",
       platform: "Playstation",
   },
   {
@@ -126,7 +132,8 @@ const users = [
       discount: 20,
       discount_price: 39.99,
       image_url: "https://gaming-cdn.com/images/products/9187/616x353/assassin-s-creed-mirage-pc-game-ubisoft-connect-europe-cover.jpg?v=1696577233",
-      video_url: "https://youtu.be/lirm6x2AJVc",
+      video_url: "",
+      image_background_url: "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Bx3f9isII2XAKLU1uD5EB/e41d7d22924be10a8c8f35f5fb27765d/acm-bagdad-vista.jpg",
       platform: "Playstation",
   },
   {
@@ -141,7 +148,8 @@ const users = [
       discount: 8,
       discount_price: 25.99,
       image_url: "https://cdn1.epicgames.com/offer/4750c68b2bfa4f43933b81cfd5cc510c/EGS_EASPORTSFC24StandardEdition_EACanada_S1_2560x1440-f1772618b782ca975f0bbe33db3a88b3",
-      video_url: "https://youtu.be/XhP3Xh4LMA8",
+      video_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/256973023/movie480_vp9.webm?t=1696287435",
+      image_background_url: "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_EaSportsFc24.jpg",
       platform: "Playstation",
   },
   {
@@ -156,7 +164,8 @@ const users = [
       discount: 10,
       discount_price: 25.99,
       image_url: "https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/DwVjpbKOsFOyPdNzmSTSWuxG.png",
-      video_url: "https://youtu.be/ai3o0XtrnM8",
+      video_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/256959863/movie480_vp9.webm?t=1690383390",
+      image_background_url: "https://insomniac.games/wp-content/uploads/2020/10/RC_RiftApart_Who_PS5-scaled.jpg",
       platform: "Playstation",
       order: 'Bestseller'
   },
@@ -172,7 +181,8 @@ const users = [
       discount: 9,
       discount_price: 40.99,
       image_url: "https://gaming-cdn.com/images/products/7911/616x353/dragon-s-dogma-2-pc-game-steam-europe-cover.jpg?v=1711626178",
-      video_url: "https://youtu.be/cT0rIgaiPWA",
+      video_url: "https://cdn.cloudflare.steamstatic.com/steam/apps/257009942/movie480_vp9.webm?t=1711065652",
+      image_background_url: "https://www.sideproject.games/wp-content/uploads/2023/11/dragons_dogma_2_data_di_uscita_copertina.webp",
       platform: "XBOX",
   },
   {
@@ -188,6 +198,7 @@ const users = [
       disocunt_price: 24.99,
       image_url: "https://gaming-cdn.com/images/products/9014/616x353/avatar-frontiers-of-pandora-pc-game-ubisoft-connect-europe-cover.jpg?v=1702461541",
       video_url: "https://youtu.be/G-1evpoTzWU",
+      image_background_url: "https://cdn1.epicgames.com/offer/eca39884bdf14f65af242a8e3ff5b2d9/EGST_StoreLandscape_2560x1440_2560x1440-4207efea668639964f50064af970da15",
       platform: "XBOX",
   },
   {
