@@ -28,7 +28,6 @@ export function UserPage() {
 
   return (
     <>
-      <Navbar />
       <div className="userPagediv">
         <div className="wholeUserPage">
           <div className="leftUserPart">
@@ -247,7 +246,6 @@ export function UserPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

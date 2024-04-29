@@ -16,7 +16,6 @@ export function Faq() {
 
     return (
         <>
-        <Navbar/>
             <div className="faqPart">
                 {/* <img className='gif' src="https://i.pinimg.com/originals/19/b2/8c/19b28c8372aaec65623f7ee7332e74be.gif" alt="" srcset="" /> */}
                 <div className='upperFaq'>
@@ -51,8 +50,6 @@ export function Faq() {
 
                 </div>
             </div >
-
-            <Footer/>
         </>
     )
 }

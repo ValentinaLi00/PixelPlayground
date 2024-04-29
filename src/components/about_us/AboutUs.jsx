@@ -6,7 +6,6 @@ import classes from "./aboutUs.module.css";
 export function AboutUs() {
   return (
     <>
-      <Navbar />
       <div className={classes.container}>
         {/* la nostra storia */}
         <div className={classes.story}>
@@ -70,31 +69,7 @@ export function AboutUs() {
             divertimento e creatività!
           </p>
         </div>
-
-        {/* <div className={classes.scroller}>
-                <ul className={`${classes.list} ${classes.scroller_inner}`}>
-                    <li>CSS</li>
-                    <li>REACT.js</li>
-                    <li>NODE.js</li>
-                    <li>VSC</li>
-                    <li>CANVA</li>
-                    <li>GIT</li>
-                    <li>GITHUB</li>
-                    <li>SQL</li>
-                </ul>
-                <ul className={`${classes.list} ${classes.scroller_inner}`}>
-                    <li>CSS</li>
-                    <li>REACT.js</li>
-                    <li>NODE.js</li>
-                    <li>VSC</li>
-                    <li>CANVA</li>
-                    <li>GIT</li>
-                    <li>GITHUB</li>
-                    <li>SQL</li>
-                </ul>
-            </div> */}
       </div>
-      <Footer />
     </>
   );
 }

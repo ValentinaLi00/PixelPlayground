@@ -39,11 +39,11 @@ export function Footer() {
       {/* informativa */}
       <div className={classes.informativa}>
         <div className={classes.info}>
-          <Link to='/termOfUse'><p>Condizioni d'uso</p></Link>
-          <Link to='/privacy'><p>Informativa sulla privacy</p></Link>
-          <Link to='/aboutus'><p>Chi siamo</p></Link>
-          <Link to='/faq'><p>FAQ</p></Link>
-          <Link to='/catalogue'><p>GiftCard</p></Link>
+          <a href="termOfUse">Condizioni d'uso</a>
+          <a href="privacy">Informativa sulla privacy</a>
+          <a href="aboutUs">Chi siamo</a>
+          <a href="faq">FAQ</a>
+          <a href="catalogue">GiftCard</a>
         </div>
         <div className={classes.copyright}>
           <p>Tutti i diritti riservati:</p>

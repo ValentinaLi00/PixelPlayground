@@ -177,7 +177,7 @@ export function Navbar() {
             </Link>
           </div>
           <div>
-            <Link to="/userPage">
+            <Link to="loginRegistration">
               <img src="src\assets\imagesGabriele\use_icon.png" id="nav_heart" />
             </Link>
           </div>

@@ -14,7 +14,6 @@ export function Wishlist() {
       />
 
       <div className="wishlistContainer">
-        <Navbar />
         <div className="upperWishlist">
           {/* <img style={{ width: '100px', height: '100%' }} src="src\assets\loghi\ariGiaccariAssets\logo-removebg-preview.png" alt="" /> */}
           <h1>LISTA DESIDERI</h1>
@@ -47,7 +46,6 @@ export function Wishlist() {
                     <img style={{ width: '50px' }} src="src\assets\loghi\ariGiaccariAssets\broken-heart.png" alt="brokenHeart" />
                 </div> */}
       </div>
-      <Footer />
     </div>
   );
 }

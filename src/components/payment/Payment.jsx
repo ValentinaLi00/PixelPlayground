@@ -11,7 +11,6 @@ export function Payment() {
 
   return (
     <div className="background_container">
-      <Navbar />
       <form action="#" id="paymentForm">
         <div className="address_container">
           <div className="input_container">
@@ -152,7 +151,6 @@ export function Payment() {
           </div>
         </div>
       </form>
-      <Footer />
     </div>
   );
 }
