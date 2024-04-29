@@ -121,6 +121,7 @@ export function Product() {
       {/* <Gallery /> */}
       <Requirements />
       <Reviews />
+      <ScrollUp/>
     </div>
   );
 }

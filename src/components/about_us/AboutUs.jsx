@@ -67,6 +67,7 @@ export function AboutUs() {
           </p>
         </div>
       </div>
+      <ScrollUp />
     </>
   );
 }

@@ -132,6 +132,7 @@ export function Catalogue() {
           </button>
         </div>
       </div>
+      <ScrollUp/>
     </>
   );
 }

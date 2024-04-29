@@ -43,6 +43,7 @@ export function Privacy() {
                     <h3 className={classes.generalBot}>Ti invitiamo a leggere attentamente la nostra informativa sulla privacy e a contattarci se hai domande o dubbi. La tua privacy è importante per noi e faremo del nostro meglio per proteggere le tue informazioni.</h3>
                 </div>
             </div>
+            <ScrollUp/>
         </div>
     )
 }

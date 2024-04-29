@@ -46,6 +46,7 @@ export function TermOfUse() {
                     </h3>
                 </div>
             </div>
+            <ScrollUp/>
         </div>
     )
 }
