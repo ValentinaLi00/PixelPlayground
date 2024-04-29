@@ -1,6 +1,3 @@
-import { Navbar } from "../navbar/Navbar";
-import { Footer } from "../footer/Footer";
-
 import classes from "./aboutUs.module.css";
 
 export function AboutUs() {

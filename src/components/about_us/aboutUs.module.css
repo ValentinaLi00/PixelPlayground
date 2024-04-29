@@ -73,11 +73,16 @@
     justify-content: space-between;
     width: 50%;
     height: 100%;
-    margin-top: 70px;
     margin-bottom: 100px;
     animation: fade-out linear;
     animation-timeline: view();
     animation-range: exit;
+}
+
+.team,
+.mission,
+.style {
+    margin-top: 70px;
 }
 
 @keyframes fade-out {
