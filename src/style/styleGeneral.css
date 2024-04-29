@@ -5,6 +5,10 @@
   font-family: Minecraft;
 }
 
+body {
+  background-color: #201434;
+}
+
 @font-face {
   font-family: 'Minecraft';
   src: local('Mincreft'),

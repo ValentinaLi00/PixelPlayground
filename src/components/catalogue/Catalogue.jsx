@@ -14,7 +14,7 @@ export function Catalogue() {
   const [genre, setGenre] = useState("selectGenre");
   const [order, setOrder] = useState('selectOrder');
   const [price, setPrice] = useState('selectPrice')
-  const {id} = useParams
+  const { id } = useParams
 
   if (loading) {
     return <p>Caricamento in corso...</p>;
@@ -41,7 +41,6 @@ export function Catalogue() {
 
   return (
     <>
-      <Navbar />
       <div className={classes.container_catalogue}>
         <div className={classes.container_filter}>
           <div className={classes.filter}>
@@ -121,7 +120,7 @@ export function Catalogue() {
             price === 'selectPrice' ||
             game.prezzi === price)
             .slice(1, show)
-            .map((game) => <Link to={`/catalogue/product/${game.id}`}><Game key={game.id} game={game} /></Link>)}
+            .map((game) => <a href={`/catalogue/product/${game.id}`}><Game key={game.id} game={game} /></a>)}
 
         </div>
         <div className={classes.container_btn}>
@@ -133,7 +132,7 @@ export function Catalogue() {
           </button>
         </div>
       </div>
-      <Footer />
+      <ScrollUp/>
     </>
   );
 }

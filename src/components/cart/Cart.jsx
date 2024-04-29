@@ -63,6 +63,7 @@ export function Cart() {
                     </div>
                 </div>
             </div>
+            <ScrollUp/>
         </div>
     )
 

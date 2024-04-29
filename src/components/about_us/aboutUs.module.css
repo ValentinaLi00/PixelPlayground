@@ -63,6 +63,10 @@
     color: rgba(243, 17, 106, 255);
 }
 
+.story {
+    margin-top: 15px;
+}
+
 .story,
 .team,
 .mission,
@@ -73,11 +77,16 @@
     justify-content: space-between;
     width: 50%;
     height: 100%;
-    margin-top: 70px;
     margin-bottom: 100px;
     animation: fade-out linear;
     animation-timeline: view();
     animation-range: exit;
+}
+
+.team,
+.mission,
+.style {
+    margin-top: 70px;
 }
 
 @keyframes fade-out {
