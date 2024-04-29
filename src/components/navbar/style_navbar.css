@@ -7,7 +7,7 @@
 .container_of_all {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 22vh;
     background-color: #201434;
 }
 

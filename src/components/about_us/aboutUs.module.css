@@ -63,6 +63,10 @@
     color: rgba(243, 17, 106, 255);
 }
 
+.story {
+    margin-top: 15px;
+}
+
 .story,
 .team,
 .mission,

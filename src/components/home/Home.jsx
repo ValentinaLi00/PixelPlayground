@@ -19,7 +19,7 @@ export function Home() {
       <GiftCards />
       <Genres />
       <Reviews />
-      <ScrollUp />
+      {/* <ScrollUp /> */}
     </div>
   );
 }
