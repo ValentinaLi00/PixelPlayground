@@ -6,12 +6,8 @@ import "./wishlist.css";
 
 export function Wishlist() {
   return (
+    <div>
     <div className="wishlistBackground">
-      <img
-        className="wishlistBackgroundImg"
-        src="src\assets\loghi\ariGiaccariAssets\sfondo_wishlist.png"
-        alt=""
-      />
 
       <div className="wishlistContainer">
         <div className="upperWishlist">
@@ -46,6 +42,7 @@ export function Wishlist() {
                     <img style={{ width: '50px' }} src="src\assets\loghi\ariGiaccariAssets\broken-heart.png" alt="brokenHeart" />
                 </div> */}
       </div>
+    </div>
     </div>
   );
 }

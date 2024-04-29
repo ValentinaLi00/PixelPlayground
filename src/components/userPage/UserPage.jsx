@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Footer } from "../footer/Footer";
 import { Navbar } from "../navbar/Navbar";
 import "./userPage.css";
@@ -9,6 +9,9 @@ export function UserPage() {
 
   const [editingPsw, setEditingPsw] = useState(false);
   const [password, setPassword] = useState("");
+
+   const changedEmail= localStorage.setItem("email", email);
+   const changedPassword= localStorage.setItem("password", JSON.stringify(password));
 
   const inputRef = useRef(null);
   const [image, setImage] = useState("");

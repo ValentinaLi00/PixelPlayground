@@ -1,8 +1,18 @@
 import { useState } from 'react';
 import classes from './prova.module.css'
+import { useNavigate } from 'react-router-dom';
 
 export function PaymentProva() {
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
+
+    const handleRedirect = (url) => {
+        const confirmRedirect = window.confirm("Stai per essere reindirizzato ad un'altra pagina. Vuoi continuare?");
+        if (confirmRedirect) {
+            navigate(url); // Reindirizzamento alla pagina
+        }
+    };
+
     return (
         <form className={classes.container}>
 
@@ -44,16 +54,16 @@ export function PaymentProva() {
                         <h4>Dati di pagamento</h4>
                         <div className={classes.container_card}>
                             <div className={classes.paypal}>
-                                <img src="src\assets\melissa_img\payment_icon\paypal.png" alt=""  />
+                                <img src="src\assets\melissa_img\payment_icon\paypal.png" alt="" onClick={() => handleRedirect("https://www.paypal.com")} />
                             </div>
                             <div className={classes.googlePay}>
-                                <img src="src\assets\melissa_img\payment_icon\Gpay.png" alt="" />
+                                <img src="src\assets\melissa_img\payment_icon\Gpay.png" alt="" onClick={() => handleRedirect("https://pay.google.com")}/>
                             </div>
                             <div className={classes.mastercard}>
-                                <img src="src\assets\melissa_img\payment_icon\mastercard.png" alt="" onClick={() => setShow(true)}  />
+                                <img src="src\assets\melissa_img\payment_icon\mastercard.png" alt="" onClick={() => setShow(!show)}  />
                             </div>
                             <div className={classes.visa}>
-                                <img src="src\assets\melissa_img\payment_icon\visa.png" alt="" onClick={() => setShow(true)}  />
+                                <img src="src\assets\melissa_img\payment_icon\visa.png" alt="" onClick={() => setShow(!show)}  />
                             </div>
                         </div>
                     </div>
