@@ -1,156 +1,124 @@
-import { Navbar } from "../navbar/Navbar";
-import { Footer } from "../footer/Footer";
-import './payment.css'
-import { useState } from "react";
-import "./payment.css"
-
-
+import { useNavigate } from 'react-router-dom';
+import classes from './payment.module.css'
+import { useState } from 'react';
 
 export function Payment() {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
+
+  const handleRedirect = (url) => {
+    const confirmRedirect = window.confirm("Stai per essere reindirizzato ad un'altra pagina. Vuoi continuare?");
+    if (confirmRedirect) {
+      navigate(url); // Reindirizzamento alla pagina
+    }
+  };
 
   return (
-    <div className="background_container">
-      <form action="#" id="paymentForm">
-        <div className="address_container">
-          <div className="input_container">
-            <h1 className="title_address">Indirizzo di fatturazione</h1>
-            <br />
-            <label htmlFor="input_name">Nome</label>
-            <input type="text" name="input_name" id="input_name" />
+    <form className={classes.container}>
 
-            <label htmlFor="input_surname">Cognome</label>
-            <input type="text" name="input_surname" id="input_surname" />
+      {/* Payment*/}
+      <div className={classes.payment_container}>
+        <h2>Pagamento</h2>
+        {/* info personali */}
+        <div className={classes.billing_address}>
+          <h4>Indirizzo di Fatturazione</h4>
 
-            <label htmlFor="input_address">Indirizzo di fatturazione</label>
-            <input type="text" name="input_address" id="input_address" />
-          </div>
-        </div>
-
-        <div className="resume_container_payment">
-          <div className="container_payment_resume">
-            <h2 className="cart-title-resume">Riepilogo</h2>
-            <div className="cart-item_resume">
-              <div className="cart-resume-thumbnail">
-                <div className="check_items">
-                  <input type="checkbox" />
-                  <img
-                    src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png"
-                    alt="Titolo del gioco"
-                  />
-                </div>
-                <div className="cart-item-details">
-                  <p className="cart-item-title">Titolo del gioco</p>
-                  <p className="cart-item-price">Prezzo: $XX.XX</p>
-                </div>
-                <div className="cart-buttons_resume">
-                  <button className="remove_btn">Rimuovi</button>
-                </div>
+          <div className={classes.personal_info}>
+            {/* input per nome e cognome */}
+            <div className={classes.name_surname}>
+              <div className={classes.name_person}>
+                <label htmlFor="">Nome</label>
+                <input type="text" name="name" placeholder="name" />
+              </div>
+              <div className={classes.surname_person}>
+                <label htmlFor="">Cognome</label>
+                <input type="text" name="surname" placeholder="surname" />
               </div>
             </div>
-            <div>
-              <ul>{/* map lista giochi nel carrello */}</ul>
-              <div className="cart-title-details">
-                <p className="cart-total-text">Totale:</p>
-                <p className="cart-total-amount">$XX.XX</p>
-                <p className="cart-discount">$XX.XX</p>
+            <div className={classes.email_address}>
+              <div className={classes.email_person}>
+                <label htmlFor="email">Email</label>
+                <input type="email" name="email" placeholder="email" />
               </div>
-              <div className="cart-resume-buttons">
-                <button className="payment_btn">Paga ora</button>
+              <div className={classes.address_person}>
+                <label htmlFor="address">Indirizzo, numero civico, CAP</label>
+                <input type="text" name="address" placeholder="indirizzo" />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="payment_box">
-          <div className="payment_container">
-            <h1 className="title_address">Pagamento</h1>
-            <div className="cards_payment_container">
-              <div className="google_payment">
-                <img className="img_payment"
-                  src="https://lh3.googleusercontent.com/v-WZaxZB_U1zuemPL0Slj182czueIRBKNibrAhLAxOD2WrstNV3pMa4a4z084j67tSSFeM_uR1No-6_ion1gttRhqV8iVmhyaV6zTg4"
-                  alt="google pay"
-                />
+        {/* info pagamento */}
+        <div className={classes.payment_info}>
+          <div className={classes.choose_payment}>
+            <h4>Dati di pagamento</h4>
+            <div className={classes.container_card}>
+              <div className={classes.paypal}>
+                <img src="src\assets\melissa_img\payment_icon\paypal.png" alt="" onClick={() => handleRedirect("https://www.paypal.com")} />
               </div>
-
-              <div className="paypal_payment">
-                <img className="img_payment"
-                  src="src\assets\melissa_img\payment_icon\paypal.png"
-                  alt="paypal"/>
+              <div className={classes.googlePay}>
+                <img src="src\assets\melissa_img\payment_icon\Gpay.png" alt="" onClick={() => handleRedirect("https://pay.google.com")} />
               </div>
-
-              <div className="visa_payment">
-                <img className="img_payment"
-                  src="src\assets\melissa_img\payment_icon\visa.png"
-                  onClick={() => setShow(true)}
-                  alt="visa"
-                />
+              <div className={classes.mastercard}>
+                <img src="src\assets\melissa_img\payment_icon\mastercard.png" alt="" onClick={() => setShow(!show)} />
               </div>
-
-              <div className="mastercard_payment">
-                <img className="img_payment"
-                  src="src\assets\melissa_img\payment_icon\mastercard.png"
-                  onClick={() => setShow(true)}
-                  alt=""
-                />
+              <div className={classes.visa}>
+                <img src="src\assets\melissa_img\payment_icon\visa.png" alt="" onClick={() => setShow(!show)} />
               </div>
             </div>
-            {show ? (
-              <div className="input_details">
-                <label htmlFor="input_card_name">Titolare Carta</label>
-                <input
-                  className="card_name"
-                  type="text"
-                  name="input_card_name"
-                  id="input_card_name"
-                />
-
-                <label htmlFor="input_card_number">Numero carta</label>
-                <input
-                  className="card_number"
-                  type="text"
-                  name="input_card_number"
-                  id="input_card_number"
-                />
-
-                <label htmlFor="input_card_expairy">Scadenza</label>
-                <input
-                  className="card_expairy"
-                  type="text"
-                  name="input_card_expairy"
-                  id="input_card_expairy"
-                  placeholder="MM/AAAA"
-                />
-
-                <label htmlFor="input_cvv">CVV</label>
-                <input
-                  className="card_cvv"
-                  type="text"
-                  name="input_cvv"
-                  id="input_cvv"
-                  placeholder="123"
-                />
-
-                <div className="checkbox_container">
-                  <input
-                    className="checkbox"
-                    type="checkbox"
-                    name="checkbox"
-                    checked=""
-                  />
-                  <label className="checkbox_label" htmlFor="checkbox">
-                    Salva per i prossimi acquisti
-                  </label>
-                </div>
-
-                <div className="payment_btn_container">
-                  <button className="payment_btn">Paga ora</button>
-                </div>
+          </div>
+          {/* dati carta cliente */}
+          {show ? (<div className={classes.payment}>
+            <div className={classes.owner_container}>
+              <div className={classes.owner_card}>
+                <label htmlFor="" >Titolare della Carda</label>
+                <input type="text" />
               </div>
-            ) : null}
+              <div className={classes.card_number}>
+                <label htmlFor="">Numero della carta</label>
+                <input type="number" />
+              </div>
+              <div className={classes.card_date}>
+                <label htmlFor="">Scadenza</label>
+                <input type="date" />
+              </div>
+              <div className={classes.cvv}>
+                <label htmlFor="">CVV</label>
+                <input type="password" />
+              </div>
+            </div>
+          </div>) : null}
+
+        </div>
+        <div className={classes.button}>
+          <button>Paga ora</button>
+        </div>
+      </div>
+
+      {/* Riepilogo */}
+      <div className={classes.resume}>
+        <h2>Riepilogo</h2>
+        <div className={classes.resume_total}>
+          <div className={classes.game}>
+            <p>Titolo gioco</p>
+            <p>10€</p>
+          </div>
+          <div className={classes.total}>
+            <p>Totale</p>
+            <p>150€</p>
+          </div>
+          <div className={classes.discount}>
+            <p>codice sconto</p>
+            <label htmlFor="discount"></label>
+            <input type="text" name='discount' />
+          </div>
+          <div className={classes.button_resume}>
+            <button className={classes.checkOut_button}>Checkout</button>
+            <button className={classes.continue_button}>Continua con lo shopping</button>
           </div>
         </div>
-      </form>
-    </div>
-  );
+      </div>
+    </form>
+  )
+
 }
