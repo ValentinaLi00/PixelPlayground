@@ -6,7 +6,7 @@ import { Requirements } from "./Requirements";
 import { Reviews } from "./Reviews";
 
 
-export function Product() {
+export function Product({ addToCart }) {
   const [data, setData] = useState([]);
   const { id } = useParams();
 
