@@ -41,8 +41,6 @@ export function Faq() {
                                     <br />
                                     <div className={selected === i ? 'answer_shown' : 'answer'} >
                                         <p>{item.answer}</p></div>
-
-
                                 </>
                             )
                         })

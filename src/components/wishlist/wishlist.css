@@ -1,26 +1,14 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #201434;
-}
+
 
 .wishlistBackground {
     position: relative;
     height: 100vh;
-}
-
-.wishlistBackgroundImg{
-    height: 100%;
+    background-color: #201434;
+    
 }
 
 .wishlistBackground p {
     font-size: 18px;
-}
-
-.wishlistBackgroundImg {
-    width: 100%;
-    height: 100%;
-    filter: brightness(20%);
 }
 
 .wishlistContainer {
@@ -49,18 +37,18 @@ body {
 
 .favContainer {
     width: 75%;
-    height: 160px;
+    height: auto;
     display: flex;
     margin-left: 15%;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    background-color: rgba(255, 255, 255, 0.115);
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.474);
     backdrop-filter: blur(2px);
     border-radius: 50px;
     padding: 10px 70px 10px 20px;
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.632);
+    background-color: #4f16cbb3;
 }
 
 .favContainer img {
@@ -80,7 +68,7 @@ body {
 .upperWishlist h1 {
     font-size: 50px;
     color: hsl(340deg 100% 32%);
-    padding-top: 50px;
+    padding-top: 20px;
     font-family: 'minecraft';
     letter-spacing: 5px;
     word-spacing: 15px;
