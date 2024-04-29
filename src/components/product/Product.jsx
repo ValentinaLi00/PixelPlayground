@@ -7,7 +7,7 @@ import { Reviews } from "./Reviews";
 import { ScrollUp } from "../footer/ScrollUp";
 
 
-export function Product() {
+export function Product({ addToCart }) {
   const [data, setData] = useState([]);
   const { id } = useParams();
 
