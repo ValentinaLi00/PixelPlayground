@@ -1,61 +1,23 @@
-import classes from "./product.module.css";
+import classes from './gallery.module.css'
 
 export function Gallery() {
   return (
-    <>
-      <div className={classes.product_gallery}>
-        <h2 className={classes.productGallery_title}>Immagini di gioco</h2>
-        <div className={classes.gallery_container}>
-          <div className={classes.mainFrame}>
-            <img
-              src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-              alt="main frame"
-            />
-          </div>
-          <div className={classes.galleryBtn_container}>
-            <button className={classes.leftGalleryBtn}> {`<`} </button>
-            <button className={classes.rightGalleryBtn}> {`>`} </button>
-          </div>
-          <div className={classes.product_gallery_subContainer}>
-            <div>
-              <img
-                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-                alt="product's thumbnail"
-              />
-            </div>
-            <div>
-              <img
-                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-                alt="product's thumbnail"
-              />
-            </div>
-            <div>
-              <img
-                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-                alt="product's thumbnail"
-              />
-            </div>
-            <div>
-              <img
-                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-                alt="product's thumbnail"
-              />
-            </div>
-            <div>
-              <img
-                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-                alt="product's thumbnail"
-              />
-            </div>
-            <div>
-              <img
-                src="src\assets\paoloLupoAssets\myOrders_icon.avif"
-                alt="product's thumbnail"
-              />
-            </div>
-          </div>
+    <div className={classes.container}>
+        {/* Immagine principale e bottoni */}
+        <div className={classes.image}>
+            
+            <img src="src\assets\valentinaLiAssets\home\eiyuden_chronicle.jpg" alt="" />
+            <button className={classes.prev}>&lt;</button>
+            <button className={classes.next}>&lt;</button>
         </div>
-      </div>
-    </>
-  );
+        {/* immagini miniatura */}
+        <div className={classes.miniature}>
+            <img src="src\assets\valentinaLiAssets\home\eiyuden_chronicle.jpg" alt="" />
+            <img src="src\assets\valentinaLiAssets\home\eiyuden_chronicle.jpg" alt="" />
+            <img src="src\assets\valentinaLiAssets\home\eiyuden_chronicle.jpg" alt="" />
+            <img src="src\assets\valentinaLiAssets\home\eiyuden_chronicle.jpg" alt="" />
+            <img src="src\assets\valentinaLiAssets\home\eiyuden_chronicle.jpg" alt="" />
+        </div>
+    </div>
+)
 }

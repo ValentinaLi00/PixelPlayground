@@ -5,6 +5,7 @@ import { Gallery } from "./Gallery";
 import { Requirements } from "./Requirements";
 import { Reviews } from "./Reviews";
 
+
 export function Product() {
   const [data, setData] = useState([]);
   const { id } = useParams();
@@ -60,7 +61,7 @@ export function Product() {
             <div className={classes.priceBtn_container}>
               <button name="wishlistBtn" className={classes.wishlistBtn}>
                 <img
-                  src="src\assets\paoloLupoAssets\heart_wishlist.png"
+                  src="src\assets\imagesGabriele\heart_wishlist.png"
                   alt=""
                 />
               </button>
@@ -117,7 +118,7 @@ export function Product() {
         </div>
       </div>
       
-      <Gallery />
+      {/* <Gallery /> */}
       <Requirements />
       <Reviews />
     </div>
