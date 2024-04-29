@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import classes from './prova.module.css'
 
 export function PaymentProva() {
-
+    const [show, setShow] = useState(false);
     return (
         <form className={classes.container}>
 
@@ -43,21 +44,21 @@ export function PaymentProva() {
                         <h4>Dati di pagamento</h4>
                         <div className={classes.container_card}>
                             <div className={classes.paypal}>
-                                <img src="src\assets\melissa_img\payment_icon\paypal.png" alt="" />
+                                <img src="src\assets\melissa_img\payment_icon\paypal.png" alt=""  />
                             </div>
                             <div className={classes.googlePay}>
                                 <img src="src\assets\melissa_img\payment_icon\Gpay.png" alt="" />
                             </div>
                             <div className={classes.mastercard}>
-                                <img src="src\assets\melissa_img\payment_icon\mastercard.png" alt="" />
+                                <img src="src\assets\melissa_img\payment_icon\mastercard.png" alt="" onClick={() => setShow(true)}  />
                             </div>
                             <div className={classes.visa}>
-                                <img src="src\assets\melissa_img\payment_icon\visa.png" alt="" />
+                                <img src="src\assets\melissa_img\payment_icon\visa.png" alt="" onClick={() => setShow(true)}  />
                             </div>
                         </div>
                     </div>
                     {/* dati carta cliente */}
-                    <div className={classes.payment}>
+                    {show ?  ( <div className={classes.payment}>
                         <div className={classes.owner_container}>
                             <div className={classes.owner_card}>
                                 <label htmlFor="" >Titolare della Carda</label>
@@ -76,7 +77,7 @@ export function PaymentProva() {
                                 <input type="password" />
                             </div>
                         </div>
-                    </div>
+                    </div>) : null}
 
                 </div>
                 <div className={classes.button}>
