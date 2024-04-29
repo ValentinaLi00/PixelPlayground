@@ -164,7 +164,7 @@ export function Navbar() {
             <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" />
           </div> */}
           <div>
-            <Link to="/cart">
+            <Link to="cart">
               <img
                 src="src\assets\imagesGabriele\cart_empty.png"
                 id="nav_cart"
@@ -172,12 +172,12 @@ export function Navbar() {
             </Link>
           </div>
           <div>
-            <Link to="/wishlist">
+            <Link to="wishlist">
               <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" />
             </Link>
           </div>
           <div>
-            <Link to="loginRegistration">
+            <Link to="login">
               <img src="src\assets\imagesGabriele\use_icon.png" id="nav_heart" />
             </Link>
           </div>

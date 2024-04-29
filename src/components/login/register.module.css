@@ -1,0 +1,121 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.register {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: #4f16cbb3;
+    border-radius: 15px;
+}
+
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+
+}
+
+.welcome {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 35px;
+    margin-top: 30px;
+}
+
+.welcome h2 {
+    font-size: 26px;
+}
+
+.welcome h3 {
+    font-size: 22px;
+}
+
+.form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.registration {
+    width: 48%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registration p, a{
+    font-size: 18px;
+}
+
+.registration a {
+    color: rgba(243, 17, 106, 255);
+}
+
+
+/* input and button */
+
+.form input {
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    border: rgba(243, 17, 106, 255);
+    background-color: rgba(243, 17, 106, 255);
+    text-align: center;
+    font-size: 16px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form input::-webkit-input-placeholder {
+    color: white;
+}
+
+.button_login {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: rgba(243, 17, 106, 255);
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+.button_login:hover {
+    width: 220px;
+    border: 4px solid rgba(243, 17, 106, 255);
+}
+
+/* immagine */
+.container_img {
+    width: 55%;
+    height: 100%;
+}
+
+.container_img img {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}

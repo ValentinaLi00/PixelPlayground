@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 /**Login*/
@@ -24,7 +24,7 @@
     align-items: center;
     width: 40%;
     height: 100%;
-    
+
 }
 
 /*Logo*/
@@ -138,6 +138,7 @@
     font-size: 18px;
     color: rgba(243, 17, 106, 255);
     background-color: white;
+    
 }
 
 .registration_submit:hover,

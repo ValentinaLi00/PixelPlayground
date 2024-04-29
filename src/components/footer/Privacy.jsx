@@ -1,3 +1,4 @@
+import { ScrollUp } from './ScrollUp'
 import classes from './privacy.module.css'
 
 export function Privacy() {

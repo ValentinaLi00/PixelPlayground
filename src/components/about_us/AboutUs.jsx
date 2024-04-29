@@ -1,3 +1,4 @@
+import { ScrollUp } from "../footer/ScrollUp";
 import classes from "./aboutUs.module.css";
 
 export function AboutUs() {

@@ -2,8 +2,10 @@ import { useRef, useEffect, useState } from "react";
 import { Footer } from "../footer/Footer";
 import { Navbar } from "../navbar/Navbar";
 import "./userPage.css";
+import { useNavigate } from "react-router-dom";
 
 export function UserPage() {
+  const navigate = useNavigate()
   const [editing, setEditing] = useState(false);
   const [email, setEmail] = useState("");
 
@@ -27,6 +29,11 @@ export function UserPage() {
 
   function handleSuscribe() {
     alert('Ti sei iscritto alla newsLetter')
+  }
+
+  function handleLogout() {
+    localStorage.removeItem('loggedin')
+    navigate('/')
   }
 
   return (
@@ -238,7 +245,7 @@ export function UserPage() {
                 </p>
                 <div className="exitDivImg">
                   {" "}
-                  <img
+                  <img onClick={handleLogout}
                     className="exit"
                     src="src\assets\paoloLupoAssets\exitDoor_icon-removebg-preview.png"
                     alt="exit_icon"

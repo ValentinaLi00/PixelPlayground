@@ -1,3 +1,4 @@
+import { ScrollUp } from './ScrollUp'
 import classes from './termOfUse.module.css'
 
 export function TermOfUse() {

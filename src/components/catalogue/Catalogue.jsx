@@ -6,6 +6,7 @@ import classes from "./catalogue.module.css";
 
 import { useFetchGames } from "../home/useFetchGames";
 import { Link, useParams } from "react-router-dom";
+import { ScrollUp } from "../footer/ScrollUp";
 
 export function Catalogue() {
   const { data, loading, error } = useFetchGames();

@@ -3,6 +3,7 @@ import { Footer } from "../footer/Footer";
 import { Payment } from "../payment/Payment";
 
 import "./wishlist.css";
+import { ScrollUp } from "../footer/ScrollUp";
 
 export function Wishlist() {
   return (

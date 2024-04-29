@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { Gallery } from "./Gallery";
 import { Requirements } from "./Requirements";
 import { Reviews } from "./Reviews";
+import { ScrollUp } from "../footer/ScrollUp";
 
 
 export function Product() {

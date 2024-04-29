@@ -1,6 +1,6 @@
 .container {
     margin-top: 50px;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     justify-content: space-around;
 }
