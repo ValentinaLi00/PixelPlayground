@@ -31,11 +31,11 @@ export function Register() {
                     </div>
                     <form className={classes.form} onSubmit={handleSubmit}>
                         <label htmlFor="username"></label>
-                        <input type="text" name="username" value={input.username} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id="username" placeholder="username" />
+                        <input type="text" name="username" value={input.username} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id="username" placeholder="username" required/>
                         <label htmlFor="email"></label>
-                        <input type="text" name='email' value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='email' placeholder='email' />
+                        <input type="text" name='email' value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='email' placeholder='email' required/>
                         <label htmlFor="password"></label>
-                        <input type="password" name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='password' placeholder='password' />
+                        <input type="password" name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='password' placeholder='password' required/>
                         <button className={classes.button_login}>Registrati</button>
                     </form>
                     <div className={classes.registration}>

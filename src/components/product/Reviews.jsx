@@ -1,4 +1,6 @@
+import { ImgReview } from "./ImgReview";
 import classes from "./product.module.css";
+
 
 export function Reviews() {
   return (
@@ -6,76 +8,34 @@ export function Reviews() {
       <div className={classes.mainReview_container}>
         <h2 className={classes.review_title}>Recensioni</h2>
 
+        {/* user card */}
         <div className={classes.userReviewer_container}>
+          {/* avatar */}
           <div className={classes.userReviewer_avatar_container}>
-            <img
-              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 154044.png"
-              alt=""
-              width="80px"
-              height="80px"
-            />
+            <ImgReview url='src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 153924.png'/>
             <span>User's name</span>
           </div>
+          {/* Stelline */}
           <div className={classes.stars_container}>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <div className={classes.subReview_container}>
               <p>
@@ -88,76 +48,35 @@ export function Reviews() {
           </div>
         </div>
 
+        {/* user card */}
         <div className={classes.userReviewer_container}>
+          {/* avatar */}
           <div className={classes.userReviewer_avatar_container}>
             <img
-              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 153928.png"
-              alt=""
-              width="80px"
-              height="80px"
-            />
+              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 153928.png" alt="" width="80px" height="80px" />
             <span>User's name</span>
           </div>
+          {/* stelline */}
           <div className={classes.stars_container}>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <div className={classes.subReview_container}>
               <p>
@@ -170,76 +89,35 @@ export function Reviews() {
           </div>
         </div>
 
+        {/* user card */}
         <div className={classes.userReviewer_container}>
+          {/* avatar */}
           <div className={classes.userReviewer_avatar_container}>
             <img
-              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 153944.png"
-              alt=""
-              width="80px"
-              height="80px"
-            />
+              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 153944.png" alt="" width="80px" height="80px" />
             <span>User's name</span>
           </div>
+          {/* stelline */}
           <div className={classes.stars_container}>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <div className={classes.subReview_container}>
               <p>
@@ -251,77 +129,35 @@ export function Reviews() {
             </div>
           </div>
         </div>
-
+        {/* user card */}
         <div className={classes.userReviewer_container}>
+          {/* avatar */}
           <div className={classes.userReviewer_avatar_container}>
             <img
-              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 154010.png"
-              alt=""
-              width="80px"
-              height="80px"
-            />
+              src="src\assets\paoloLupoAssets\assetsDiProva\Screenshot 2024-03-30 154010.png" alt="" width="80px" height="80px" />
             <span>User's name</span>
           </div>
+          {/* stelline */}
           <div className={classes.stars_container}>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <button className={classes.starThumbnail}>
-              <img
-                src="src\assets\paoloLupoAssets\pixel-star.png"
-                alt="star"
-                className={classes.yellowStar}
-              />
-              <img
-                src="src\assets\paoloLupoAssets\black-pixel-star.png"
-                alt=""
-                className={classes.blackStar}
-              />
+              <img src="src\assets\paoloLupoAssets\pixel-star.png" alt="star" className={classes.yellowStar} />
+              <img src="src\assets\paoloLupoAssets\black-pixel-star.png" alt="" className={classes.blackStar} />
             </button>
             <div className={classes.subReview_container}>
               <p>

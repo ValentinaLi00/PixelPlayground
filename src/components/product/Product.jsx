@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
 import classes from "./product.module.css";
 import { Link, useParams } from "react-router-dom";
-import { Gallery } from "./Gallery";
-import { Requirements } from "./Requirements";
-import { Reviews } from "./Reviews";
-import { ScrollUp } from "../footer/ScrollUp";
-
 
 export function Product({ addToCart }) {
   const [data, setData] = useState([]);
@@ -118,11 +113,6 @@ export function Product({ addToCart }) {
           </div>
         </div>
       </div>
-      
-      {/* <Gallery /> */}
-      <Requirements />
-      <Reviews />
-      <ScrollUp/>
     </div>
   );
 }

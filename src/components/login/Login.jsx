@@ -35,9 +35,9 @@ export function Login() {
                     </div>
                     <form className={classes.form} onSubmit={handleLogin}>
                         <label htmlFor="email"></label>
-                        <input type="text" name='email' value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='email' placeholder='email' />
+                        <input type="text" name='email' value={input.email} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='email' placeholder='email' required />
                         <label htmlFor="password"></label>
-                        <input type="password" name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='password' placeholder='password' />
+                        <input type="password" name='password' value={input.password} onChange={(e) => setInput({ ...input, [e.target.name]: e.target.value })} id='password' placeholder='password' required/>
                         <button className={classes.button_login}>Accedi</button>
                     </form>
                     <div className={classes.registration}>
