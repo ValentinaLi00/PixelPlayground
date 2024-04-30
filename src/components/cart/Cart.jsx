@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import classes from './cart.module.css'
+import { ScrollUp } from '../footer/ScrollUp'
 
 export function Cart() {
 
@@ -63,7 +64,9 @@ export function Cart() {
                     </div>
                 </div>
             </div>
+            
         </div>
+        
     )
 
 

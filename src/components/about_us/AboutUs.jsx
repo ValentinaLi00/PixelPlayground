@@ -1,3 +1,4 @@
+import { ScrollUp } from "../footer/ScrollUp";
 import classes from "./aboutUs.module.css";
 
 export function AboutUs() {
@@ -67,6 +68,7 @@ export function AboutUs() {
           </p>
         </div>
       </div>
+      <ScrollUp />
     </>
   );
 }

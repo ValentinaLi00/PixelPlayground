@@ -1,11 +1,8 @@
 import { useState } from "react";
-import { Navbar } from "../navbar/Navbar";
-import { Footer } from "../footer/Footer";
 import { Game } from "./Game";
 import classes from "./catalogue.module.css";
-
 import { useFetchGames } from "../home/useFetchGames";
-import { Link, useParams } from "react-router-dom";
+import { ScrollUp } from "../footer/ScrollUp";
 
 export function Catalogue() {
   const { data, loading, error } = useFetchGames();
@@ -14,7 +11,7 @@ export function Catalogue() {
   const [genre, setGenre] = useState("selectGenre");
   const [order, setOrder] = useState('selectOrder');
   const [price, setPrice] = useState('selectPrice')
-  const { id } = useParams
+
 
   if (loading) {
     return <p>Caricamento in corso...</p>;
@@ -132,6 +129,7 @@ export function Catalogue() {
           </button>
         </div>
       </div>
+      <ScrollUp/>
     </>
   );
 }

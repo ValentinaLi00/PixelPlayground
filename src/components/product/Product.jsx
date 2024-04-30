@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
 import classes from "./product.module.css";
 import { Link, useParams } from "react-router-dom";
-import { Gallery } from "./Gallery";
-import { Requirements } from "./Requirements";
-import { Reviews } from "./Reviews";
 
-
-export function Product() {
+export function Product({ addToCart }) {
   const [data, setData] = useState([]);
   const { id } = useParams();
 
@@ -117,10 +113,6 @@ export function Product() {
           </div>
         </div>
       </div>
-      
-      {/* <Gallery /> */}
-      <Requirements />
-      <Reviews />
     </div>
   );
 }

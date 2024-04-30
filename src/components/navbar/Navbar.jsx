@@ -7,6 +7,7 @@ export function Navbar() {
   const [showPanelContainer, setShowPanelContainer] = useState(false);
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false)
 
   const toggleContainers = () => {
     setShowNavbar(!showNavbar);
@@ -34,6 +35,18 @@ export function Navbar() {
     };
   }, [prevScrollPos]);
 
+  //per controllare se lo user è loggato
+  useEffect(() => {
+    // Check if user is logged in from local storage or other state management
+    const loggedIn = localStorage.getItem('loggedin');
+    if (loggedIn === 'true') {
+      setIsUserLoggedIn(true);
+    } else {
+      setIsUserLoggedIn(false);
+    }
+  }, []);
+
+
   return (
     <div className="container_of_all">
       <div
@@ -45,8 +58,8 @@ export function Navbar() {
           </div>
           <div className="user_container">
             <Link to="/userpage"><div className="user_image">
-                <img src="src\assets\imagesGabriele\use_icon.png" alt="" />
-              </div>
+              <img src="src\assets\imagesGabriele\use_icon.png" alt="" />
+            </div>
             </Link>
           </div>
           <div className="sections_panel">
@@ -121,12 +134,12 @@ export function Navbar() {
         style={{ display: showNavbar ? "flex" : "none" }}
       >
         <div className="nav_first_section">
-        <Link to="/">
+          <Link to="/">
             <img src="src\assets\loghi\logo2.png" id="logo_vettoriale" />
           </Link>
         </div>
         <div className="center_navbar">
-          
+
           <div className="nav_second_section">
             <div className="first_logo_nav">
               <Link to="catalogue">
@@ -164,7 +177,7 @@ export function Navbar() {
             <img src="src\assets\imagesGabriele\lente1.png" id="nav_search" />
           </div> */}
           <div>
-            <Link to="/cart">
+            <Link to="cart">
               <img
                 src="src\assets\imagesGabriele\cart_empty.png"
                 id="nav_cart"
@@ -172,14 +185,20 @@ export function Navbar() {
             </Link>
           </div>
           <div>
-            <Link to="/wishlist">
+            <Link to="wishlist">
               <img src="src\assets\imagesGabriele\heart.png" id="nav_heart" />
             </Link>
           </div>
           <div>
-            <Link to="loginRegistration">
-              <img src="src\assets\imagesGabriele\use_icon.png" id="nav_heart" />
-            </Link>
+            {isUserLoggedIn ? (
+              <Link to='userPage'>
+                <img src="src\assets\imagesGabriele\use_icon.png" id="nav_heart" />
+              </Link>
+            ) :
+              <Link to="login">
+                <img src="src\assets\imagesGabriele\use_icon.png" id="nav_heart" />
+              </Link>
+            }
           </div>
         </div>
       </div>

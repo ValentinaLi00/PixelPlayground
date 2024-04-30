@@ -1,6 +1,6 @@
 .container {
     margin-top: 50px;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     justify-content: space-around;
 }
@@ -51,7 +51,8 @@
 .product img {
     width: 100px;
 }
-.button_delete{
+
+.button_delete {
     background-color: rgba(243, 17, 106, 255);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     width: 100px;
@@ -62,9 +63,13 @@
     cursor: pointer;
 }
 
+.button_delete:hover {
+    transform: scale(1.2);
+}
+
 /* Riepilogo */
 
-.resume{
+.resume {
     display: flex;
     flex-direction: column;
     background-color: #4f16cbb3;
@@ -74,7 +79,7 @@
     height: 60%;
     gap: 100px;
     row-gap: 20px;
-   
+
 }
 
 .resume h2 {
@@ -88,13 +93,13 @@
     margin-top: 20px;
 }
 
-.resume p{
+.resume p {
     font-size: 20px;
 }
 
-.resume_total{
+.resume_total {
     height: 100%;
-    color:white;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,7 +107,7 @@
     margin-bottom: 100px;
 }
 
-.button_resume{
+.button_resume {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -110,7 +115,7 @@
     margin-top: 45px;
 }
 
-.button_resume button{
+.button_resume button {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     color: #fff;
     border-radius: 5px;
@@ -120,18 +125,32 @@
     height: 60px;
 }
 
-.checkOut_button{
-    background-color: #28a744;
-    font-size: 20px;
-    
+.button_resume button:hover {
+    transform: scale(1.2);
 }
 
-.continue_button{
+.checkOut_button {
+    background-color: #28a744;
+    font-size: 20px;
+
+}
+
+.checkOut_button:hover {
+    transform: scale(1.2);
+}
+
+.continue_button {
     background-color: #014b99;
     font-size: 20px;
 }
 
-.game, .total, .discount{
+.continue_button:hover {
+    transform: scale(1.2);
+}
+
+.game,
+.total,
+.discount {
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -145,4 +164,3 @@
     border: 1px solid yellow;
     outline: none;
 }
-

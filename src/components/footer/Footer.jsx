@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import classes from "./footer.module.css";
-import { Link } from "react-router-dom";
 
 export function Footer() {
 
@@ -25,6 +24,7 @@ export function Footer() {
   }
 
   return (
+    
     <footer className={classes.container}>
       {/* social */}
       <div className={classes.social}>
