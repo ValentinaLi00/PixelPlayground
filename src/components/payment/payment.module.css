@@ -1,11 +1,12 @@
 .container {
-    margin-top: 50px;
+    margin-top: 30px;
     height: 70%;
     display: flex;
     justify-content: space-around;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom:50px;
+    
 }
 
 /* Payment*/
@@ -47,16 +48,16 @@
 }
 
 .billing_address h4 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .billing_address label {
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .billing_address input {
-    width: 300px;
-    height: 40px;
+    width: 250px;
+    height: 30px;
     border-radius: 15px;
 
 }
@@ -74,7 +75,7 @@
 .email_address {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .name_person,
@@ -98,9 +99,6 @@ input{
     flex-direction: column;
 }
 
-.payment_info h4 {
-    font-size: 30px;
-}
 
 .choose_payment {
     width: 100%;
@@ -121,8 +119,8 @@ input{
 
 .choose_payment h4 {
     text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 25px;
+    margin-top: 10px;
     color: #000;
     background: linear-gradient( #25ff00 48%, #00def3 68%);
     -webkit-background-clip: text;
@@ -136,7 +134,7 @@ input{
 }
 
 .payment_info img {
-    width: 150px;
+    width: 100px;
 }
 
 
@@ -148,7 +146,7 @@ input{
 }
 
 .owner_container {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
