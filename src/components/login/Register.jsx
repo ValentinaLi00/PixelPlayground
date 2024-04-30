@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import classes from './register.module.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export function Register() {
 
@@ -37,7 +37,7 @@ export function Register() {
                     </form>
                     <div className={classes.registration}>
                         <p>Hai già un account?</p>
-                        <a href="login">Clicca qui!</a>
+                        <Link to="/login"><p>Clicca qui!</p></Link>
                     </div>
                 </div>
                 <div className={classes.container_img}>

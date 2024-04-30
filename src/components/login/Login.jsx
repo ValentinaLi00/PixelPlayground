@@ -1,7 +1,7 @@
 // import classes from './loginRegistration.module.css'
 import { useState } from 'react'
 import classes from './login.module.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export function Login() {
     const navigate = useNavigate()
@@ -39,7 +39,7 @@ export function Login() {
                     </form>
                     <div className={classes.registration}>
                         <p>Non hai un account?</p>
-                        <a href="registration">Clicca qui!</a>
+                        <Link to="/registration"><p>Clicca qui!</p></Link>
                     </div>
                 </div>
                 <div className={classes.container_img}>

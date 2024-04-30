@@ -29,8 +29,8 @@ export function App() {
           <Route path="cart" element={<Cart />} />
           <Route path="payment" element={<Payment />} />
           <Route path="wishlist" element={<Wishlist />} />
-          <Route path="login" element={<Login />} />
-          <Route path="registration" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/registration" element={<Register />} />
           <Route path="userPage" element={<UserPage />} />
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="faq" element={<Faq />} />
