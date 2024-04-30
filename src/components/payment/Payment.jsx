@@ -72,7 +72,7 @@ export function Payment() {
           {/* info pagamento */}
           <div className={classes.payment_info}>
             <div className={classes.choose_payment}>
-              <h4>Dati di pagamento</h4>
+              <h4>Metodo di pagamento</h4>
               <div className={classes.container_card}>
                 <div className={classes.paypal}>
                   <img src="src\assets\melissa_img\payment_icon\paypal.png" alt="" onClick={() => handleRedirect("https://www.paypal.com")} />
