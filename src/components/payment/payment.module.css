@@ -87,7 +87,9 @@
     gap: 10px;
 }
 
-
+input{
+    text-align: center;
+}
 
 /* info pagamento */
 
@@ -107,6 +109,14 @@
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+}
+
+.container_card img{
+    border-radius: 15px;
+}
+
+.paypal :hover, .googlePay :hover, .mastercard:hover, .visa:hover{
+    transform: scale(1.2);
 }
 
 .choose_payment h4 {
@@ -136,7 +146,7 @@
     justify-content: center;
    
 }
-/* QUI */
+
 .owner_container {
     margin-top: 20px;
     display: flex;
@@ -172,9 +182,12 @@
     width: 100px;
     height: 40px;
     font-size: 20px;
+    margin-top: 20px;
 
 }
-
+.button button:hover{
+    transform: scale(1.2);
+}
 /* Riepilogo */
 
 .resume {
@@ -233,15 +246,23 @@
     height: 60px;
 }
 
-.checkOut_button {
+/* .checkOut_button {
     background-color: #28a744;
     font-size: 20px;
 
+} */
+
+.checkOut_button:hover{
+    transform: scale(1.1);
 }
 
 .continue_button {
     background-color: #014b99;
     font-size: 20px;
+}
+
+.continue_button:hover {
+    transform: scale(1.1);
 }
 
 .game,
@@ -255,7 +276,7 @@
 }
 
 .discount input {
-    background-color: rgba(243, 17, 106, 255);
+    /* background-color: rgba(243, 17, 106, 255); */
     border-radius: 5px;
     border: 1px solid yellow;
     outline: none;
