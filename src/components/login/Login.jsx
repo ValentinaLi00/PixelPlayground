@@ -14,7 +14,7 @@ export function Login() {
     function handleLogin(event) {
         event.preventDefault();
         const loggedUser = JSON.parse(localStorage.getItem('user'));
-        if(input.email === loggedUser.email && input.password === loggedUser.password) {
+        if (input.email === loggedUser.email && input.password === loggedUser.password) {
             localStorage.setItem('loggedin', true)
             navigate('/userPage')
         } else {
@@ -24,6 +24,9 @@ export function Login() {
 
     return (
         <div className={classes.container}>
+            <div className={classes.home}>
+                <Link to='/'><img src="src\assets\imagesGabriele\logo-removebg-preview.png" alt="" /></Link>
+            </div>
             <div className={classes.login}>
                 <div className={classes.container_form}>
                     <div className={classes.welcome}>

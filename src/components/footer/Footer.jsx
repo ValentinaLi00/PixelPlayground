@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import classes from "./footer.module.css";
-import { Link } from "react-router-dom";
-import { ScrollUp } from "./ScrollUp";
 
 export function Footer() {
 

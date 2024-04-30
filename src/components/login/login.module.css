@@ -2,9 +2,24 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    position: relative;
+}
+
+/* logo home */
+
+.home {
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home img {
+    width: 100%;
 }
 
 .login {

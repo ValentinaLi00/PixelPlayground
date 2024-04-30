@@ -20,6 +20,9 @@ export function Register() {
 
     return (
         <div className={classes.container}>
+            <div className={classes.home}>
+                <Link to='/'><img src="src\assets\imagesGabriele\logo-removebg-preview.png" alt="" /></Link>
+            </div>
             <div className={classes.register}>
                 <div className={classes.container_form}>
                     <div className={classes.welcome}>

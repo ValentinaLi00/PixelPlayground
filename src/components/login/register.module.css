@@ -7,6 +7,20 @@
     color: white;
 }
 
+/* logo home */
+.home {
+    width: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home img {
+    width: 100%;
+}
+
+
+
 .register {
     display: flex;
     width: 80%;
@@ -62,7 +76,8 @@
     justify-content: space-between;
 }
 
-.registration p, a{
+.registration p,
+a {
     font-size: 18px;
 }
 
