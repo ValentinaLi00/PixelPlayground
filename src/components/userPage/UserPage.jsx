@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { Footer } from "../footer/Footer";
 import { Navbar } from "../navbar/Navbar";
 import "./userPage.css";
+import { Link } from "react-router-dom";
 
 export function UserPage() {
   const [editing, setEditing] = useState(false);
@@ -137,7 +138,6 @@ export function UserPage() {
                         alt="modify_password"
                       />
                     </div>
-                    <p>cancella account</p>
                   </>
                 ) : (
                   <>
@@ -155,12 +155,34 @@ export function UserPage() {
                         alt="modify-psw"
                       />
                     </div>
-                    <p>cancella account</p>
                   </>
                 )}
               </div>
             </div>
-            <div className="orders">
+            <div className="newsletter">
+              <span
+                style={{
+                  fontSize: "23px",
+                  fontWeight: "100",
+                  color: "white",
+                  textShadow: "0px 0px 15px rgb(205, 0, 185)",
+                }}
+              >
+                NEWSLETTER
+              </span>
+              <img
+                src="src\assets\paoloLupoAssets\newsletter-removebg-preview.png"
+                alt=""
+              />
+              <div className="subscribe">
+                <p>iscriviti per rimanere aggiornato</p>
+                <button onClick={handleSuscribe}>subscribe</button>
+              </div>
+            </div>
+        
+          </div>
+          <div className="rightUserPart">
+          <div className="orders">
               <span
                 style={{
                   fontSize: "23px",
@@ -183,30 +205,9 @@ export function UserPage() {
                 <p className="showMore">mostra altro</p>
               </div>
             </div>
-          </div>
-          <div className="rightUserPart">
-            <div className="newsletter">
-              <span
-                style={{
-                  fontSize: "23px",
-                  fontWeight: "100",
-                  color: "white",
-                  textShadow: "0px 0px 15px rgb(205, 0, 185)",
-                }}
-              >
-                NEWSLETTER
-              </span>
-              <img
-                src="src\assets\paoloLupoAssets\newsletter-removebg-preview.png"
-                alt=""
-              />
-              <div className="subscribe">
-                <p>iscriviti per rimanere aggiornato</p>
-                <button onClick={handleSuscribe}>subscribe</button>
-              </div>
-            </div>
+
             <div className="wishlistAndExit">
-              <div>
+              {/* <div>
                 <p
                   style={{
                     fontSize: "23px",
@@ -224,7 +225,7 @@ export function UserPage() {
                     alt="heart_wishlist_icon"
                   />
                 </div>
-              </div>
+              </div> */}
               <div>
                 <p
                   style={{
@@ -237,12 +238,14 @@ export function UserPage() {
                   EXIT
                 </p>
                 <div className="exitDivImg">
+                <Link to="/"> 
                   {" "}
                   <img
                     className="exit"
                     src="src\assets\paoloLupoAssets\exitDoor_icon-removebg-preview.png"
                     alt="exit_icon"
                   />
+                  </Link>
                 </div>
               </div>
             </div>
