@@ -27,7 +27,7 @@
 .payment_container h2 {
     margin-bottom: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #000;
     background: linear-gradient(#25ff00 48%, #00def3 68%);
     -webkit-background-clip: text;
@@ -123,7 +123,7 @@ input::-webkit-inner-spin-button {
 
 .choose_payment h4 {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 10px;
     color: #000;
     background: linear-gradient(#25ff00 48%, #00def3 68%);
@@ -138,7 +138,7 @@ input::-webkit-inner-spin-button {
 }
 
 .payment_info img {
-    width: 75px;
+    width: 95px;
 }
 
 
@@ -264,14 +264,14 @@ input::-webkit-inner-spin-button {
     transform: scale(1.2);
 } */
 
-.continue_button {
+/* .continue_button {
     background-color: #014b99;
     font-size: 20px;
 }
 
 .continue_button:hover {
     transform: scale(1.1);
-}
+} */
 
 .game,
 .total,
@@ -280,7 +280,8 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  
 }
 
 .discount input {

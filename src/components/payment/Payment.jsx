@@ -135,7 +135,7 @@ export function Payment() {
             </div>
             <div className={classes.button_resume}>
               {/* <button className={classes.checkOut_button}>Checkout</button> */}
-              <button className={classes.continue_button}>Continua con lo shopping</button>
+              {/* <button className={classes.continue_button}>Continua con lo shopping</button> */}
             </div>
           </div>
         </div>
