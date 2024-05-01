@@ -23,20 +23,20 @@
     padding: 30px 0px;
 } */
 .userPagediv {
-    padding: 30px 0px;
     background: #201434;
+  
 }
 
 .wholeUserPage {
     font-size: large;
     width: 100%;
-    padding: 20px;
     color: white;
+    padding: 0px 20px;
     text-shadow: 1px 1px 2px black;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
-    gap: 30px;
+    gap: 10px;
 
 }
 
@@ -56,11 +56,13 @@
     padding: 15px;
     border-radius: 20px;
     box-shadow: 4px 4px 5px #170f23;
-    ;
     margin: 10px;
     margin-bottom: 60px;
 }
 
+.newsletter{
+    margin-top: -50px;
+}
 .modifyAcc p,
 .modifyAcc span,
 .ordersList p,
@@ -73,9 +75,21 @@
     text-align: center;
 }
 
-/* .leftUserPart {
+.leftUserPart {
     width: 600px;
-} */
+    display: flex;
+    flex-direction: column;
+justify-content: flex-start;
+
+} 
+.rightUserPart {
+    display: flex;
+    flex-direction: column;
+justify-content: flex-start;
+margin-top: -26px; 
+    
+}
+
 
 .modifyAcc {
     display: flex;
@@ -125,8 +139,9 @@
 .subscribe {
     display: flex;
     flex-direction: column;
-    width: 430px;
+    width: 500px;
     gap: 10px;
+    margin-left: 50px;
     padding-bottom: 20px;
     align-items: center;
 }
@@ -134,8 +149,8 @@
 .wishlistDivImg,
 .exitDivImg {
     position: relative;
-    width: 160px;
-    height: 170px;
+    width: 120px;
+    height: 130px;
 }
 
 .exitDivImg img {
@@ -143,8 +158,8 @@
     right: 8px;
     bottom: 2px;
     cursor: pointer;
-    width: 140px;
-    height: 160px;
+    width: 100px;
+    height: 120px;
     transition: 0.5s ease-in-out;
 }
 
@@ -175,6 +190,10 @@
     transition: 0.4s ease-in-out;
 }
 
+.orders{
+    width: 500px;
+}
+
 .orders img {
     width: 50px;
     filter: contrast(-20%);
@@ -189,8 +208,9 @@
 .wishlistAndExit {
     display: flex;
     gap: 50px;
+    margin-top: -25px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .orderedItem {
@@ -203,6 +223,12 @@
 
 .ordersList {
     text-align: center;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow-y: scroll;
+
 }
 
 .showMore:hover {
