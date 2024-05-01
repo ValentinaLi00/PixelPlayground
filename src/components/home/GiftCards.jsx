@@ -32,7 +32,7 @@ export function GiftCards() {
             </div>
 
             <div className={classes.containerImg}>
-                {randomGiftCard && randomGiftCard.filter((game) => game.genre === 'GiftCard').slice(0, show).map((game) => (<Link to={`/catalogue/product/${game.id}`}><GiftCardSingle key={game.id} game={game} /></Link>))}
+                {randomGiftCard && randomGiftCard.filter((game) => game.genre === 'GiftCard').slice(0, show).map((game) => (<Link to={`/${game.id}`}><GiftCardSingle key={game.id} game={game} /></Link>))}
             </div>
         </div>
     )
