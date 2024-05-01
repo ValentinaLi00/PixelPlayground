@@ -1,6 +1,5 @@
 
 import classes from './catalogue.module.css'
-import { Product } from '../product/Product'
 
 export function Game({ game }) {
 

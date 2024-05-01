@@ -3,6 +3,7 @@ import { Game } from "./Game";
 import classes from "./catalogue.module.css";
 import { useFetchGames } from "../home/useFetchGames";
 import { ScrollUp } from "../footer/ScrollUp";
+import { Outlet } from "react-router-dom";
 
 export function Catalogue() {
   const { data, loading, error } = useFetchGames();
@@ -117,7 +118,7 @@ export function Catalogue() {
             price === 'selectPrice' ||
             game.prezzi === price)
             .slice(1, show)
-            .map((game) => <a href={`/catalogue/product/${game.id}`}><Game key={game.id} game={game} /></a>)}
+            .map((game) => <a href={`/${game.id}`}><Game key={game.id} game={game} /></a>)}
 
         </div>
         <div className={classes.container_btn}>
@@ -130,6 +131,7 @@ export function Catalogue() {
         </div>
       </div>
       <ScrollUp/>
+      <Outlet/>
     </>
   );
 }

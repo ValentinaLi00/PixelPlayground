@@ -6,9 +6,9 @@ import { Reviews } from "./Reviews";
 export function ProductGeneral() {
     return(
         <div>
-            {/* <Product/>
+            <Product/>
             <Gallery/>
-            <Requirements/> */}
+            <Requirements/>
             <Reviews/>
         </div>
     )

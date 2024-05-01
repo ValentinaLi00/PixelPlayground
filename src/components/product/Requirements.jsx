@@ -1,13 +1,18 @@
-import classes from "./product.module.css";
+import classes from './requirements.module.css'
 
 export function Requirements() {
   return (
-    <>
-      <div className={classes.requirements_container}>
-        <h2 className={classes.requirements_title}>Requisiti di sistema</h2>
-        <div className={classes.requirements_subContainer}>
+    <div className={classes.container}>
+      <div className={classes.requisiti_title}>
+        <div className={classes.title}>
+          <h2>Requisiti</h2>
+          <hr />
+        </div>
+        <div className={classes.requisiti}>
+          {/* requisiti minimi */}
           <div className={classes.minimumRequirements_container}>
-            <h3 className={classes.minimumRequirements_title}>Minimi</h3>
+            <h2>Minimi</h2>
+            <hr />
             <table className={classes.minimumRequirements_table}>
               <thead>
                 <tr>
@@ -36,10 +41,12 @@ export function Requirements() {
               </thead>
             </table>
           </div>
+
+          {/* requisiti suggeriti */}
+
           <div className={classes.suggestedRequirements_container}>
-            <h3 className={classes.suggestedRequirements_title}>
-              Raccomandati
-            </h3>
+            <h2>Raccomandati </h2>
+            <hr />
             <table className={classes.suggestedRequirements_table}>
               <thead>
                 <tr>
@@ -67,6 +74,6 @@ export function Requirements() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
