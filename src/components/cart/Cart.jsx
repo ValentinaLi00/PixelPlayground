@@ -7,6 +7,9 @@ export function Cart() {
 
     const { cartItems, removeFromCart } = useCart();
 
+    const calculateTotalPrice = () => {
+        return cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
+    };
 
     return (
         <div className={classes.container}>
@@ -42,7 +45,7 @@ export function Cart() {
                     </div>
                     <div className={classes.total}>
                         <p>Totale</p>
-                        <p>150€</p>
+                        <p>{calculateTotalPrice()}</p>
                     </div>
                     <div className={classes.discount}>
                         <p>codice sconto</p>
