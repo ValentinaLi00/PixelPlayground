@@ -24,29 +24,11 @@ export function Cart() {
                                 <img src={item.image} alt={item.title} />
                                 <h4>{item.title}</h4>
                                 <p>{item.price}€</p>
-                                <button onClick={() => handleDelete(item.id)}>Elimina</button>
+                                <button onClick={() => removeFromCart(item.id)}>Elimina</button>
                             </li>
                         ))}
                     </ul>
-                    {/* <div className={classes.product}>
-                        <img src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="" />
-                        <div className={classes.product_title}>
-                            <h4>Titolo del gioco</h4>
-                            <p>God of war</p>
-                        </div>
-                        <div className={classes.product_price}>
-                            <h4>Prezzo</h4>
-                            <p>50€</p>
-                        </div>
-                        <form className={classes.available}>
-                            <p>quantità</p>
-                            <label for="quantity"></label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="5"></input>
-                        </form>
-                        <div className={classes.delete}>
-                            <button className={classes.button_delete} onClick={handleDelete}>Elimina</button>
-                        </div>
-                    </div> */}
+                    
                 </div>
             </div>
 

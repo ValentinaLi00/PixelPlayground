@@ -27,7 +27,8 @@ export function Description() {
             addToCart({
                 id: data.id,
                 title: data.title,
-                price: data.discount_price
+                price: data.discount_price,
+                image: data.image_url
             });
             alert('Prodotto aggiunto al carrello!');
         }
