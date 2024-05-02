@@ -1,12 +1,12 @@
 import { Link, useNavigate } from 'react-router-dom'
 import classes from './cart.module.css'
 import { ScrollUp } from '../footer/ScrollUp'
+import { useCart } from '../../context/CartProvider';
 
 export function Cart() {
 
-    function handleDelete() {
-        alert('Il prodotto è stato eliminato dal tuo carrello')
-    }
+    const { cartItems, removeFromCart } = useCart();
+
 
     return (
         <div className={classes.container}>
@@ -17,11 +17,18 @@ export function Cart() {
                 {/* contenitore di tutti i prodotti */}
                 <div className={classes.products}>
                     {/* singolo prodotto */}
-                    <div className={classes.product}>
-                        <div className={classes.checkbox}>
-                            <label htmlFor="choose"></label>
-                            <input type="checkbox" name='choose' />
-                        </div>
+
+                    <ul>
+                        {cartItems.map(item => (
+                            <li key={item.id}>
+                                <img src={item.image} alt={item.title} />
+                                <h4>{item.title}</h4>
+                                <p>{item.price}€</p>
+                                <button onClick={() => handleDelete(item.id)}>Elimina</button>
+                            </li>
+                        ))}
+                    </ul>
+                    {/* <div className={classes.product}>
                         <img src="https://seeklogo.com/images/P/pokemon-logo-67F682590B-seeklogo.com.png" alt="" />
                         <div className={classes.product_title}>
                             <h4>Titolo del gioco</h4>
@@ -31,13 +38,15 @@ export function Cart() {
                             <h4>Prezzo</h4>
                             <p>50€</p>
                         </div>
-                        <div className={classes.available}>
-                            <p>disponibile</p>
-                        </div>
+                        <form className={classes.available}>
+                            <p>quantità</p>
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5"></input>
+                        </form>
                         <div className={classes.delete}>
                             <button className={classes.button_delete} onClick={handleDelete}>Elimina</button>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -64,10 +73,9 @@ export function Cart() {
                     </div>
                 </div>
             </div>
-            
-        </div>
-        
-    )
 
+        </div>
+
+    )
 
 }

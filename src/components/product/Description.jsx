@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import classes from './description.module.css'
 import { useParams } from 'react-router-dom';
+import { useCart } from '../../context/CartProvider';
 
 export function Description() {
+    const { addToCart } = useCart();
     const [data, setData] = useState([]);
     const { id } = useParams();
 
@@ -18,7 +20,18 @@ export function Description() {
 
     useEffect(() => {
         getAPI();
-    }, []);
+    }, [id]);
+
+    const handleAddToCart = () => {
+        if (data) {
+            addToCart({
+                id: data.id,
+                title: data.title,
+                price: data.discount_price
+            });
+            alert('Prodotto aggiunto al carrello!');
+        }
+    };
 
     return (
         <div className={classes.container}>
@@ -48,7 +61,7 @@ export function Description() {
                             </div>
                             <div className={classes.buttons}>
                                 <div className={classes.wish}><img src="src\assets\imagesGabriele\heart.png" alt="" /></div>
-                                <button>aggiungi al carrello</button>
+                                <button onClick={handleAddToCart}>aggiungi al carrello</button>
                             </div>
                             <span className={classes.discount}>
                                 Sconto del 10%
