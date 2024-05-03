@@ -1,7 +1,3 @@
-import { Navbar } from "../navbar/Navbar";
-import { Footer } from "../footer/Footer";
-import { Payment } from "../payment/Payment";
-
 import "./wishlist.css";
 import { ScrollUp } from "../footer/ScrollUp";
 
