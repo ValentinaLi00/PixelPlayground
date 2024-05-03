@@ -7,6 +7,7 @@ export function Description() {
     const { addToCart } = useCart();
     const [data, setData] = useState([]);
     const { id } = useParams();
+    const { addToWishlist } = useCart()
 
     async function getAPI() {
         try {
@@ -34,7 +35,17 @@ export function Description() {
         }
     };
 
-    
+    const handleAddToWish = () => {
+        if (data) {
+            addToWishlist({
+                id: data.id,
+                title: data.title,
+                price: data.discount_price,
+                image: data.image_url
+            });
+            alert('Prodotto aggiunto alla Wishlist!');
+        }
+    };
 
     return (
         <div className={classes.container}>
@@ -63,7 +74,7 @@ export function Description() {
                                 <p>{data.discount_price}€</p>
                             </div>
                             <div className={classes.buttons}>
-                                <div className={classes.wish} onClick={handleAddToCart}><img src="src\assets\imagesGabriele\heart.png" alt="" /></div>
+                                <div className={classes.wish} onClick={handleAddToWish}><img src="src\assets\imagesGabriele\heart.png" alt="" /></div>
                                 <button onClick={handleAddToCart}>aggiungi al carrello</button>
                             </div>
                             <span className={classes.discount}>
