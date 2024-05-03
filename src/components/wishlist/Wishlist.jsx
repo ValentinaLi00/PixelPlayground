@@ -1,5 +1,4 @@
 import "./wishlist.css";
-import { ScrollUp } from "../footer/ScrollUp";
 import { useCart } from "../../context/CartProvider";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -77,7 +76,6 @@ export function Wishlist() {
                 </div> */}
         </div>
       </div>
-      <ScrollUp />
     </div>
   );
 }

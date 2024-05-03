@@ -176,6 +176,7 @@ p {
     color: white;
     font-size: 18px;
     background-color: rgba(243, 17, 106, 255);
+    border: 1px solid rgba(243, 17, 106, 255);
     height: 40px;
     width: 150px;
     border-radius: 15px;
@@ -187,5 +188,6 @@ p {
     background-color: #FFFFFF00;
     color: rgba(243, 17, 106, 255);
     border: 1px solid #c2440a00;
+    border: 1px solid rgba(243, 17, 106, 255);
 }
 

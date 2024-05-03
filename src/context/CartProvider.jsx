@@ -64,8 +64,7 @@ export const CartProvider = ({ children }) => {
         const updatedWishlist = wishlistItems.filter(item => item.id !== itemId);
         setWishlistItems(updatedWishlist);
     };
-
-
+    
     return (
         <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, totalPrice, totalQuantity, wishlistItems, 
             addToWishlist, removeFromWishlist}}>

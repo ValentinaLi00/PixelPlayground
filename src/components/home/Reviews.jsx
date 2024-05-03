@@ -25,7 +25,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p>Non me lo aspettavo ma è sito affidabile e trovo sempre sconti fantastici!</p>
                         </div>
                     </div>
 
@@ -46,7 +46,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>Acquisto su pixelPlaygroud ormai da bel po, non ho mai avuto problemi. </p>
                         </div>
                     </div>
 
@@ -67,7 +67,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p> Sito affidabile e assistenza tecnica impeccabile! </p>
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>Vasta scelta e sempre grandi sconti </p>
                         </div>
                     </div>
 
@@ -115,7 +115,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>Best site of video game! </p>
                         </div>
                     </div>
 
@@ -136,7 +136,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>affidabili, precisi e gentili</p>
                         </div>
                     </div>
 
@@ -157,7 +157,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>Ho acquistato un gioco per mio figlio, rimasto contento!</p>
                         </div>
                     </div>
 
@@ -178,7 +178,7 @@ export function Reviews() {
                             </div>
                         </div>
                         <div className={classes.review}>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>Aggiornano continuamente il catalogo, sempre attenti alle nuove uscite </p>
                         </div>
                     </div>
 
