@@ -34,6 +34,8 @@ export function Description() {
         }
     };
 
+    
+
     return (
         <div className={classes.container}>
             <div className={classes.container_img_banner}>
@@ -61,7 +63,7 @@ export function Description() {
                                 <p>{data.discount_price}€</p>
                             </div>
                             <div className={classes.buttons}>
-                                <div className={classes.wish}><img src="src\assets\imagesGabriele\heart.png" alt="" /></div>
+                                <div className={classes.wish} onClick={handleAddToCart}><img src="src\assets\imagesGabriele\heart.png" alt="" /></div>
                                 <button onClick={handleAddToCart}>aggiungi al carrello</button>
                             </div>
                             <span className={classes.discount}>

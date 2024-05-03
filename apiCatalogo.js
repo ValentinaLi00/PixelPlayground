@@ -14,7 +14,7 @@ const users = [
       discount: 10,
       discount_price: 19.99,
       image_background_url: "https://fanatical.imgix.net/product/original/27410333-afab-4fb3-b326-e5f3118313ca.jpeg?auto=compress,format&w=870&fit=crop&h=489",
-      image_url: "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jlhttps://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.glitched.online%2Fgod-of-war-ragnarok-ps4-file-size-leaked-and-its-massive%2F&psig=AOvVaw30HAsSoRKBqc70jPJloPmW&ust=1714836439931000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjtu9fl8YUDFQAAAAAdAAAAABAE4oBSq.png",
+      image_url: "https://gaming-cdn.com/images/products/5679/616x353/red-dead-redemption-2-pc-game-rockstar-cover.jpg?v=1713793245",
       video_url: "https://cdn.akamai.steamstatic.com/steam/apps/256768274/movie480.webm?t=1574881498",
       platform: "Playstation",
       order: 'Bestseller',
