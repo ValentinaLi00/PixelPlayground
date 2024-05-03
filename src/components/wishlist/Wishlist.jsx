@@ -9,14 +9,10 @@ export function Wishlist() {
   return (
     <div>
       <div className="wishlistBackground">
-
         <div className="wishlistContainer">
           <div className="upperWishlist">
-            {/* <img style={{ width: '100px', height: '100%' }} src="src\assets\loghi\ariGiaccariAssets\logo-removebg-preview.png" alt="" /> */}
             <h1>LISTA DESIDERI</h1>
-            {/* <img style={{ width: '70px', height: '100%', paddingTop: '10px' }} src="src\assets\loghi\ariGiaccariAssets\cart_full-removebg-preview.png" alt="" /> */}
           </div>
-
           <div className="favContainer">
             <img
               style={{ width: "200px", height: "auto" }}
@@ -37,6 +33,7 @@ export function Wishlist() {
               <button className="removeFromWishlistBtn">rimuovi</button>
             </div>
           </div>
+         
           {/* IF WISHLIST IS EMPTY  */}
           {/* <div className='emptyWishlist' >
                     <p style={{fontSize: '25px'}}>la tua lista desideri è vuota</p>
