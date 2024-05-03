@@ -13,11 +13,11 @@ export const AccordionFaq = [
 },
 {
     question: 'Reso e rimborsi',
-    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt doloribus iure nemo ad ex perspiciatis, veritatis aliquid minus accusamus!'
+    answer: 'Non possiamo offrire resi o rimborsi per chiavi di videogiochi una volta che sono state utilizzate o attivate. Tuttavia, se hai ricevuto una chiave difettosa o errata, possiamo emettere un rimborso o una chiave sostitutiva.Un rimborso può essere concesso se: 1)Hai ricevuto una chiave difettosa. 2) Hai ricevuto una chiave errata (per un gioco diverso da quello che hai acquistato).' 
 },
 {
     question: 'Privacy e sicurezza',
-    answer: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt doloribus iure nemo ad ex perspiciatis, veritatis aliquid minus accusamus!'
+    answer: 'La tua privacy e la sicurezza dei tuoi dati personali sono importanti per noi. Questa politica descrive come raccogliamo, utilizziamo, condividiamo e proteggiamo le tue informazioni quando utilizzi il nostro sito di gaming.'
 },
 
 ]
