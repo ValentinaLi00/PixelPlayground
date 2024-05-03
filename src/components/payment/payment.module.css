@@ -1,9 +1,8 @@
 .container {
-    margin-top: 50px;
-    height: 75%;
+    height: 80%;
     display: flex;
     justify-content: space-around;
-    margin-bottom:200px;
+    margin-bottom: 110px;
 
 }
 
@@ -14,7 +13,6 @@
     align-items: center;
     height: 80%;
     width: 50%;
-    padding: 30px;
     gap: 10px;
     border-radius: 15px;
     background-color: #4f16cbb3;
@@ -54,8 +52,14 @@
 .billing_address input {
     width: 300px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(243, 17, 106, 255);
+    border: 1px solid rgba(243, 17, 106, 255);
+}
 
+.billing_address input::-webkit-input-placeholder {
+    color: white;
 }
 
 .personal_info {
@@ -84,15 +88,13 @@
     gap: 10px;
 }
 
-input {
-    text-align: center;
-}
 
-input::-webkit-outer-spin-button,
+
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
+} */
 /* info pagamento */
 
 .payment_info {
@@ -163,10 +165,15 @@ input::-webkit-inner-spin-button {
 .owner_container input {
     width: 300px;
     height: 30px;
-    border-radius: 15px;
-
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(243, 17, 106, 255);
+    border: 1px solid rgba(243, 17, 106, 255);
 }
 
+.owner_container input::-webkit-input-placeholder {
+    color: white;
+}
 
 .owner_card,
 .card_number,
@@ -189,6 +196,7 @@ input::-webkit-inner-spin-button {
     height: 40px;
     font-size: 15px;
     margin-top: 20px;
+    margin-bottom: 24px;
 
 }
 
@@ -201,12 +209,13 @@ input::-webkit-inner-spin-button {
 .resume {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: #4f16cbb3;
     border: 1px solid #4f16cbb3;
     border-radius: 15px;
     width: 40%;
-    height: 60%;
+    height: 328px;
     row-gap: 20px;
 
 }
@@ -219,7 +228,7 @@ input::-webkit-inner-spin-button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: #0000;
     background-clip: text;
-    margin-top: 20px;
+
 }
 
 .resume p {
@@ -227,20 +236,43 @@ input::-webkit-inner-spin-button {
 }
 
 .resume_total {
-    height: 100%;
+    width: 90%;
+    height: 90%;
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 100px;
+    row-gap: 35px;
 }
+
+.resume_game {
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
 
 .button_resume {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 60px;
+    gap: 30px;
+
 }
 
 .button_resume button {
@@ -251,42 +283,26 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
     width: 200px;
     height: 60px;
-   
 }
 
-/* .checkOut_button {
+.button_resume button:hover {
+    transform: scale(1.2);
+}
+
+.checkOut_button {
     background-color: #28a744;
     font-size: 20px;
+}
 
-} */
-/* 
 .checkOut_button:hover {
     transform: scale(1.2);
-} */
+}
 
-/* .continue_button {
+.continue_button {
     background-color: #014b99;
     font-size: 20px;
 }
 
 .continue_button:hover {
-    transform: scale(1.1);
-} */
-
-.game,
-.total,
-.discount {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  
-}
-
-.discount input {
-    /* background-color: rgba(243, 17, 106, 255); */
-    border-radius: 5px;
-    border: 1px solid yellow;
-    outline: none;
+    transform: scale(1.2);
 }
