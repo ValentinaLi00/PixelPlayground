@@ -23,9 +23,7 @@ export function Faq() {
                         <h1>FAQ's</h1>
 
                     </div>
-                    <div>
-                        <img className='questionGuy' style={{ width: '180px', height: '100%' }} src="src\assets\loghi\ariGiaccariAssets\modified.png" alt="" />
-                    </div>
+                
                 </div>
                 <div className='faq'>
                     <div className='faqAccordion'>
@@ -45,8 +43,11 @@ export function Faq() {
                         })
                         }
                     </div>
+                 
 
-                </div>
+                </div>   <div>
+                        <img className='questionGuy' style={{ width: '180px', height: '100%' }} src="src\assets\loghi\ariGiaccariAssets\modified.png" alt="" />
+                    </div>
             </div >
         </>
     )

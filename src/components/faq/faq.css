@@ -1,15 +1,17 @@
-
-.gif{
+.gif {
     position: relative;
 }
 
 .faqPart {
     height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
     padding: 0px 30px 50px 30px;
     background-color: #201434;
     color: pink;
-  background-image: url('src/assets/loghi/ariGiaccariAssets/gifCat.gif'); 
-background-blend-mode: multiply;
+    background-image: url('src/assets/loghi/ariGiaccariAssets/gifCat.gif');
+    background-blend-mode: multiply;
 }
 
 .upperFaq {
@@ -18,13 +20,13 @@ background-blend-mode: multiply;
     justify-content: space-between;
 }
 
-.upperFaq div{
+.upperFaq div {
     display: flex;
     align-items: center;
 }
 
 .upperFaq h1 {
-    text-shadow: 2px 2px 1px black ;
+    text-shadow: 2px 2px 1px black;
     font-family: 'karma';
     font-size: 85px;
     color: rgb(189, 174, 44);
@@ -47,8 +49,8 @@ background-blend-mode: multiply;
 
 }
 
-.questionGuy{
-    margin: 50px 50px 0px 0px ;
+.questionGuy {
+    margin: 150px 50px 0px 0px;
 }
 
 .question {
@@ -60,6 +62,7 @@ background-blend-mode: multiply;
 .faqAccordion {
     width: 500px;
     text-align: center;
+    padding: 50px;
 }
 
 .showHidebtns {
@@ -96,6 +99,8 @@ background-blend-mode: multiply;
     padding: 20px;
 
 }
-.answer p, .answer_shown p {
+
+.answer p,
+.answer_shown p {
     font-size: 18px;
 }
