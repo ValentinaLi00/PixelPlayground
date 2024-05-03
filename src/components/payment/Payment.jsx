@@ -55,21 +55,21 @@ export function Payment() {
             <div className={classes.name_surname}>
               <div className={classes.name_person}>
                 <label htmlFor="">Nome</label>
-                <input type="text" name="name" placeholder='es. Mario' />
+                <input type="text" name="name" placeholder='es. Mario' required/>
               </div>
               <div className={classes.surname_person}>
                 <label htmlFor="">Cognome</label>
-                <input type="text" name="surname" placeholder='es. Rossi' />
+                <input type="text" name="surname" placeholder='es. Rossi' required/>
               </div>
             </div>
             <div className={classes.email_address}>
               <div className={classes.email_person}>
                 <label htmlFor="email">Email</label>
-                <input type="email" name="email" placeholder='es. mariorossi@gmail.com' />
+                <input type="email" name="email" placeholder='es. mariorossi@gmail.com' required/>
               </div>
               <div className={classes.address_person}>
                 <label htmlFor="address">Indirizzo, numero civico, CAP</label>
-                <input type="text" name="address" placeholder='es. Via Santiago, 23 00132 ' />
+                <input type="text" name="address" placeholder='es. Via Santiago, 23 00132 ' required/>
               </div>
             </div>
           </div>
@@ -99,19 +99,19 @@ export function Payment() {
             <div className={classes.owner_container}>
               <div className={classes.owner_card}>
                 <label htmlFor="" >Titolare della Carta</label>
-                <input type="text" placeholder='es. Mario Rossi' />
+                <input type="text" placeholder='es. Mario Rossi' required/>
               </div>
               <div className={classes.card_number}>
                 <label htmlFor="">Numero della carta</label>
-                <input type="number"  placeholder='es. 5333 000 ...'/>
+                <input type="number"  placeholder='es. 5333 000 ...' required/>
               </div>
               <div className={classes.card_date}>
                 <label htmlFor="">Scadenza (MM/YY)</label>
-                <input type="text" value={expiry} onChange={handleExpiryChange} placeholder="MM/YY" maxLength={5} />
+                <input type="text" value={expiry} onChange={handleExpiryChange} placeholder="MM/YY" maxLength={5}  required/>
               </div>
               <div className={classes.cvv}>
                 <label htmlFor="">CVV</label>
-                <input type="password" maxLength={4} value={cvv} onChange={handleCvvChange} placeholder='es. 387'/>
+                <input type="password" maxLength={4} value={cvv} onChange={handleCvvChange} placeholder='es. 387' required/>
               </div>
             </div>
           </div>) : null}
