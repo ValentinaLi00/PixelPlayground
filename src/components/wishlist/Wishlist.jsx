@@ -9,6 +9,14 @@ export function Wishlist() {
   const { id } = useParams();
   const [data, setData] = useState([]);
 
+
+  const [selected, setSelected] = useState(null)
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null)
+    } else setSelected(i)
+  }
+
   async function getAPI() {
     try {
       const response = await fetch(`http://localhost:5001/api/oggetti/${id}`);
@@ -43,29 +51,40 @@ export function Wishlist() {
             <h1>LISTA DESIDERI</h1>
           </div>
           <div className="favContainer">
-            <ul>
-              {wishlistItems.map(wish => (
-                <li key={wish.id}>
-                  <img
-                    style={{ width: "200px", height: "auto" }}
-                    src={wish.image}
-                    alt=""
-                  />
-                  <div className="favProdName">
-                    <p className="prodDetails">Nome del gioco</p>
-                    <p>{wish.title}</p>
+
+            <div>
+              {wishlistItems.length >= 1 ?
+
+                <ul>
+                  {wishlistItems.map(wish => (
+                    <li key={wish.id}>
+                      <img
+                        style={{ width: "200px", height: "auto" }}
+                        src={wish.image}
+                        alt=""
+                      />
+                      <div className="favProdName">
+                        <p className="prodDetails">Nome del gioco</p>
+                        <p>{wish.title}</p>
+                      </div>
+                      <div className="favProdPrice">
+                        <p className="prodDetails">Prezzo</p>
+                        <p>{wish.price}</p>
+                      </div>
+                      <div className="addRemoveBtns">
+                        <button className="addToCartBtn" onClick={handleAddToCart}>aggiungi al carrello</button>
+                        <button className="removeFromWishlistBtn" onClick={() => removeFromWishlist(wish.id)}>rimuovi</button>
+                      </div>
+                    </li>
+                  ))} </ul>
+
+
+                  :<div className='emptyWishlist' >
+                    <p style={{ fontSize: '20px' }}>la tua lista desideri è vuota</p>
+                    <img style={{ width: '50px' }} src="src\assets\loghi\ariGiaccariAssets\broken-heart.png" alt="brokenHeart" />
                   </div>
-                  <div className="favProdPrice">
-                    <p className="prodDetails">Prezzo</p>
-                    <p>{wish.price}</p>
-                  </div>
-                  <div className="addRemoveBtns">
-                    <button className="addToCartBtn" onClick={handleAddToCart}>aggiungi al carrello</button>
-                    <button className="removeFromWishlistBtn" onClick={() => removeFromWishlist(wish.id)}>rimuovi</button>
-                  </div>
-                </li>
-              ))}
-            </ul>
+                }
+            </div>
 
           </div>
 
