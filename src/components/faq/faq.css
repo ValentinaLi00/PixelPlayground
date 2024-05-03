@@ -7,11 +7,11 @@
     display: flex;
     justify-content: space-around;
     align-items: start;
-    padding: 0px 30px 50px 30px;
     background-color: #201434;
     color: pink;
     background-image: url('src/assets/loghi/ariGiaccariAssets/gifCat.gif');
     background-blend-mode: multiply;
+    margin-bottom: 80px;
 }
 
 .upperFaq {

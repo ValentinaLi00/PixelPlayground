@@ -1,16 +1,15 @@
 .container {
-    margin-top: 50px;
     height: 75vh;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 /* Carrello */
 .cart {
     overflow-y: scroll;
-    height: 80%;
+    height: 90%;
     width: 50%;
-    padding: 30px;
     gap: 10px;
     border-radius: 15px;
     background-color: #4f16cbb3;
@@ -33,11 +32,17 @@
 .products {
     padding: 20px;
     width: 100%;
+    height: 100%;
+}
+
+.products li {
+    list-style: none;
 }
 
 /* singolo prodotto */
 
 .product {
+    height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,7 +55,17 @@
 }
 
 .product img {
-    width: 100px;
+    width: 15%;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.title,
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
 }
 
 .button_delete {
@@ -73,6 +88,7 @@
 .resume {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: #4f16cbb3;
     border: 1px solid #4f16cbb3;
@@ -91,7 +107,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: #0000;
     background-clip: text;
-    margin-top: 20px;
+
 }
 
 .resume p {
@@ -99,21 +115,41 @@
 }
 
 .resume_total {
-    height: 100%;
+    width: 90%;
+    height: 90%;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    margin-bottom: 100px;
+    row-gap: 35px;
 }
+
+.resume_game {
+    width: 100%;
+    height: 35%;
+    overflow-y: scroll;
+    
+}
+
+.game {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    width: 30%;
+    display: flex;
+   justify-content: space-between;
+
+}
+
 
 .button_resume {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 30px;
-    margin-top: 45px;
+    
 }
 
 .button_resume button {
@@ -149,6 +185,8 @@
     transform: scale(1.2);
 }
 
+/* 
+
 .game,
 .total,
 .discount {
@@ -160,8 +198,8 @@
 }
 
 .discount input {
-    /* background-color: rgba(243, 17, 106, 255); */
+     background-color: rgba(243, 17, 106, 255); 
     border-radius: 5px;
     border: 1px solid yellow;
     outline: none;
-}
+} */

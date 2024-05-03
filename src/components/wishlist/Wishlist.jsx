@@ -1,11 +1,11 @@
-import { Navbar } from "../navbar/Navbar";
-import { Footer } from "../footer/Footer";
-import { Payment } from "../payment/Payment";
-
 import "./wishlist.css";
 import { ScrollUp } from "../footer/ScrollUp";
+import { useCart } from "../../context/CartProvider";
 
 export function Wishlist() {
+  const { addToWishlist, removeFromWishlist } = useCart();
+
+
   return (
     <div>
       <div className="wishlistBackground">

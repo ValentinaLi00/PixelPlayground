@@ -84,23 +84,23 @@ export function Gallery() {
 
                 >
                     <img
-                        src={data.image_background_url}
+                        src={data.gallery1}
 
                     />
                     <img
-                        src={data.image_background_url}
+                        src={data.gallery2}
 
                     />
                     <img
-                        src={data.image_background_url}
+                        src={data.gallery3}
 
                     />
                     <img
-                        src={data.image_background_url}
+                        src={data.gallery4}
 
                     />
                     <img
-                        src={data.image_background_url}
+                        src={data.gallery5}
 
                     />
                 </Carousel>

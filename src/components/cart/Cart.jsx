@@ -24,14 +24,22 @@ export function Cart() {
                     <ul>
                         {cartItems.map(item => (
                             <li key={item.id}>
-                                <img src={item.image} alt={item.title} />
-                                <h4>{item.title}</h4>
-                                <p>{item.price}€</p>
-                                <button onClick={() => removeFromCart(item.id)}>Elimina</button>
+                                <div className={classes.product}>
+                                    <img src={item.image} alt={item.title} />
+                                    <div className={classes.title}>
+                                        <p>Nome del gioco</p>
+                                        <h3>{item.title}</h3>
+                                    </div>
+                                    <div className={classes.price}>
+                                        <p>Prezzo</p>
+                                        <h3>{item.price}€</h3>
+                                    </div>
+                                    <button className={classes.button_delete} onClick={() => removeFromCart(item.id)}>Elimina</button>
+                                </div>
                             </li>
                         ))}
                     </ul>
-                    
+
                 </div>
             </div>
 
@@ -39,19 +47,25 @@ export function Cart() {
             <div className={classes.resume}>
                 <h2>Riepilogo</h2>
                 <div className={classes.resume_total}>
-                    <div className={classes.game}>
-                        <p>Titolo gioco</p>
-                        <p>10€</p>
+                    <div className={classes.resume_game }>
+                        {cartItems.map(item => (
+
+                            <div className={classes.game} key={item.id}>
+                                <h3>{item.title}</h3>
+                                <h3>{item.price}€</h3>
+                            </div>
+
+                        ))}
                     </div>
                     <div className={classes.total}>
                         <p>Totale</p>
                         <p>{calculateTotalPrice()}</p>
                     </div>
-                    <div className={classes.discount}>
+                    {/* <div className={classes.discount}>
                         <p>codice sconto</p>
                         <label htmlFor="discount"></label>
                         <input type="text" name='discount' />
-                    </div>
+                    </div> */}
                     <div className={classes.button_resume}>
                         <Link to='/payment'><button className={classes.checkOut_button}>Checkout</button></Link>
                         <Link to='/'><button className={classes.continue_button}>Continua con lo shopping</button></Link>
@@ -59,7 +73,7 @@ export function Cart() {
                 </div>
             </div>
 
-        </div>
+        </div >
 
     )
 

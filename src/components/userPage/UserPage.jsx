@@ -13,8 +13,8 @@ export function UserPage() {
   const [editingPsw, setEditingPsw] = useState(false);
   const [password, setPassword] = useState("");
 
-   const changedEmail= localStorage.setItem("email", email);
-   const changedPassword= localStorage.setItem("password", JSON.stringify(password));
+  const changedEmail = localStorage.setItem("email", email);
+  const changedPassword = localStorage.setItem("password", JSON.stringify(password));
 
   const inputRef = useRef(null);
   const [image, setImage] = useState("");
@@ -49,6 +49,7 @@ export function UserPage() {
                   fontWeight: "100",
                   color: "white",
                   textShadow: "0px 0px 15px rgb(205, 0, 185)",
+                  marginLeft: '20px'
                 }}
               >
                 ACCOUNT
@@ -107,7 +108,7 @@ export function UserPage() {
                   </div>
                 ) : (
                   <div>
-                    <span>e-mail: jessicarossi@gmail.com </span>{" "}
+                    <span>e-mail: prova@gmail.com </span>{" "}
                     <img
                       onClick={() => setEditing(true)}
                       style={{
@@ -173,6 +174,7 @@ export function UserPage() {
                   fontWeight: "100",
                   color: "white",
                   textShadow: "0px 0px 15px rgb(205, 0, 185)",
+                  marginLeft: '20px'
                 }}
               >
                 NEWSLETTER
@@ -186,16 +188,17 @@ export function UserPage() {
                 <button onClick={handleSuscribe}>subscribe</button>
               </div>
             </div>
-        
+
           </div>
           <div className="rightUserPart">
-          <div className="orders">
+            <div className="orders">
               <span
                 style={{
                   fontSize: "23px",
                   fontWeight: "100",
                   color: "white",
                   textShadow: "0px 0px 15px rgb(205, 0, 185)",
+                  marginLeft: '20px'
                 }}
               >
                 I MIEI ORDINI
@@ -240,18 +243,19 @@ export function UserPage() {
                     fontWeight: "100",
                     color: "white",
                     textShadow: "0px 0px 15px rgb(205, 0, 185)",
+                    marginLeft: '20px'
                   }}
                 >
                   EXIT
                 </p>
                 <div className="exitDivImg">
-                <Link to="/"> 
-                  {" "}
-                  <img onClick={handleLogout}
-                    className="exit"
-                    src="src\assets\paoloLupoAssets\exitDoor_icon-removebg-preview.png"
-                    alt="exit_icon"
-                  />
+                  <Link to="/">
+                    {" "}
+                    <img onClick={handleLogout}
+                      className="exit"
+                      src="src\assets\paoloLupoAssets\exitDoor_icon-removebg-preview.png"
+                      alt="exit_icon"
+                    />
                   </Link>
                 </div>
               </div>
