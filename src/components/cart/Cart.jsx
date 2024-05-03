@@ -21,7 +21,7 @@ export function Cart() {
                 <div className={classes.products}>
                     {/* singolo prodotto */}
 
-                    <ul>
+                    <ul id='ciao'>
                         {cartItems.map(item => (
                             <li key={item.id}>
                                 <div className={classes.product}>

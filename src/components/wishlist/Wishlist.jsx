@@ -1,12 +1,40 @@
 import "./wishlist.css";
 import { ScrollUp } from "../footer/ScrollUp";
 import { useCart } from "../../context/CartProvider";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export function Wishlist() {
   const { wishlistItems, removeFromWishlist } = useCart();
+  const { addToCart } = useCart();
+  const { id } = useParams();
+  const [data, setData] = useState([]);
 
+  async function getAPI() {
+    try {
+      const response = await fetch(`http://localhost:5001/api/oggetti/${id}`);
+      const responseJson = await response.json();
+      setData(responseJson);
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
+  useEffect(() => {
+    getAPI();
+  }, [id]);
 
+  const handleAddToCart = () => {
+    if (data) {
+      addToCart({
+        id: data.id,
+        title: data.title,
+        price: data.discount_price,
+        image: data.image_url
+      });
+      alert('Prodotto aggiunto al carrello!');
+    }
+  };
 
   return (
     <div>
@@ -33,7 +61,7 @@ export function Wishlist() {
                     <p>{wish.price}</p>
                   </div>
                   <div className="addRemoveBtns">
-                    <button className="addToCartBtn">aggiungi al carrello</button>
+                    <button className="addToCartBtn" onClick={handleAddToCart}>aggiungi al carrello</button>
                     <button className="removeFromWishlistBtn" onClick={() => removeFromWishlist(wish.id)}>rimuovi</button>
                   </div>
                 </li>
