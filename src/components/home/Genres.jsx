@@ -37,50 +37,50 @@ export function Genres() {
 
                 <div className={classes.containerCards}>
 
-                    <div className={`${classes.card} ${classes.action} `}  >
+                    <Link to="/action"><div className={`${classes.card} ${classes.action} `}  >
                         <img src="src\assets\valentinaLiAssets\home\genres\action_figure.png" alt="" className={`${classes.character} ${classes.figure_action}`} />
                         <div className={classes.ribbon}>Action</div>
-                    </div>
+                    </div></Link>
 
-                    <div className={`${classes.card} ${classes.fighting} `} >
+                   <Link to="/fighting"><div className={`${classes.card} ${classes.fighting} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\fighting_figure.png" alt="" className={`${classes.character} ${classes.figure_fighting}`} />
                         <div className={classes.ribbon}>Fighting</div>
-                    </div>
+                    </div></Link> 
 
-                    <div className={`${classes.card} ${classes.adventures} `} >
+                    <Link to="/adventure"><div className={`${classes.card} ${classes.adventures} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\adventure_figure.png" alt="" className={`${classes.character} ${classes.figure_adventures}`} />
                         <div className={classes.ribbon}>Adventure</div>
-                    </div>
+                    </div></Link>
 
-                    <div className={`${classes.card} ${classes.multiplayer} `} >
+                    <Link to="/multiplayer"><div className={`${classes.card} ${classes.multiplayer} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\multiplayer_figure.png" alt="" className={`${classes.character} ${classes.figure_multiplayer}`} />
                         <div className={classes.ribbon}>Multiplayer</div>
-                    </div>
+                    </div></Link>
 
-                    <div className={`${classes.card} ${classes.fps} `} >
+                    <Link to="/FPS"><div className={`${classes.card} ${classes.fps} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\fps_figure.webp" alt="" className={`${classes.character} ${classes.figure_fps}`} />
                         <div className={classes.ribbon}>FPS</div>
-                    </div>
+                    </div></Link>
 
-                    <div className={`${classes.card} ${classes.sport} `} >
+                    <Link to="/sport"><div className={`${classes.card} ${classes.sport} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\sport_figure.png" alt="" className={`${classes.character} ${classes.figure_sport}`} />
                         <div className={classes.ribbon}>Sport</div>
-                    </div>
+                    </div></Link>
 
-                    <div className={`${classes.card} ${classes.indie} `} >
+                    <Link to="/indie"><div className={`${classes.card} ${classes.indie} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\indie_figure.png" alt="" className={`${classes.character} ${classes.figure_indie}`} />
                         <div className={classes.ribbon}>Indie</div>
-                    </div>
+                    </div></Link>
 
-                    <div className={`${classes.card} ${classes.racing} `} >
+                    <Link to="/racing"><div className={`${classes.card} ${classes.racing} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\racing_figure.png" alt="" className={`${classes.character} ${classes.figure_racing}`} />
                         <div className={classes.ribbon}>Racing</div>
-                    </div>
+                    </div></Link>
 
-                    <div className={`${classes.card} ${classes.rpg} `} >
+                    <Link to="/RPG"><div className={`${classes.card} ${classes.rpg} `} >
                         <img src="src\assets\valentinaLiAssets\home\genres\rpg_figure.png" alt="" className={`${classes.character} ${classes.figure_rpg}`} />
                         <div className={classes.ribbon}>RPG</div>
-                    </div>
+                    </div></Link>
                 </div>
             </div>
         </div>
