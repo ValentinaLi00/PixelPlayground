@@ -1614,7 +1614,25 @@ const users = [
   video_url: "https://youtu.be/_MM4clV2qjE?si=uMZihMcfwbOeTnme",
   image_background_url: "https://gaming-cdn.com/img/products/9579/pcover/1920x620/9579.jpg?v=1706550061",
   platform: "PC",
-}
+},
+{
+  id: 119,
+  title: "Red dead redemption",
+  sub_title: "Red dead Redemption 2",
+  genre: "Action", 
+  rating: "PEGI 18",
+  developer: "Rockstar Games",
+  description: "America, 1899. Arthur Morgan e la banda di Van der Linde sono in fuga. Con gli agenti federali e i migliori cacciatori di taglie alle costole, la banda deve rapinare, combattere e rubare per farsi strada e cercare di sopravvivere nel cuore di un'America dura e selvaggia. Una serie di conflitti e divisioni rischiano di mettere a repentaglio l'unità del gruppo, e Arthur si ritrova costretto a scegliere tra i suoi ideali e la lealtà nei confronti della banda che l'ha cresciuto.", 
+  price: 29.99,
+  discount: 10,
+  discount_price: 19.99,
+  image_background_url: "https://gaming-cdn.com/img/products/5679/pcover/1920x620/5679.jpg?v=1713793245",
+  image_url: "https://gaming-cdn.com/images/products/5679/616x353/red-dead-redemption-2-pc-game-rockstar-cover.jpg?v=1713793245",
+  video_url: "https://cdn.akamai.steamstatic.com/steam/apps/256768274/movie480.webm?t=1574881498",
+  platform: "XBOX",
+  order: 'Bestseller',
+  prezzi: 'low'
+},
 
 
 ]
